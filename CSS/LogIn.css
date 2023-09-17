@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.login-section .login-container{
+    width: 93% !important;
+}
+.login-image-wrapper{
+    width: 45% !important;
+    background-color: #CAF0F8;
+}
+.login-image-wrapper .first-wrapper{
+    width: 90% !important;
+    margin-inline: auto !important;
+    height: 90% !important;
+    margin-top: 2.5rem !important;
+    display: flex;
+    justify-content: center;
+}
+.login-image-wrapper img{ 
+    border: 7px solid #0F0E0E;
+    outline: 10px solid #0077B6;
+}
+.login-content{
+    margin-top: -4rem !important;
+    width: 45% !important;
+}
+.login-content h1{
+    margin-top: -6rem !important;
+}
+.login-btn{
+    background-color: #0077B6;
+    border-radius: 0;
+}
+.login-btn:hover{
+    background-color: #0077B6;
+}
+.reset-a{
+    color: 00B4D8;
+    text-decoration: none;
+}
+
+.login-btn-wrapper button{
+    border: 1px solid #0077B6;
+    padding-block: 0.75rem !important;
+}
+@media only screen and (max-width: 900px){
+    .login-image-wrapper img{
+        width: 80% !important;
+    }
+}
+@media only screen and (max-width: 500px){
+    .login-image-wrapper img{
+        width: 90% !important;
+    }
+    .login-section .login-container{
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .login-image-wrapper{
+        width: 50% !important;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .login-section .login-container{
+        width: 100% !important;
+        display: flex;
+        gap: 3rem !important;
+        justify-content: space-between !important;
+    }
+    .login-image-wrapper{
+        width: 50% !important;
+    }
+    .login-image-wrapper img{
+        width: 100% !important;
+        opacity: 0;
+    }
+    .login-content{
+        width: 60% !important;
+    }
+}
+/* input:invalid {
+    border: 1px solid red;
+} */
