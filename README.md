@@ -1,4 +1,31 @@
 # AGILYST
-**Project overview**
- If you are looking for a way to improve your agile skills and learn from experienced professionals, you might want to check out AGILYST. AGILYST is a website that connects you with agile mentors who can help you with your projects, challenges and goals. You can browse through different profiles of mentors, see their ratings and reviews, and book a session with the one that suits your needs. Whether you are a beginner or an expert, AGILYST can help you grow as an agile practitioner and achieve better results.
+
+This is a website project developed by African Agility cohort 06 students. The website aims to connect agile mentors and mentees across the globe and provide them with resources and guidance. The project follows agile principles and values, and uses Scrum as the framework for managing the work. We are learning and applying agile practices such as user stories, sprints, and retrospectives. The project is expected to be completed by----.
+
+## Table of Contents
+
+- [Introduction](#agile-mentorship-website-development-project)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+To get started with this project, you can clone the repository using the following command:
+
+```
+git clone https://github.com/Endework/AGILYST.git
+```
+
+
+## Usage
+
+This website is designed to connect agile mentors and mentees across the Globe. Users can sign up for an account, create a profile, and search for mentors or mentees based on their location, skills, and experience. The website also provides resources and guidance for agile practitioners.
+
+## Contributing
+
+Thank you for your interest in contributing to our project! At this time, we are not accepting contributions. However, we appreciate your support and encourage you to check back later for updates.
+
+## License
 
