@@ -4,7 +4,7 @@ This is a website project developed by African Agility cohort 06 students. The w
 
 ## Table of Contents
 
-- [Introduction](#agile-mentorship-website-development-project)
+- [Introduction](#AGILYST)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
