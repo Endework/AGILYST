@@ -46,7 +46,7 @@ body{
 }
 .logo{
     width:70%;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .logo img{
     width: 100%;
@@ -104,17 +104,26 @@ body{
         outline: 5px solid #00B4D8 ;
         
     }
+    .right .title{
+        color: #0077B6;
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 50px; /* 112.281% */
+        
+    }
     .right{
         width: 100% !important;
     }
     .sub{
         
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 20px; 
         letter-spacing: 0.5px;
     }
+
     
   }
   
