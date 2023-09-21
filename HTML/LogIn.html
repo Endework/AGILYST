@@ -12,6 +12,7 @@
 		/>
 		<link
 			rel="stylesheet"
+			
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		/>
 		<link
@@ -27,26 +28,18 @@
 		<title>Login Page</title>
 	</head>
 	<body>
-		<!-- code by Purity Kamau -->
 		<section class="login-section w-100">
 			<div class="login-container d-flex justify-content-between">
 				<div class="login-image-wrapper">
-					<div class="first-wrapper">
 						<img
-							src="../Images/forgotpass.jpeg"
+							src="../Images/onboarding.png"
 							alt=""
 							class="w-100"
 						/>
-					</div>
 				</div>
 				<div class="login-content">
-					<img
-						src="../Images/logo.png"
-						alt=""
-                        class="w-100"
-					/>
-					<h1 class="display-4 mb-2 fw-medium">Welcome Back</h1>
-					<p class="mx-5 px-5 fw-semibold mb-4">Log into your account</p>
+					<h1 class="display-4 mb-3 fw-medium text-center mt-4">Welcome Back</h1>
+					<p class="fw-semibold mb-4 top-p text-center">Log into your account</p>
 					<!-- Form -->
 					<form
 						action="SignUp.html"
@@ -83,16 +76,15 @@
 						<button
 							class="btn login-btn w-100 text-white mt-4 py-2 fs-5"
 							type="submit"
-							onclick="window.location.href=''"
+							onclick="window.location.href='../index.html'"
 						>
 							Log in
 						</button>
 					</form>
 					<p class="text-center my-5">
 						Forgot your Password?
-						
 						<a
-							href="./Forgot.html"
+							href="Forgot.html"
 							class="reset-a ms-1"
 							>Reset Password</a
 						>
@@ -100,28 +92,31 @@
 					<p class="text-center w-75 mx-auto mb-5">
 						By Logging in, you agree to our Terms of Use and Privacy policy.
 					</p>
-					<h2 class="text-uppercase fw-semibold text-center mb-5">or</h2>
-					<div class="login-btn-wrapper d-flex flex-column gap-4 fw-bold mb-4">
-						<button class="btn border border-rounded">
-							<img
-								src="../Images/icons-google.svg"
-								alt=""
-							/>
-							<a href="https://accounts.google.com/o/oauth2/v2/auth?scope=email&redirect_uri=YOUR_REDIRECT_URI&response_type=code&client_id=YOUR_CLIENT_ID" class="text-black ms-2">Log in with Google</a>
-						</button>
-						<button class="btn border border-rounded">
-							<img
+					<div class="login-options">
+						<hr>
+						<h2 class="text-center mb-5 bg-white fs-5">or log in with</h2>
+					</div>
+					<div class="login-btn-wrapper d-flex justify-content-between">
+							<button class="btn border border-rounded">
+								<a href="https://accounts.google.com/o/oauth2/v2/auth?scope=email&redirect_uri=YOUR_REDIRECT_URI&response_type=code&client_id=YOUR_CLIENT_ID" class="border">
+									<img src="../Images/icons-google.svg" alt="">
+								</a>
+							</button>
+						<button class="btn border border-rounded ">
+							<a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email" class="text-black ms-2">
+                                <img
 								src="../Images/icons-facebook.svg"
 								alt=""
 							/>
-							<a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email" class="text-black ms-2">Log in with Facebook</a>
+							</a>
 						</button>
 						<button class="btn border border-rounded ">
-							<img
+							<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress" class="text-black ms-2">
+                                <img
 								src="../Images/icons-linkedin.svg"
 								alt=""
 							/>
-							<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress" class="text-black ms-2">Log in with Linkedin</a>
+							</a>
 						</button>
 					</div>
 				</div>
