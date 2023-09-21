@@ -1,5 +1,8 @@
-/* font-family: 'Lato', sans-serif; */
-/* left div */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     width: 100%;
 
@@ -7,9 +10,7 @@ body{
 
 .left{
     width: 50% !important;
-    
-    
-    background-color:  #CAF0F8;
+    /* background-color:  #CAF0F8; */
 }
 .image_wrapper{
     width: 100% !important;
@@ -20,13 +21,13 @@ body{
     
 }
 .image_wrapper img{
-    width: 40% !important;
+    width: 100% !important;
 
     /* position: relative;
     left:160px;
     top:400px; */
-    border: 10px solid #0F0E0E;
-    outline: 10px solid #00B4D8 ;
+    /* border: 10px solid #0F0E0E;
+    outline: 10px solid #00B4D8 ; */
     
 }
 /* .image_wrapper::before{
