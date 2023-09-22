@@ -88,6 +88,9 @@ img{
 #submit:hover{
     background-color: #0b667c;
 }
+.button{
+    margin-right: 8.5rem !important;
+}
 
 .signup-with{
     justify-content: center;
