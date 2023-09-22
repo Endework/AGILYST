@@ -76,24 +76,24 @@ body{
   /* media query */
   @media screen and (max-width: 700px) {
     .container-fluid {
-      flex-direction: column;
+      flex-direction: row;
       
     }
     .left{
-        width: 100% !important;
+        width: 40% !important;
         
     }
     .right{
-        width: 100% !important;
+        width: 50% !important;
     }
     .image_wrapper img{
         width: 100% !important;
-        height: 50vh !important;
+        height: 100vh !important;
     }
     .right .title{
         color: #0077B6;
         font-family: 'Lato', sans-serif;
-        font-size: 60px;
+        font-size: 30px;
         font-weight: 400;
         line-height: 50px;   
     }
@@ -104,9 +104,7 @@ body{
         line-height: 20px; 
         letter-spacing: 0.5px;
     }
-    .image_wrapper:hover img{
-        transform: scale(0.75);
-    }
+    
     
   }
   
