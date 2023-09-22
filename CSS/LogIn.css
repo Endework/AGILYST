@@ -14,7 +14,7 @@ a{
 }
 .login-image-wrapper{
     width: 45% !important;
-    height: 100% !important;
+    height: 105% !important;
     margin-left: 1rem !important;
     margin-block: 1rem !important;
 }
@@ -58,24 +58,69 @@ a{
     padding-block: 0.5rem !important;
     padding-inline: 0.75rem !important;
 }
+@media only screen and (max-width: 912px){
+    .login-image-wrapper img{
+        height: 50% !important;
+    }
+}
 @media only screen and (max-width: 820px){
     .login-content .top-p{
         width: 90% !important;
     }
+    .login-image-wrapper img{
+        height: 60% !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    .login-image-wrapper img{
+        height: 65% !important;
+    }
+}
+@media only screen and (max-width: 540px){
+    .login-image-wrapper img{
+        height: 100% !important;
+    }
 }
 @media only screen and (max-width: 490px){
+    .login-image-wrapper img{
+        height: 90% !important;
+    }
     .login-content .top-p{
         width: 90% !important;
     }
+    .login-btn-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
 }
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 375px){
+    .login-image-wrapper img{
+        height: 120% !important;
+    }
     .login-content{
         height: 100% !important;
     }
     .login-options{
         margin-block: 3rem !important;
     }
+    .login-btn-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
 }
+@media only screen and (max-width: 360px){
+    .login-image-wrapper img{
+        height: 110% !important;
+    }
+}
+@media only screen and (max-width: 280px){
+    .login-image-wrapper img{
+        height: 135% !important;
+    }
+}
+
 /* input:invalid {
     border: 1px solid red;
 } */

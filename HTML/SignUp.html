@@ -1,129 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../CSS/signup.css" />
-    <title>SignUp</title>
-  </head>
-  <!-- code by Favour Ezera -->
-  <body>
-    <main class="signup">
-      <div class="signup-img">
-        <img src="../images/Frame 46.jpg" alt="frame image" />
-      </div>
-      <div class="form">
-        <div class="get">
-          <img src="../images/Agilyst Logo5 3- new.jpg" alt="Agilyst logo" />
-          <h1>Get Started!</h1>
-          <p>Create your account</p>
-        </div>
-        <div class="form-input">
-          <form action="">
-            <p>Full Name*</p>
-            <input
-              type="text"
-              placeholder="Full Name"
-              name="Full Name"
-              id="full-name"
-              required
-            />
-            <p>Email*</p>
-            <input
-              type="email"
-              placeholder="Email"
-              name="Email"
-              id="email"
-              required
-            />
-            <p>Password*</p>
-            <input
-              type="password"
-              placeholder="Password"
-              name="Password"
-              id="password"
-              required
-            />
-            <p>Confirm Password*</p>
-            <input
-              type="password"
-              placeholder="Password"
-              name="Password"
-              id="password"
-              required
-            />
-            <p>Choose Role*</p>
-            <select name="role" id="role">
-              <option selected disabled>Choose Role</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-            </select>
-            <p>Experience Level*</p>
-            <select name="experience" id="experience">
-              <option selected disabled>Experience Level</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-            </select>
-            <p>Industry*</p>
-            <select name="industry" id="industry">
-              <option selected disabled>Industry</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-              <option value="">.......</option>
-            </select>
-            <input type="submit" value="Sign Up" id="submit" />
-          </form>
-          <!-- <div class="submit">
-                    <input type="submit" value="Sign Up">
-                </div> -->
-        </div>
-        <div class="signup-with">
-          <div class="already">
-            <p>Already have an account ? <a href="./LogIn.html">Sign In</a></p>
-            <br />
-            <br />
-            <p>
-              By signing up, you agree to our Terms of Use <br />
-              and Privacy policy
-            </p>
-            <br />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="../CSS/SignUp.css"
+		/>
+		<title>Signup Page</title>
+	</head>
+	<body>
+		<section class="signup-section w-100">
+			<div class="signup-container d-flex justify-content-between">
+				<div class="signup-image-wrapper">
+					<img
+						src="../Images/onboarding.png"
+						alt=""
+						class="w-100"
+					/>
+				</div>
+				<div class="signup-content">
+					<h1 class="display-4 mb-3 fw-medium text-center mt-4">
+						Get Started!
+					</h1>
+					<p class="fw-semibold mb-4 top-p text-center">Create your account</p>
+					<!-- Form -->
+					<form
+						action="SignUp.html@"
+						method="post"
+						class="w-100"
+					>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Full Name*</p>
+							<input
+								type="full name"
+								name="full name"
+								id="full name"
+								placeholder="Full Name"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Email*</p>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Password*</p>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Password"
+								pattern="[A-Za-z0-9]{8,}"
+								title="Password must be at least 8 characters long and contain only letters and numbers"
+								class="border rounded py-2 ps-4 w-100"
+								required
+							/>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Confirm Password*</p>
+							<input
+								type="password"
+								name="password"
+								id="confirm password"
+								placeholder="Confirm Password"
+								pattern="[A-Za-z0-9]{8,}"
+								title="Password must be at least 8 characters long and contain only letters and numbers"
+								class="border rounded py-2 ps-4 w-100"
+								required
+							/>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Choose Role*</p>
+							<select
+								name="role"
+								id="role"
+								class="border rounded py-2 ps-4 w-100 text-body-secondary"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+									Choose Role
+								</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Experience Level*</p>
+							<select
+								name="role"
+								id="role"
+								class="border rounded py-2 ps-4 w-100 text-body-secondary"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+									Experience Level
+								</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Industry*</p>
+							<select
+								name="role"
+								id="role"
+								class="border rounded py-2 ps-4 w-100 text-body-secondary"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+									Select Industry
+								</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div>
+						<button
+							class="btn signup-btn w-100 text-white py-2 fs-5" 
+							type="submit"
+							onclick="window.location.href=''"
+						>
+							Sign up
+						</button>
+					</form>
+					<p class="text-center my-5">
+						Already have an account?
+						<a
+							href="LogIn.html"
+							class="reset-a ms-1"
+							>Sign in</a
+						>
+					</p>
+					<p class="text-center w-75 mx-auto mb-5">
+						By Signing up, you agree to our Terms of Use and Privacy policy.
+					</p>
+					<div class="signup-options">
+						<hr />
+						<h2 class="text-center mb-5 bg-white fs-5">or sign up with</h2>
+					</div>
+					<div class="signup-btn-wrapper d-flex justify-content-between">
+						<button class="btn border border-rounded">
+							<a
+								href="https://accounts.google.com/o/oauth2/v2/auth?scope=email&redirect_uri=YOUR_REDIRECT_URI&response_type=code&client_id=YOUR_CLIENT_ID"
+								class="mx-2"
+							>
+								<img
+									src="../Images/icons-google.svg"
+									alt=""
+								/>
+							</a>
+						</button>
+						<button class="btn border border-rounded">
+							<a
+								href="https://www.facebook.com/v2.8/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email"
+								class="mx-2"
+							>
+								<img
+									src="../Images/icons-facebook.svg"
+									alt=""
+								/>
+							</a>
+						</button>
+						<button class="btn border border-rounded">
+							<a
+								href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress"
+								class="mx-2"
+							>
+								<img
+									src="../Images/icons-linkedin.svg"
+									alt=""
+								/>
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <h1>OR</h1>
-          </div>
-          <div class="sign-with">
-            <!-- <div>
-                        <button> <img src="./images/flat-color-icons_google.svg" alt="google logo"> <span>Sign up with Google</span></button>
-                    </div> -->
-            <div>
-              <button>
-                <i class="fa-brands fa-google"></i
-                ><a href="">Sign up with Google</a>
-              </button>
-            </div>
-            <div>
-              <button>
-                <i class="fa-brands fa-facebook"></i
-                ><a href="">Sign up with Facebook</a>
-              </button>
-            </div>
-            <div>
-              <button>
-                <i class="fa-brands fa-linkedin"></i
-                ><a href="">Sign up with LinkedIn</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="../signup.js"></script>
+	</body>
 </html>
