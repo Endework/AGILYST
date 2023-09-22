@@ -5,11 +5,12 @@
 }
 body{
     width: 100%;
+    /* overflow-x: hidden; */
 
 }
-
+/* left div */
 .left{
-    width: 50% !important;
+    width: 40% !important;
     /* background-color:  #CAF0F8; */
 }
 .image_wrapper{
@@ -22,23 +23,13 @@ body{
 }
 .image_wrapper img{
     width: 100% !important;
-
-    /* position: relative;
-    left:160px;
-    top:400px; */
-    /* border: 10px solid #0F0E0E;
-    outline: 10px solid #00B4D8 ; */
-    
+   
+    transition: transform 0.3s ease-in-out;
 }
-/* .image_wrapper::before{
-    content: "";
-    position: absolute;
-    top: 440px;
-    left: 245px;
-    right: 826px;
-    bottom: -145px;
-    border: 15px solid #00B4D8;
-} */
+.image_wrapper:hover img{
+    transform: scale(0.89);
+}
+
 
 /* right div */
 .right{
@@ -58,7 +49,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     font-weight: 400;
-    line-height: 64px; /* 112.281% */
+    line-height: 64px;
     letter-spacing: 0.1px;
 }
 .right .text{
@@ -82,49 +73,40 @@ body{
   .flex-item {
     flex: 1;
   }
-
-  
   /* media query */
   @media screen and (max-width: 700px) {
-    .container {
-      flex-direction: column-reverse;
+    .container-fluid {
+      flex-direction: column;
       
     }
     .left{
         width: 100% !important;
         
     }
+    .right{
+        width: 100% !important;
+    }
     .image_wrapper img{
-        width: 45% !important;
-        transform: rotate(90deg);
-    
-        /* position: relative;
-        left:160px;
-        top:400px; */
-        border: 5px solid #0F0E0E;
-        outline: 5px solid #00B4D8 ;
-        
+        width: 100% !important;
+        height: 50vh !important;
     }
     .right .title{
         color: #0077B6;
         font-family: 'Lato', sans-serif;
         font-size: 60px;
         font-weight: 400;
-        line-height: 50px; /* 112.281% */
-        
-    }
-    .right{
-        width: 100% !important;
+        line-height: 50px;   
     }
     .sub{
         
         font-size: 18px;
-        font-style: normal;
         font-weight: 500;
         line-height: 20px; 
         letter-spacing: 0.5px;
     }
-
+    .image_wrapper:hover img{
+        transform: scale(0.75);
+    }
     
   }
   

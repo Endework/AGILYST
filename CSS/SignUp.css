@@ -7,6 +7,11 @@
     color: #0F0E0E;
     font-family: 'Lato', sans-serif;
 }
+/* endework */
+body{
+    width: 100%;
+}
+/* endework */
 a{
     text-decoration: none;
     font-size: 0.8rem;
@@ -169,150 +174,39 @@ img{
    font-size: 1rem;
 }
 
-@media screen and (max-width: 500px){
-    .signup{
-        display: flex;
-        flex-direction: row;
-        margin: 0;
+
+
+/* endework */
+@media screen and (max-width: 700px) {
+    .signup {
+      flex-direction: column;
     }
-    img{
-        /* width: 100%;
-        height: 50vh;
-        align-items: center;
-        justify-content: center; */
-        width: 0%;
-        height: 0%;
-        /* margin: 0.5rem; */
-        
-        /* margin-top: 22rem;
-        margin-right: 5rem; */
+    .signup-img{
+        width: 100% !important;  
     }
     .form{
-        margin-left: rem;
+        width: 100% !important;
     }
-    .get{
-        text-align: center ;
-        margin-right: 3rem;
+    .signup-img img{
+        width: 100% !important;
+        height: 50vh !important;
     }
-    .get h1{
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
+    /* .right .title{
+        color: #0077B6;
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
         font-weight: 400;
+        line-height: 50px;   
     }
-    .get p{
-        margin-bottom: 1.5rem;
-        font-size: 0.65rem;
-        font-weight: 400;
-    }
-    
-    .form-input{
-        margin-left: rem;
-        font-size: 0.5rem;
-    }
-    .form-input p{
-        margin-left: 0.5rem;
-        font-size: 0.65rem;
-        font-weight: 400;
-    }
-    .form-input input{
-        margin: 0.rem;
-        width: 15rem;
-        height: 2rem;
-        font-size: 0.5rem;
-    }
-    
-    .form-input select{
-        margin: 0.rem;
-        width: 15rem;
-        height: 2rem;
-        font-size: 0.5rem;
-    }
-    #submit{
-        background-color: #0077B6;
-        border: 1px solid #0077B6;
-        color: #F5F0F6;
-    }
-    #submit:hover{
-        background-color: #0b667c;
-    }
-    
-    .signup-with {
-        justify-content: center;
-        margin-right: rem;
-        font-size: 0.5rem;
-    }
-    .already a{
-        color: #00B4D8;
-        text-decoration: none;
-        font-size: 0.5rem;
-    }
-    .already a:hover{
-        opacity: 200;
-        color: #0b667c;
-    }
-    .already h1{
-        margin-top: 0.8rem;
+    .sub{
         
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px; 
+        letter-spacing: 0.5px;
+    } */
+    .image_wrapper:hover img{
+        transform: scale(0.75);
     }
-    #hr-line{
-       /* margin: 100px, auto; */
-       text-align: center;
-       position: relative;
-       margin-right: 1rem;
-       
-    }
-    #hr-line:before {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 1px;
-        background-color: #A7A4A4;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        z-index: -2;
-    }
-    #hr-line:after {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 1px;
-        background-color: #A7A4A4;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        z-index: -2;
-    }
-    #hr-line span{
-        background: transparent;
-        color: #A7A4A4;
-    }
-    .sign-with {
-        display: flex;
-        margin-right: rem;
-    }
-    .sign-with button{
-        margin: 1rem;
-        width: 3rem;
-        height: 2rem;
-        border: 1px solid #0077B6;
-        border-radius: 0.5rem;
-        background-color: transparent;
-        font-size: 0.5rem;
-
-    }
-    .sign-with button:hover{
-        background-color: #e6f4f7;
-    }
-    .sign-with img{
-        width: 1.5vw;
-        height: 3vh;
-        margin-right: 0.5rem;
-        margin-top: 0.4rem;
-    }
-    .fa-brands{
-       color: #0077B6;
-       font-size: 1rem;
-}
-}
+    
+  }
