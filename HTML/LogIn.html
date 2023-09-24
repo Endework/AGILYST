@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="../CSS/LogIn.css"
+		/>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<section class="login-section w-100">
+			<div class="login-container d-flex justify-content-between">
+				<div class="login-image-wrapper">
+						<img
+							src="../Images/onboarding.png"
+							alt=""
+							class="w-100"
+						/>
+				</div>
+				<div class="login-content">
+					<h1 class="display-4 mb-3 fw-medium text-center mt-4">Welcome Back</h1>
+					<p class="fw-semibold mb-4 top-p text-center">Log into your account</p>
+					<!-- Form -->
+					<form
+						action="SignUp.html"
+						method="get"
+						class="w-100"
+					>
+						<div class="form-div mb-3">
+							<p class="fw-medium">Email*</p>
+							<label for="email"></label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+						<div class="form-div">
+							<p class="fw-medium">Password*</p>
+							<div class="input">
+								<label for="password"></label>
+								<input
+									type="password"
+									name="password"
+									id="password"
+									placeholder="Password"
+									pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and contain only letters and numbers"
+									class="border rounded py-2 ps-4 w-100"
+									required
+								/>
+							</div>
+						</div>
+						<button
+							class="btn login-btn w-100 text-white mt-4 py-2 fs-5"
+							type="submit"
+							onclick="window.location.href='../index.html'"
+						>
+							Log in
+						</button>
+					</form>
+					<p class="text-center my-5">
+						Forgot your Password?
+						<a
+							href="Forgot.html"
+							class="reset-a ms-1"
+							>Reset Password</a
+						>
+					</p>
+					<p class="text-center w-75 mx-auto mb-5">
+						By Logging in, you agree to our Terms of Use and Privacy policy.
+					</p>
+					<div class="login-options">
+						<hr>
+						<h2 class="text-center mb-5 bg-white fs-5">or log in with</h2>
+					</div>
+					<div class="login-btn-wrapper d-flex justify-content-between">
+							<button class="btn border border-rounded">
+								<a href="https://accounts.google.com/o/oauth2/v2/auth?scope=email&redirect_uri=YOUR_REDIRECT_URI&response_type=code&client_id=YOUR_CLIENT_ID" class="mx-2">
+									<img src="../Images/icons-google.svg" alt="">
+								</a>
+							</button>
+						<button class="btn border border-rounded ">
+							<a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email" class="mx-2">
+                                <img
+								src="../Images/icons-facebook.svg"
+								alt=""
+							/>
+							</a>
+						</button>
+						<button class="btn border border-rounded ">
+							<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress" class="mx-2">
+                                <img
+								src="../Images/icons-linkedin.svg"
+								alt=""
+							/>
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="../login.js"></script>
+	</body>
+</html>
