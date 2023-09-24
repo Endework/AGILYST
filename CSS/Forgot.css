@@ -80,11 +80,12 @@ body{
       
     }
     .left{
-        width: 40% !important;
+        /* width: 40% !important; */
+        display: none;
         
     }
     .right{
-        width: 50% !important;
+        width: 100% !important;
     }
     .image_wrapper img{
         width: 100% !important;
