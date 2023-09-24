@@ -5,6 +5,7 @@
 }
 body{
     width: 100%;
+    height: 100%;
     /* overflow-x: hidden; */
 
 }
@@ -34,6 +35,7 @@ body{
 /* right div */
 .right{
     width: 50%;
+   
     
 }
 .logo{
@@ -85,7 +87,9 @@ body{
         
     }
     .right{
+     
         width: 100% !important;
+        
     }
     .image_wrapper img{
         width: 100% !important;
