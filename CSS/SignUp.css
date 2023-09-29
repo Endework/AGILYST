@@ -10,16 +10,16 @@ a {
 }
 .signup-section .signup-container {
 	width: 92% !important;
-	height: 123vh !important;
+	height: 100vh !important;
 }
 .signup-image-wrapper {
 	width: 45% !important;
-	height: 160% !important;
+	height: 100% !important;
 	margin-left: 1rem !important;
 	margin-block: 1rem !important;
 }
 .signup-image-wrapper img {
-	height: 100% !important;
+	height: 194% !important;
 }
 .signup-content {
 	width: 45% !important;
@@ -59,67 +59,84 @@ a {
 	padding-block: 0.5rem !important;
 	padding-inline: 0.75rem !important;
 }
+
+@media only screen and (max-width: 1280px) {
+    .signup-image-wrapper img{
+		height: 150% !important;
+	}
+}
+@media only screen and (max-width: 1024px) {
+    .signup-image-wrapper img{
+		height: 198% !important;
+	}
+}
 @media only screen and (max-width: 912px) {
-	.signup-image-wrapper img {
-		height: 50% !important;
+	.signup-image-wrapper img{
+		height: 100% !important;
 	}
 }
 @media only screen and (max-width: 820px) {
 	.signup-content .top-p {
 		width: 90% !important;
 	}
-	.signup-image-wrapper img {
-		height: 60% !important;
+	.signup-image-wrapper img{
+		height: 100% !important;
 	}
 }
 @media only screen and (max-width: 768px) {
 	.signup-image-wrapper img {
-		height: 65% !important;
+		height: 115% !important;
 	}
 }
 @media only screen and (max-width: 540px) {
 	.signup-image-wrapper img {
-		height: 90% !important;
+		height: 169% !important;
 	}
 }
 @media only screen and (max-width: 490px) {
-	.signup-image-wrapper img {
-		height: 90% !important;
+	.signup-image-wrapper {
+		width: 1% !important;
+		height: 100% !important;
+		opacity: 0;
+		height: 100%;
 	}
 	.signup-content .top-p {
 		width: 90% !important;
 	}
-	.signup-btn-wrapper {
+	.signup-content{
+		width: 95% !important;
+		margin-inline: auto !important;
+	}
+	/* .signup-btn-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem !important;
+	} */
+}
+@media only screen and (max-width: 414px) {
+    .signup-image-wrapper img{
+		height: 100% !important;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.signup-image-wrapper img{
-		height: 105% !important;
-	}
-	.signup-content {
-		height: 100% !important;
-	}
 	.signup-options {
-		margin-block: 3rem !important;
+		margin-block: 2rem !important;
 	}
-	.signup-btn-wrapper {
+	/* .signup-btn-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem !important;
-	}
+	} */
 }
 @media only screen and (max-width: 360px) {
-	.signup-image-wrapper img {
+	/* .signup-image-wrapper img {
 		height: 95% !important;
-	}
+	} */
 }
 @media only screen and (max-width: 280px) {
-	.signup-image-wrapper img {
+	/* .signup-image-wrapper img {
 		height: 120% !important;
-	}
+	} */
 }
 
 /* input:invalid {

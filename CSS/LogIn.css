@@ -82,43 +82,42 @@ a{
     }
 }
 @media only screen and (max-width: 490px){
-    .login-image-wrapper img{
-        height: 90% !important;
+    .login-image-wrapper{
+        width: 1% !important;
+        opacity: 0;
+    }
+    .login-content{
+        width: 95% !important;
+        margin-inline: auto !important;
     }
     .login-content .top-p{
         width: 90% !important;
     }
-    .login-btn-wrapper{
+    /* .login-btn-wrapper{
         display: flex;
         flex-wrap: wrap;
         gap: 1rem !important;
-    }
+    } */
 }
 @media only screen and (max-width: 375px){
-    .login-image-wrapper img{
-        height: 120% !important;
-    }
-    .login-content{
-        height: 100% !important;
-    }
     .login-options{
         margin-block: 3rem !important;
     }
-    .login-btn-wrapper{
+    /* .login-btn-wrapper{
         display: flex;
         flex-wrap: wrap;
         gap: 1rem !important;
-    }
+    } */
 }
 @media only screen and (max-width: 360px){
-    .login-image-wrapper img{
+    /* .login-image-wrapper img{
         height: 110% !important;
-    }
+    } */
 }
 @media only screen and (max-width: 280px){
-    .login-image-wrapper img{
+    /* .login-image-wrapper img{
         height: 135% !important;
-    }
+    } */
 }
 
 /* input:invalid {
