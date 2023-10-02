@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFECEF;
+}
+.navbar-brand img{
+    width: 75% !important;
+    height: 5rem !important;
+}
+.navbar .nav-link , .dropdown-item{
+    color: #0F0E0E !important;
+    font-size: 1.05rem;
+    margin-right: 1rem !important;
+}
+
+.btn{
+    transition:.3s ease all;
+    padding: 0.75rem 2.4rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+.btn-1{
+    border: 2px solid #0077B6 !important;
+    color: #0F0E0E;
+}
+.btn-1:hover{
+    background-color: #0077B6 !important;
+    color: #FFF;
+}
+.btn-2{
+    background-color: #0077B6;
+    color: #FFF;
+}
+.btn-2:hover{
+    background-color: transparent;
+    color: #0F0E0E;
+    border: 2px solid #0077B6 !important;
+}
