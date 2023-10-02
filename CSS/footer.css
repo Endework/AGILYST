@@ -34,13 +34,14 @@ a{
 .footer-content-wrapper{
     width: 70%;
 }
-footer form input{
+footer .footer-content-wrapper form{
     position: relative;
 }
-footer button{
+footer .footer-content-wrapper button{
     position: absolute;
-    top: 8%;
-    left:68%;
+    top: 5%;
+    left: 68%;
+    
 }
 .footer-links li{
     list-style: none;

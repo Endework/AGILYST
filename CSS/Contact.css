@@ -121,5 +121,59 @@ nav a:hover{
     font-size: 2.5rem;
     letter-spacing: 0.2px;
 }
-/* footer */
+
+
+
+/* footer styles */
+
+
+footer{
+    background-color: #0077B6;
+}
+a{
+    text-decoration: none;
+}
+.footer-wrapper{
+    width: 95%;
+    margin-inline: auto !important;
+}
+.footer-logo{
+    width: 200px;
+    height: 300px;
+    background: url(../Images/footer-logo-bg.png) center/ cover no-repeat;
+    position: relative;
+}
+.footer-logo img{
+    width: 70%;
+    position: absolute;
+    top:35% ;
+    left:15%;
+    /* transform: translate(-35%, 15%); */
+}
+.footer-content-wrapper{
+    width: 70%;
+}
+footer .footer-content-wrapper form{
+    position: relative;
+}
+footer .footer-content-wrapper button{
+    position: absolute;
+    top: 4%;
+    left: 70.75%;
+    
+}
+.footer-links li{
+    list-style: none;
+    margin-bottom: 1rem !important;
+}
+.footer-links a{
+    color: white;
+}
+footer hr{
+    color: white;
+    border: 2px solid white;
+}
+
+
+
 
