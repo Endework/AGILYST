@@ -7,41 +7,76 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .navbar{
     font-family: 'Open Sans', sans-serif;
     background-color: #EFECEF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .navbar-brand img{
     width: 75% !important;
     height: 5rem !important;
 }
-.navbar .nav-link , .dropdown-item{
-    color: #0F0E0E !important;
-    font-size: 1.05rem;
-    margin-right: 1rem !important;
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.15rem;
 }
 
-.btn{
-    transition:.3s ease all;
-    padding: 0.75rem 2.4rem;
+.dropdown-link{
+    display: flex;
+    justify-content: center;
+}
+.dropdown-menu{
+    display: none;
+    flex-direction: column;
+    gap: 1rem !important;
+    background-color: #FFF;
+    padding-inline: 1rem !important;
+}
+
+.dropdown-menu a:hover{
+    background-color: #EFECEF;
+    display: block;
+}
+.btn-div{
+    display: flex;
+    gap: 2rem;
+}
+.btn-div button{
     text-transform: capitalize;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
+    transition:.3s ease all;
+    border-radius: 8px;
+    padding: 3rem 2rem ;
 }
-.btn-1{
-    border: 2px solid #0077B6 !important;
+#btn-1{
+    border: 2px solid #0077B6;
     color: #0F0E0E;
+    padding: 0.1rem 2rem !important;
 }
-.btn-1:hover{
-    background-color: #0077B6 !important;
-    color: #FFF;
-}
-.btn-2{
+#btn-1:hover{
     background-color: #0077B6;
     color: #FFF;
 }
-.btn-2:hover{
+#btn-2{
+    background-color: #0077B6;
+    color: #FFF;
+    border: 2px solid #0077B6;
+    padding: 1rem 2rem !important;
+}
+#btn-2:hover{
     background-color: transparent;
     color: #0F0E0E;
-    border: 2px solid #0077B6 !important;
+    border: 2px solid #0077B6;
 }
+
+
