@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.navbar{
+    background-color: #EFECEF;
+}
+.navbar-brand img{
+    width: 75% !important;
+    height: 6rem !important;
+}
+.navbar .nav-link{
+    color: #0F0E0E !important;
+}
+
+.sidebar{
+    background-color: #CAF0F8;
+    width: 15%;
+    height: 105vh !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon-links a{
+    color: #0F0E0E;
+}
+.settings-icon{
+    width: 15%;
+}
+.home-content span , hr{
+    color: #00B4D8;
+}
+hr{
+    border: 1px solid #0F0E0E;
+}
+h5{
+    color: #00B4D8;
+}
+
+.profile-img{
+    width: 20%;
+}
+.profile-img img{
+    width: 100%;
+}

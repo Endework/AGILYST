@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/bookings.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top ps-5">
+                <div class="container-fluid d-flex justify-content-evenly">
+                    <a
+                        class="navbar-brand"
+                        href="#"
+                    >
+                        <img
+                            src="/Images/dashboard-logo.png"
+                            alt=""
+                            class=""
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarTogglerDemo02"
+                    >
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active fs-5"
+                                    id="first-link"
+                                    aria-current="page"
+                                    href="/index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fs-5"
+                                    id="nav-link2"
+                                    href="#"
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fs-5"
+                                    id="nav-link2"
+                                    href="#"
+                                    >Responses</a
+                                >
+                            </li>
+                            <div class="btn-div d-flex gap-4 position-relative">
+                                <input
+                                    type="search"
+                                    name=""
+                                    id=""
+                                    placeholder="Search for mentors"
+                                    class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+                                    type="submit"
+                                />
+                                <img
+                                    src="/Images/symbols-search.svg"
+                                    alt=""
+                                    class="position-absolute top-50 end-0 translate-middle-y me-3"
+                                    onclick="window.location.href=''"
+                                />
+                            </div>
+                            <div class="dashboard-profile d-flex gap-4 ms-5">
+                                <img
+                                    src="/Images/message.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="/Images/ci-bell-notification.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="/Images/dashboard-profile.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="/Images/symbols-arrow-drop-down.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="main-sec mt-5 pt-5 d-flex gap-5">
+                <!-- side navbar -->
+                <div class="sidebar d-flex flex-column gap-4">
+                    <div class="profile-wrapper d-flex gap-3 mt-4">
+                        <img
+                            src="/Images/dashboard-profile.svg"
+                            alt=""
+                        />
+                        <div class="profile-content">
+                            <h2 class="fs-4">John Doe</h2>
+                            <a href="">View profile</a>
+                        </div>
+                    </div>
+                    <div
+                        class="links-wrapper d-flex flex-column gap-5 position-fixed-start"
+                    >
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/home-icon.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./Mentee-booking-response.html"
+                                class="text-black ms-2"
+                                >Home</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/message.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./groups-chats.html"
+                                class="text-black ms-2"
+                                >Messages</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/booking-icon.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./bookings.html"
+                                class="text-black ms-2"
+                                >Bookings</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/connection-icon.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./connections.html"
+                                class="text-black ms-2"
+                                >Connections</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/milestones-trophy.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./achievements.html"
+                                class="text-black ms-2"
+                                >Milestones</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/connection-icon.svg"
+                                alt=""
+                            />
+                            <a
+                                href="./group-sessions.html"
+                                class="text-black ms-2"
+                                >Group sessions</a
+                            >
+                        </div>
+                        <div class="icon-links ps-3">
+                            <img
+                                src="/Images/settings-icon.png"
+                                alt=""
+                                class="settings-icon"
+                            />
+                            <a
+                                href=""
+                                class="text-black ms-2"
+                                >Setting</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content mt-5 w-100">
+                    <h5 class="fs-4">Bookings</h5>
+                    <p class="mb-5">The session timings are following your local timezone Africa/Lagos</p>
+                    <a href="" class="border-bottom border-black text-black border-3 me-5 pe-5">Upcoming</a>
+                    <a href="" class="text-black mx-5 px-5">Pending</a>
+                    <a href="" class="text-black ms-5 ps-5">History</a>
+                    <hr class="w-100 mb-4">
+                    <div class="card text-center mb-3 w-75">
+						<div class="card-body my-5">
+							<h5 class="card-title">Mentorship session with <a href="./Mentee-m-search-results.html">Ali Mohammed</a></h5>
+							<div class="card-text d-flex justify-content-evenly my-5">
+								<div class="card-date d-flex gap-3">
+									<img
+										src="/Images/uit-calender.svg"
+										alt=""
+									/>
+									<p class="fs-5">Mon, Aug 12</p>
+								</div>
+								<div class="card-date d-flex gap-3">
+									<img
+										src="/Images/booking-icon.svg"
+										alt=""
+									/>
+									<p class="fs-5">7:30 PM - 8:00 PM</p>
+								</div>
+							</div>
+							<a
+								href="#"
+								class="btn btn-primary py-2 px-4 fs-5"
+								>Join Meeting</a
+							>
+							<a
+								href="#"
+								class="btn btn-light border border-secondary-subtle ms-5 py-2 px-4 fs-5"
+								>Send Message</a
+							>
+							<a
+								href="#"
+								class="btn btn-light border border-secondary-subtle ms-5 py-2 px-4 fs-5"
+								>Reschedule this call</a
+							>
+							<a
+								href="#"
+								class="btn btn-light ms-5 py-2 px-4 fs-5 text-danger"
+								>Cancle</a
+							>
+						</div>
+					</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
