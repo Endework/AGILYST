@@ -20,7 +20,7 @@
 .sidebar{
     background-color: #CAF0F8;
     width: 20%;
-    height: 103vh !important;
+    height: 110vh !important;
 }
 
 a{
@@ -33,15 +33,22 @@ a{
 .settings-icon{
     width: 15%;
 }
-.home-content span , hr{
-    color: #00B4D8;
-}
+
 hr{
-    border: 1px solid #0F0E0E;
+    color: #00B4D8;
+    border: 2px solid #00B4D8;
 }
-h5 , .num-p{
+/* .btn-hr{
+    border: 1px solid #FFF;
+} */
+.first-a{
     color: #00B4D8;
 }
 .btn-2 , .btn-2:hover{
-    background-color: #0077B6;
+    background-color: #00B4D8;
 }
+
+.button-clicked , .button-clicked:hover{
+    background-color: #00B4D8; /* Change to the desired color */
+}
+
