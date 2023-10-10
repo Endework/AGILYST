@@ -6,8 +6,18 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-.navbar , .btn-1{
+
+.navbar , .btn-1 , .nav-bar{
     background-color: #EFECEF;
+}
+.nav-bar-2{
+    background-color: #CAF0F8;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    z-index: 10;
+    opacity: 0;
 }
 .navbar-brand img{
     width: 75% !important;
@@ -16,7 +26,9 @@
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
-
+.nav-bar{
+    opacity: 0;
+}
 .sidebar{
     background-color: #CAF0F8;
     width: 20%;
@@ -57,4 +69,22 @@ h5 , .num-p{
 }
 .overlay img{
     height: 55vh !important;
+}
+
+
+@media only screen and (max-width: 992px){
+    .nav-normal{
+        opacity: 0;
+    }
+    .nav-bar{
+        opacity: 1;
+    }
+    .sidebar{
+        opacity: 0;
+        width: 1rem !important;
+        height: 175vh !important;
+    }
+    .nav-bar-2{
+        opacity: 1;
+    }
 }
