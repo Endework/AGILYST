@@ -12,6 +12,11 @@ nav {
 	align-items: center;
 	background-color: #efecef;
 	padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
 .navlist {
@@ -87,7 +92,13 @@ nav ul li ul li a:hover {
 	font-size: 12px;
 }
 
+
+
 /* hero section */
+
+main{
+    margin-top: 8rem;
+}
 .hero-maincontainer {
 	display: flex;
 	justify-content: center;
