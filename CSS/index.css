@@ -12,6 +12,11 @@ nav {
 	align-items: center;
 	background-color: #efecef;
 	padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
 .navlist {
@@ -87,7 +92,27 @@ nav ul li ul li a:hover {
 	font-size: 12px;
 }
 
+.dropdowns {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+
+.dropdown-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
 /* hero section */
+
+main{
+    margin-top: 8rem;
+}
 .hero-maincontainer {
 	display: flex;
 	justify-content: center;
@@ -501,6 +526,7 @@ form button {
 	margin-top: 6rem;
 	margin-bottom: 3rem;
 }
+/* footer */
 /* footer */
 
 footer{
