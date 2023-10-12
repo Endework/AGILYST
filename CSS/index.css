@@ -92,7 +92,21 @@ nav ul li ul li a:hover {
 	font-size: 12px;
 }
 
+.dropdowns {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
 
+.dropdown-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 /* hero section */
 

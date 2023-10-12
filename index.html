@@ -20,19 +20,23 @@
 			  <img  style="height: 120px;" src="../Images/Logo1.png" alt="">
 		
 			  <ul class="navlist">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="/HTML/AboutUs.html">About Us</a></li>
 				<li id="service"><a href="#">Services +</a>
 				  <ul id="list">
-					<li><a href="#">Mentor</a></li>
-					<li><a href="#">Mentee</a></li>
+					<li><a href="./HTML/Mentor-dashboard/Mentor-dashboard.html">Mentor</a></li>
+					<li><a href="./HTML/Mentee-dashboard/mentee-dashboard-1.html">Mentee</a></li>
 				  </ul>
 				</li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="./HTML/Contact.html">Contact Us</a></li>
 			  </ul>
 			  <div class="btn-div">
-				<button id="btn1" type="submit">Log in</button>
+				<button id="btn1" type="submit" onclick="window.location.href='./HTML/LogIn.html'">Log in</button>
 				<button id="btn2" type="submit">Sign up</button>
+        <div class="dropdowns">
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
+      </div>
 			  </div>
 			</nav>
 		  </header>
@@ -345,5 +349,8 @@
       </div>
     </section>
   </main>
+
+
+  <script src="./index.js"></script>
 </body>
 </html>
