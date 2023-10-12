@@ -79,6 +79,7 @@ body{
   @media screen and (max-width: 700px) {
     .container-fluid {
       flex-direction: row;
+      padding-inline: 0 !important;
       
     }
     .left{
