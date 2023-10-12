@@ -526,3 +526,152 @@ form button {
 	margin-top: 6rem;
 	margin-bottom: 3rem;
 }
+/* footer */
+/* footer */
+
+footer{
+    background-color: #0077B6;
+}
+a{
+    text-decoration: none;
+}
+.footer-wrapper{
+    width: 95%;
+    margin-inline: auto !important;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	display: flex;
+	column-gap: 48px;
+	
+}
+.footer-logo{
+    width: 300px;
+    height: 280px;
+	margin-top: 100px;
+   
+}
+.footer-logo img{
+    width: 100%;
+	height: 100%;
+  
+
+    /* transform: translate(-35%, 15%); */
+}
+.footer-content-wrapper{
+    width: 70%;
+}
+footer .footer-content-wrapper form{
+    position: relative;
+}
+footer .footer-content-wrapper form input{
+	padding-right: 12px;
+	padding-left: 19.2px;
+	padding-right: 19.2px;
+	padding-bottom: 19.2px;
+	border-radius: 100px;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 30px;
+	border: 3px solid #EFECEF;
+	color: #EFECEF;
+}
+footer .footer-content-wrapper form button{
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	background-color: white;
+	border-radius: 100px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+	height: 100%;
+	width: 45%;
+	
+    
+}
+footer .footer-content-wrapper form button a{
+	padding-inline: 36px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	color:#0077B6;
+	text-align: center;
+	font-family: Lato;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	
+}
+.footer-links{
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 48px;
+	
+}
+.footer-links .platfrom-links{
+	color:  #EFECEF;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px; /* 125% */
+	letter-spacing: 0.5px;
+	font-family: 'Lato', sans-serif;
+}
+.footer-links .platfrom-links h3{
+	text-transform: uppercase;
+	margin-bottom: 19.2px;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+}
+.footer-links li{
+	margin-top: 48px;
+	margin-bottom: 48px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.footer-links a{
+    color: white;
+}
+footer hr{
+    color: white;
+    border: 2px solid white;
+}
+.copyright{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	margin-top: 48px;
+}
+
+.copyright p{
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 28.8px;
+}
+.copyright p span{
+	font-size: 24px;
+	color: white;
+}
+.copyright form select {
+	padding-top: 19.5px;
+	padding-bottom: 19.5px;
+	padding-left: 38.4px;
+	color: white;
+	background-color: transparent;
+	border: none;
+}
+
+.copyright form select option{
+	background-color: transparent;
+}
+.online-links-wrappers{
+	display: flex;
+	gap: 28.8px;
+}
