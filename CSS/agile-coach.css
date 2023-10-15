@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar , .btn-1{
+    background-color: #EFECEF;
+}
+.navbar-brand img{
+    width: 75% !important;
+    height: 6rem !important;
+}
+.navbar .nav-link{
+    color: #0F0E0E !important;
+}
+
+
+.sidebar{
+    background-color: #CAF0F8;
+    width: 25%;
+    height: 2500px;
+}
+hr{
+    background: #00B4D8;
+    height: 1px !important;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.fa-star , .fa-star-half-stroke{
+    color: #FFCB45;
+
+}
+.contact span i{
+    column-gap: 1.5rem  !important;
+}
+.profile-content img{
+    width: 200px !important;
+
+}
+.profile h3{
+font-family: 'Lato', sans-serif;
+font-size: 2.5rem;
+/* color: #00B4D8; */
+
+}
+
+.profile-content span{
+    color: #00B4D8;
+}
+.icon-links a{
+    color: #0F0E0E;
+}
+.settings-icon{
+    width: 6%;
+}
+.home-content{
+    margin-top: 3rem !important;
+}
+.home-content span{
+    color: #00B4D8;
+}
+h5{
+    color: #00B4D8;
+}
+.btn-2 , .btn-2:hover{
+    background-color: #00B4D8;
+    color: #FFF;
+}
+.first{
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.20);
+}
+.card-title{
+    text-align: start !important;
+    margin-left: 3.5rem !important;
+}
+.card-text {
+    text-align: start !important;
+    margin-left: 2.5rem !important;
+
+}
+/* .profile{
+    display: flex;
+} */
+.profile-content{
+    width: 45%;
+    
+    margin-top: 2rem !important;
+}
+
+.profile-content img{
+    width:100%;
+    border-radius: 100%;
+}
+.profile-text{
+   margin-top: 2.5rem !important; 
+}
+.profile-text h3{
+    margin-bottom: 1rem !important;
+    color: #00B4D8;
+}
+.profile-text p{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    display: inline;
+    font-size: 1.75rem !important;
+}
