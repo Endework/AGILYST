@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/mentor_signup2.css"
+		/>
+		<title>Mentor Signup Page</title>
+	</head>
+	<body>
+		<section class="signup-section w-100">
+			<div class="signup-container d-flex justify-content-between">
+				<div class="signup-image-wrapper">
+					<img
+						src="/Images/onboarding.png"
+						alt=""
+						class="w-100"
+					/>
+				</div>
+				<div class="signup-content">
+					<h1 class="display-4 mb-3 fw-medium text-center mt-4">
+						Ready to <span>Mentor</span>
+
+					</h1>
+                    
+							
+						
+                  
+					<p class="fw-semibold mb-4 top-p text-center">Just a few steps to go</p>
+					<!-- Form -->
+					<form
+						action="SignUp.html@"
+						method="post"
+						class="w-100"
+					>
+                    <h3 class=" w-100 text-dark text-center py-2 fs-5" >Personal Information</h3>
+						<div class="form-div mb-3 form-outline">
+                            
+                            <label class="form-label fw-medium mb-2" for="textAreaExample1">Biography*</label>
+                            <textarea class="form-control border rounded py-2 ps-4" id="textAreaExample1" rows="4" placeholder="Biography: A brief description .
+                            "></textarea>
+                          
+						</div>
+
+                        <div class="form-div mb-3">
+							<p class="fw-medium mb-2">Education*</p>
+							<select
+								name="Education"
+								id="Education"
+								class="border rounded py-2 ps-4 w-100 text-body-secondary"
+                                placeholder="Select Education qualifications"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+									Select Your qualifications
+								</option>
+                                <option value="">Certificate</option>
+                                <option value="">Diploma</option>
+								<option value="">Bs/ Bsc</option>
+								<option value="">Ms/ Msc</option>
+								<option value="">Phd</option>
+							</select>
+						</div>
+						<div class="form-div mb-3">
+							<p class="fw-medium mb-2">Certifications*</p>
+							<input
+								type="text"
+								name="Certifications"
+								id="Certifications"
+								placeholder="Accredited professional certificates acquired"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+                        <div class="form-div mb-3">
+							<p class="fw-medium mb-2">LinkedIn Url*</p>
+							<input
+								type="url"
+								name="LinkedIn"
+								id="LinkedIn"
+								placeholder="Add linkedIn url link"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+                        <div class="form-div mb-3">
+							<p class="fw-medium mb-2">Years of Experience*</p>
+							<select
+								name="Experience"
+								id="Experience"
+								class="border rounded py-2 ps-4 w-100 text-body-secondary"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+                                Select years of total experience
+								</option>
+								<option value="">one</option>
+								<option value="">Morethan Two</option>
+								<option value="">Morethan Five</option>
+								<option value="">Morethan Ten</option>
+							</select>
+						</div>
+                        
+                      
+
+                        <div class="form-div mb-3">
+							<p class="fw-medium mb-2">Current Role*</p>
+							<select
+								name="Role"
+								id="Role"
+								class="form-select border rounded py-2 ps-4 w-100 text-body-secondary"
+							>
+								<option
+									value=""
+									selected
+									disabled
+								>
+									Select Role
+								</option>
+                                
+							
+								<option value="">Junior</option>
+								<option value="">Senior</option>
+								
+							</select>
+						</div>
+
+                        <div class="form-div mb-3">
+							<p class="fw-medium mb-2">Current Company/School*</p>
+							<input
+								type="text"
+								name="Company"
+								id="Company"
+								placeholder="Current Company you are working at."
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+						</div>
+						<div class="btn-div d-flex justify-content-evenly ">
+                            <button class="btn btn-lg text-light" type="submit" onclick="window.location.href='./Agile-signup-1.html'">Back</button>
+                            <button class="btn btn-lg text-light" onclick="window.location.href='./agile-signup-3.html'">Next</button>
+                        </div>
+					</form>
+					<p class="text-center my-5">
+						Already have an account?
+						<a
+							href="./agile-login.html"
+							class="reset-a ms-1"
+							>Log in</a
+						>
+					</p>
+					<p class="text-center w-75 mx-auto mb-5">
+						By Signing up, you agree to our <a href="">Terms of Use</a> and <a href="">Privacy policy</a>.
+					</p>
+					
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="../signup.js"></script>
+	</body>
+</html>

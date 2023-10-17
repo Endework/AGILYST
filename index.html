@@ -6,8 +6,14 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+    <link
+			rel="shortcut icon"
+			href="/Images/logo.png"
+		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 		<link
 			rel="stylesheet"
 			href="./CSS/index.css"
@@ -24,18 +30,24 @@
 				<li><a href="/HTML/AboutUs.html">About Us</a></li>
 				<li id="service"><a href="#">Services +</a>
 				  <ul id="list">
-					<li><a href="./HTML/Mentor-dashboard/Mentor-dashboard.html">Mentor</a></li>
-					<li><a href="./HTML/Mentee-dashboard/mentee-dashboard-1.html">Mentee</a></li>
+					<li><a href="">Agile Couching</a></li>
+					<li><a href="">Mentorship</a></li>
 				  </ul>
 				</li>
 				<li><a href="./HTML/Contact.html">Contact Us</a></li>
 			  </ul>
 			  <div class="btn-div">
-				<button id="btn1" type="submit" onclick="window.location.href='./HTML/LogIn.html'">Log in</button>
+				<button id="btn1" type="submit">Log in</button>
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_login.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/LogIn.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/agile-login.html'">Agile Coach</button>
+        </div>
 				<button id="btn2" type="submit">Sign up</button>
         <div class="dropdowns">
           <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
           <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
       </div>
 			  </div>
 			</nav>
@@ -348,6 +360,25 @@
         <img src="../Images/Frame 516.png" alt="">
       </div>
     </section>
+
+    <!-- Chatbot -->
+    
+    <div class="toggle-div"><button id="toggleChatButton">Chat</button></div>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <button id="closeChatButton">Close</button>
+            Bluey
+        </div>
+        <div class="chat-area" id="chatArea">
+            <p>Hi there 👋,<br> I'm Bluey. How may I help you today?</p>
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendMessageButton">Send</button>
+        </div>
+    </div>
+
   </main>
 <!-- footer -->
 
@@ -446,7 +477,7 @@
     </div>
   </div>
  </footer>
-
+  
   <script src="./index.js"></script>
 </body>
 </html>
