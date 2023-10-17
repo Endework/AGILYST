@@ -1,107 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/Forgot.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <title>Forgot Password</title>
-  </head>
-  <body>
-    <!-- code by Endework Abera -->
-    <div class="container-fluid d-flex mt-4 mb-5 gap-5 w-100">
-      <div class="left flex-item">
-        <div class="image_wrapper">
-          <img " src="../Images/New_signin_image.jpg" alt="forgotpass image">
-        </div>
-      </div>
-      <div class="right flex-item">
-        <form action="" class="ms-5 me-5 mt-5 pe-4">
-          <!-- <div class="logo">
-            <img src="../Images/logo.png" alt="logo image" />
-          </div> -->
-          <p class="title">
-            Forgot <br />
-            Password?
-          </p>
-          <p class="text">
-            Enter the Email address <br />associated with your account
-          </p>
-          <!-- used bootstrap -->
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label sub"
-              >Email</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-              required
-            />
-          </div>
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="submit">Send Code</button>
-          </div>
-          <p class="sub pt-3">
-            Check your registered Email for a verification code.
-          </p>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label sub"
-              >Verification Code*</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              placeholder="verification Code"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label sub"
-              >Password*</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label sub"
-              >Confirm Password*</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Confirm Password"
-              required
-            />
-          </div>
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="submit">Save</button>
-          </div>
-        </form>
-      </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="../CSS/Forgot.css"
+		/>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<section class="login-section w-100">
+			<div class="login-container d-flex justify-content-between">
+				<div class="login-image-wrapper">
+						<img
+							src="../Images/onboarding.png"
+							alt=""
+							class="w-100"
+						/>
+				</div>
+				<div class="login-content">
+					<h1 class="display-4 mb-3 fw-medium text-justify mt-4" style="color: #0077B6;">Forgot <br> Password ?</h1>
+					<p class="fw-semibold mb-4 top-p text-Justify">Enter your Email</p>
+					<!-- Form -->
+					<form
+						action="SignUp.html"
+						method="get"
+						class="w-100"
+					>
+						<div class="form-div mb-3">
+							<p class="fw-medium">Email*</p>
+							<label for="email"></label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								class="border rounded w-100 py-2 ps-4"
+								required
+							/>
+                            <button
+							class="btn login-btn w-100 text-white mt-4 py-2 fs-5"
+							type="submit"
+							onclick="window.location.href='../index.html'"
+						>
+							Send Code
+						</button>
+                        <p class="fw-semibold mb-4 top-p text-justify">Check your email for verification code</p>
+						</div>
+                        <div class="form-div">
+							<p class="fw-medium">Verification code*</p>
+							<div class="input">
+								<label for="password"></label>
+								<input
+									type="number"
+									name="code"
+									id="number"
+									placeholder="Verification code"
+									class="border rounded py-2 ps-4 w-100"
+									required
+								/>
+							</div>
+						<div class="form-div">
+							<p class="fw-medium">New Password*</p>
+							<div class="input">
+								<label for="password"></label>
+								<input
+									type="password"
+									name="password"
+									id="password"
+									placeholder="New Password"
+									pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and contain only letters and numbers"
+									class="border rounded py-2 ps-4 w-100"
+									required
+								/>
+							</div>
+						</div>
+						<div class="form-div">
+							<p class="fw-medium">Confirm Password*</p>
+							<div class="input">
+								<label for="password"></label>
+								<input
+									type="password"
+									name="password"
+									id="new_password"
+									placeholder="Confirm Password"
+									pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and contain only letters and numbers"
+									class="border rounded py-2 ps-4 w-100"
+									required
+								/>
+							</div>
+						</div>
+						<button
+							class="btn login-btn w-100 text-white mt-4 py-2 fs-5"
+							type="submit"
+							
+						>
+							Save
+						</button>
+					</form>
+					
+					
+				
+					
+				</div>
+			</div>
+		</section>
 
-    <script src="./Forgot.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="../login.js"></script>
+	</body>
 </html>
