@@ -23,7 +23,7 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="../CSS/LogIn.css"
+			href="/CSS/LogIn.css"
 		/>
 		<title>Login Page</title>
 	</head>
@@ -32,7 +32,7 @@
 			<div class="login-container d-flex justify-content-between">
 				<div class="login-image-wrapper">
 						<img
-							src="../Images/onboarding.png"
+							src="/Images/onboarding.png"
 							alt=""
 							class="w-100"
 						/>
@@ -73,10 +73,15 @@
 								/>
 							</div>
 						</div>
+                        <p class="text-center  mt-4">
+                            <input type="checkbox" name="" id="" required>
+                            <label for="">By Logging in, you agree to our <a href="https://docs.google.com/document/d/14Cav8_tpLhMj1wqa7y7p3TokV7CuWWWVGshoX72YPZo/edit">Terms of Use and </a><a href="https://docs.google.com/document/d/12t_hjWHDg7Qe-BcslnpuhAd6RPmMWPe2E11MokK6itI/edit">Privacy policy</a>.</label>
+                            
+                        </p>
 						<button
 							class="btn login-btn w-100 text-white mt-4 py-2 fs-5"
 							type="submit"
-							onclick="window.location.href='./Mentee-dashboard/mentee-dashboard-1.html'"
+							onclick="window.location.href='./dashboard1.html'"
 						>
 							Log in
 						</button>
@@ -89,9 +94,6 @@
 							>Reset Password</a
 						>
 					</p>
-					<p class="text-center w-75 mx-auto mb-5">
-						By Logging in, you agree to our Terms of Use and Privacy policy.
-					</p>
 					<div class="login-options">
 						<hr>
 						<h2 class="text-center mb-5 bg-white fs-5">or log in with</h2>
@@ -99,13 +101,13 @@
 					<div class="login-btn-wrapper d-flex justify-content-between">
 							<button class="btn border border-rounded">
 								<a href="https://accounts.google.com/o/oauth2/v2/auth?scope=email&redirect_uri=YOUR_REDIRECT_URI&response_type=code&client_id=YOUR_CLIENT_ID" class="mx-2">
-									<img src="../Images/icons-google.svg" alt="">
+									<img src="/Images/icons-google.svg" alt="">
 								</a>
 							</button>
 						<button class="btn border border-rounded ">
 							<a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email" class="mx-2">
                                 <img
-								src="../Images/icons-facebook.svg"
+								src="/Images/icons-facebook.svg"
 								alt=""
 							/>
 							</a>
@@ -113,13 +115,13 @@
 						<button class="btn border border-rounded ">
 							<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress" class="mx-2">
                                 <img
-								src="../Images/icons-linkedin.svg"
+								src="/Images/icons-linkedin.svg"
 								alt=""
 							/>
 							</a>
 						</button>
 					</div>
-					<div class="home-wrapper d-flex align-items-center gap-4 mt-5">
+                    <div class="home-wrapper d-flex align-items-center gap-4 mt-5">
                         <img src="/Images/home-icon.svg" alt="" class="">
                         <a href="/index.html" class="fs-5">Return to Home Page</a>
                     </div>
