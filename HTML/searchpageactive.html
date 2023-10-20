@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/searchpageactive.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Search</title>
+  </head>
+  <body>
+    <!-- header-->
+    <header>
+      <nav>
+        <img style="height: 120px" src="../Images/Logo1.png" alt="" />
+
+        <ul class="navlist">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="/HTML/AboutUs.html">About Us</a></li>
+          <li id="service">
+            <a href="#">Services</a>
+            <ul id="list">
+              <li><a href="">Agile Couching</a></li>
+              <li><a href="">Mentorship</a></li>
+            </ul>
+          </li>
+          <li><a href="./HTML/Contact.html">Contact Us</a></li>
+        </ul>
+        <div class="btn-div">
+          <button id="btn1" type="submit">Log in</button>
+          <div class="dropdown">
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/Mentor_login.html'"
+            >
+              Mentor
+            </button>
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/LogIn.html'"
+            >
+              Mentee
+            </button>
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/Agile-Coach/agile-login.html'"
+            >
+              Agile Coach
+            </button>
+          </div>
+          <button id="btn2" type="submit">Sign up</button>
+          <div class="dropdowns">
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/Mentor_signup.html'"
+            >
+              Mentor
+            </button>
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/SignUp_Mentee.html'"
+            >
+              Mentee
+            </button>
+            <button
+              class="dropdown-button"
+              onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'"
+            >
+              Agile Coach
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- search bar -->
+      <div class="container pt-5 mt-5">
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm">
+              <div class="card-body row no-gutters align-items-center">
+                <div class="col-auto">
+                  <i class="fas fa-search fs-4"></i>
+                </div>
+                <!--end of col-->
+                <div class="col card ">
+                  <input
+                    class="form-control form-control-lg form-control-borderless"
+                    type="search"
+                    placeholder="Search"
+                  />
+                </div>
+                <!--end of col-->
+                <div class="col-auto">
+                  filter
+                  <i class="fa-solid fa-filter"></i>
+                </div>
+                <!--end of col-->
+              </div>
+            </form>
+          </div>
+          <!--end of col-->
+        </div>
+      </div>
+      <!-- section -->
+     <div class="mentors">
+        <h3>Agile coaches</h3>
+        <div class="row">
+            <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+             <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+             <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+             <div class="col  ">
+                <div class="img">
+                    <img src="/Images/Rachel.svg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="left">
+                        <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
+                        <h5>Scrum Master</h5>
+                        <h6>Availability status: <span>Active</span></h6>
+                        <div class="status">
+                            <h6>132 <br>Sessions</h6>
+                            <h6>95% Attendance</h6>
+                            <h6>68 <br>Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>Experience level</h6>
+                        <span>Senior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6>See all</h6>
+     </div>
+     <div class="sessions">
+        <h3>Sessions</h3>
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/UserGroup.svg" alt="">
+                    <h6>Innovation Through Agile Practices</h6>
+                </div>
+                
+                    
+                    <h6>Oct 15, 08:00pm (GMT)</h6>
+                    <h6>Available Slots: 45</h6>
+                    
+                       
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/UserGroup.svg" alt="">
+                    <h6>Innovation Through Agile Practices</h6>
+                </div>
+                    <div>Oct 15, 08:00pm (GMT)</div>
+                    <div>Available Slots: 45</div>
+                        </div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/UserGroup.svg" alt="">
+                    <h6>Innovation Through Agile Practices</h6>
+                </div>
+                    <h6>Oct 15, 08:00pm (GMT)</h6>
+                    <h6>Available Slots: 45</h6>
+                        
+            </div>
+        </div>
+        <h6>See all</h6>
+     </div>
+     <!-- Learning Resources -->
+     <div class="Learning">
+        <h3>Learning Resources</h3>
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/Book.png" alt="">
+                    <h6>Agile Methodologies Handbook: A Comprehensive Guide</h6>
+                </div>
+                <div class="img">
+                    <img src="/Images/EyeOutline.svg" alt="">
+                    <h6>38 views</h6>
+                </div>
+                    
+                    <h6>8 reviews</h6>
+                    
+                    
+                       
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/Book.png" alt="">
+                    <h6>Agile Methodologies Handbook: A Comprehensive Guide</h6>
+                </div>
+                <div class="img">
+                    <img src="/Images/EyeOutline.svg" alt="">
+                    <h6>38 views</h6>
+                </div>
+                    
+                    <h6>8 reviews</h6>
+                    
+                    
+                       
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="img"><img src="/Images/Book.png" alt="">
+                    <h6>Agile Methodologies Handbook: A Comprehensive Guide</h6>
+                </div>
+                <div class="img">
+                    <img src="/Images/EyeOutline.svg" alt="">
+                    <h6>38 views</h6>
+                </div>
+                    
+                    <h6>8 reviews</h6>
+                    
+                    
+                       
+            </div>
+        </div>
+        <h6>See all</h6>
+     </div>
+
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

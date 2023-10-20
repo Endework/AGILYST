@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   
+}
+/* navigation bar */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #efecef;
+	padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.navlist {
+	display: flex;
+	justify-content: space-between;
+	gap: 3.5rem;
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-family: lato;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	color: #0077b6;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	width: 100px;
+	list-style: none;
+	background-color: white;
+	height: 50px;
+	display: none;
+}
+
+nav ul li ul li {
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul li ul li a {
+	font-size: 15px;
+}
+nav ul li ul li a:hover {
+	background: #0077b6;
+	color: white;
+}
+
+#service:hover > #list {
+	display: initial;
+}
+/* navbar buttons */
+.btn-div {
+	display: flex;
+	gap: 1rem;
+}
+.btn-div button {
+	letter-spacing: 1px;
+	transition: 0.3s ease all;
+	border-radius: 8px;
+	font-family: lato;
+}
+#btn1 {
+	border: 3px solid #0077b6;
+	padding: 20px 40px;
+	font-size: 14px;
+}
+#btn2 {
+	border: none;
+	padding-inline: 40px;
+	background: #0077b6;
+	color: white;
+	font-size: lato;
+	font-size: 12px;
+}
+
+.dropdowns {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+.dropdown {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 80%;
+    right: 20;
+}
+
+.dropdown-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+/* main */
+/* search bar */
+/* Styles for wrapping the search box */
+
+
+
+/* Bootstrap 4 text input with search icon */
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/* main */
+.sessions h6, .Learning h6, .mentors h6{
+    margin-left: 5%;
+}
+.mentors{
+    margin-top: 7%;
+}
+.mentors h3 , .sessions h3 , .Learning h3 {
+    display: flex; 
+    padding: 10px;
+    margin: 2% 5%;
+    align-items: center;
+    gap: 10px;
+    background: #CAF0F8;
+}
+.mentors .row{
+    margin-bottom:  5%;
+}
+.mentors .col{
+    margin-left:5% ;
+    margin-right:5% ;
+    display: flex;
+    height: 222px;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid #CAF0F8;
+    background: #FFF;
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
+    column-gap: 3%;
+}
+.mentors .col span{
+    color: var(--Secondary-Colour, #00B4D8);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+}
+.mentors .col .txt{
+    display: flex;   
+}
+.mentors .col .txt .left .status{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4%;    
+}
+.mentors .col .txt .right{
+    text-align: center;
+    padding-top: 7%;
+    margin-left: 55%;
+}
+/* sessions */
+.sessions .row{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    
+    
+}
+.sessions .row .col .img{
+    display: flex;
+    column-gap: 1%;
+}
+.sessions .col{
+    display: flex;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #CAF0F8;
+    background: #FFF;
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
+    justify-content: space-between;
+    
+}
+.sessions .row .col .img{
+    display: flex;
+    align-items:self-start;
+}
+/* Learning */
+.Learning .row .col .img{
+    display: flex;
+}
+
+.Learning .row{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;   
+}
+.Learning .row .col .img{
+    display: flex;
+    align-items:self-start;
+}
+.Learning .col{
+    display: flex;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #CAF0F8;
+    background: #FFF;
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
+    justify-content: space-between;   
+}
+.Learning .row .col .img{
+    display: flex;
+    align-items:end;  
+}
+
+
