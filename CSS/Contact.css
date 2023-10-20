@@ -8,39 +8,6 @@ body{
     font-family: 'Lato', sans-serif;
     color: #0F0E0E;
 }
-h1{
-    padding: 230px 675px 286px 650px;
-    color: #CAF0F8;
-    /* Display Text */
-    font-family: Lato;
-    font-size: 57px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px; /* 112.281% */
-    letter-spacing: -0.2px;
-}
-h4{
-    color: var(--Neutral, #0F0E0E);
-
-/* Display Text */
-    font-family: Lato;
-    font-size: 57px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px; /* 112.281% */
-    letter-spacing: -0.2px;
-}
-h5{
-    color: #000;
-text-align: center;
-
-/* Sub-heading Text */
-font-family: Lato;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px; /* 144% */
-}
 /* NAVIGATION */
 nav {
 	display: flex;
@@ -99,6 +66,11 @@ nav ul li ul li a:hover {
 	background: #0077b6;
 	color: white;
 }
+
+#service:hover > #list {
+	display: initial;
+}
+/* navbar buttons */
 .btn-div {
 	display: flex;
 	gap: 1rem;
@@ -122,13 +94,6 @@ nav ul li ul li a:hover {
 	font-size: lato;
 	font-size: 12px;
 }
-.dropdown-item {
-    background: #0077b6 !important;
-}
-.nav-item , .dropdown-item  {
-    font-size: 20px !important;
-
-}
 
 .dropdowns {
     display: none;
@@ -136,6 +101,13 @@ nav ul li ul li a:hover {
     position: absolute;
     top: 80%;
     right: 0;
+}
+.dropdown {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 80%;
+    right: 20;
 }
 
 .dropdown-button {
@@ -146,169 +118,108 @@ nav ul li ul li a:hover {
     cursor: pointer;
 }
 
-.fa-solid{
-    margin-right: 1rem;
-}
 /* HERO IMAGE */
 #hero{
     width: 100%;
-    height: 500px;
-    /* height: 100vh;
-    zoom: 67.9%; */
-    background-image: url('../Images/contact-banner2.jpg');
+    height: 100vh;
+    zoom: 68.2%;
+    background-image: url('/Images/contact-banner2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-main{
-    width: 100%;
-}
 #contact {
     position: absolute;
-    top: 25%;
-    left: 36%;
+    top: 30%;
+    left: 37%;
     color:#CAF0F8;
     font-size: 3rem;
     font-weight: 400;
 }
 /* FORM */
-.sec-1{
-    margin-top: 100px;
-}
-.sec-1 ,.sec-2{
-    
-    padding-inline:120px ;
-    
-}
-.new{
+.form-input .first ul{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
 }
-
-.first, .second{
+.form-input .first li{
+    list-style: none;
+}
+.form-input .first p{
+    margin-bottom: 1rem;
+}
+.form-input .first input{
+    width: 190%;
+    height: 30%;
+}
+.detail {
+    margin-right: 25%;
+}
+.detail p{
+    padding-top: 5rem;
+    margin-left: 30.3%
+}
+#text-area::placeholder{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+#text-area{
+    width: 81%;
+    height: 30vh;
+    margin-left: 30.3%;
+    margin-top: 1rem;
+    border: 0.2px solid black;
+}
+#submit{
+    width: 30%;
+    height: 8vh;
+    margin-left: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #0077B6;
+    border: 1px solid #0077B6;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+#submit:hover{
+    background-color: transparent;
+    color: #000000;
+}
+.get{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color:#CAF0F8; 
 }
-
-label{
-    width: 117px;
-    height: 35px;
-    flex-shrink: 0;
-    color: var(--Neutral, #0F0E0E);
-    /* Body Text */
-    font-family: Lato;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
-    margin-top: 4%;
+.get p{
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 2rem;
 }
-
-.first input, .second input{
-    width: 480px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid #C4C4C4;
-    margin-top: 4%;
-    
+.get h1{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #0F0E0E;
+    font-size: 3.2rem;
+    letter-spacing: 0.2px;
 }
-textarea{
-    margin-top: 1%;
-    margin-bottom: 4%;
-    width: 1550px;
-    height: 172px;
-    border-radius: 3.947px;
-    border: 1px solid #C4C4C4;
-    
-}
-.text-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     
-
-}
-.text-area label{
+.get img{
     width: 100%;
-    font-size: 20px;
-    margin-top: 4%;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
-.sec-1 button{
-    margin-left: 450px;
-    display: flex;
-    width: 700px;
-    height: 79px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: var(--Primary-Colour, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0077B6);
-    color: #FFF;
+.get-intouch{
     text-align: center;
-
-    /* Title */
-    font-family: Lato;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 28px; /* 127.273% */
+    padding-right: 8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
-.sec-2{
-    margin-top: 80px;
-    display: flex;
-    width: 100%;
-    height: 650px;
-    /* padding: 19px 104px 19px 105px; */
-    justify-content: space-between;
-    gap: 80px;
-    background: var(--Accent-Colour, #CAF0F8);
-    
-}
-.sec-2 .img-div, .sec-2 .info{
-    margin-bottom: 35px;
-    margin-top: 35px;
-}
-.sec-2 .info{
-    
-    height: 510px;
-}
-.sec-2 .img-div {
-    width: 783px;
-    height: 490px;
-}
-
-.sec-2 .info{
-    display: flex;
-    width: 395px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid var(--Primary-Colour, #0077B6);
-   
-}
-.sec-2 .content{
-    color: #000;
-text-align: center;
-padding: 5px 5px 0px 5px;
-display: flex;
-flex-direction: column;
-gap: 20px;
-
-/* Sub-heading Text */
-font-family: Lato;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px; /* 144% */
-width: 213px;
-}
-.sec-2 .img-div img{
-    width: 100%;
-    
-}
-
-
-/* footer styles */
+/* * footer styles */ 
 
 
 footer{
