@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/agile-dashboard1.css"
+		/>
+		<title>Agile dasboard1</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top ps-5">
+				<div class="container-fluid d-flex justify-content-evenly">
+					<a
+						class="navbar-brand"
+						href="#"
+					>
+						<img
+							src="/Images/dashboard-logo.png"
+							alt=""
+							class=""
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarTogglerDemo02"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+							<li class="nav-item">
+								<a
+									class="nav-link active fs-5"
+									id="first-link"
+									aria-current="page"
+									href="../landingpage.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./mentee-coach-dashboard-1.html"
+									>Dashboard</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./resource.html"
+									>Resources</a
+								>
+							</li>
+							<div class="btn-div d-flex gap-4 position-relative">
+								<input
+									type="search"
+									name=""
+									id=""
+									placeholder="Search for Agile coaches"
+									class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+									type="submit"
+								/>
+								<img
+									src="/Images/symbols-search.svg"
+									alt=""
+									class="position-absolute top-50 end-0 translate-middle-y me-3"
+									onclick="window.location.href=''"
+								/>
+							</div>
+							<div class="dashboard-profile d-flex gap-4 ms-5">
+								<img
+									src="/Images/message.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/ci-bell-notification.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/dashboard-profile.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/symbols-arrow-drop-down.svg"
+									alt=""
+								/>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="main-sec mt-5 pt-5 d-flex gap-5">
+				<!-- side navbar -->
+				<div class="sidebar d-flex flex-column gap-4">
+					<div class="profile-wrapper d-flex gap-3 mt-4">
+						<img
+							src="/Images/dashboard-profile.svg"
+							alt="" class="w-50"
+						/>
+						<div class="profile-content">
+							<h2 class="fs-4">John Doe</h2>
+							<a href="./mentee-profile.html">View profile</a>
+						</div>
+					</div>
+					<div
+						class="links-wrapper d-flex flex-column gap-5 position-fixed-start"
+					>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/home-icon.svg"
+								alt=""
+							/>
+							<a
+								href="./waitlist.html"
+								class="text-black ms-2"
+								>Join waitlist</a
+							>
+						</div>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/message.svg"
+								alt=""
+							/>
+							<a
+								href=""
+								class="text-black ms-2"
+								>Messages</a
+							>
+						</div>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/booking-icon.svg"
+								alt=""
+							/>
+							<a
+								href=""
+								class="text-black ms-2"
+								>Bookings</a
+							>
+						</div>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/connection-icon.svg"
+								alt=""
+							/>
+							<a
+								href=""
+								class="text-black ms-2"
+								>Community</a
+							>
+						</div>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/connection-icon.svg"
+								alt=""
+							/>
+							<a
+								href=""
+								class="text-black ms-2"
+								>Group sessions</a
+							>
+						</div>
+						<div class="icon-links ps-3">
+							<img
+								src="/Images/settings-icon.png"
+								alt=""
+								class="settings-icon"
+							/>
+							<a
+								href=""
+								class="text-black ms-2"
+								>Setting</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="home-content mt-5 w-100">
+					<h4 class="fs-5">Profile</h4>
+					<hr class="w-75 mt-5 mb-5" />
+					<div class="profile-wrapper d-flex align-items-center gap-4">
+						<div class="profile-img">
+							<img
+								src="/Images/Steve-1.svg"
+								alt=""
+							/>
+						</div>
+						<div class="profile-text">
+							<h5 class="mb-3">Steve Brishton</h5>
+							<p class="mb-2">Contact Coach</p>
+							<div class="contact-imgs d-flex gap-3">
+                                <img src="/Images/chat.png" alt="">
+                                <img src="/Images/video-call.png" alt="">
+                                <img src="/Images/call.png" alt="">
+                            </div>
+							<p>
+								Rating:
+								<span class="ms-2">
+									<img
+										src="/Images/star.svg"
+										alt=""
+									/>
+									<img
+										src="/Images/star.svg"
+										alt=""
+									/>
+									<img
+										src="/Images/star.svg"
+										alt=""
+									/>
+									<img
+										src="/Images/star.svg"
+										alt=""
+									/>
+									<img
+										src="/Images/star-half.svg"
+										alt=""
+									/>
+								</span>
+							</p>
+						</div>
+						<button
+							class="btn btn-2 btn-outline-light px-5 py-2"
+							type="submit"
+							onclick="window.location.href=''"
+						>
+							Book Coach
+						</button>
+					</div>
+					<div class="info-wrapper mt-5 border w-75">
+                        <div class="links-wrapper d-flex justify-content-between">
+                            <a href="./mentee-coach-dashboard-1.html" class="btn bg-secondary-subtle px-4 py-1 
+                            ">Biography</a>
+                            <a href="./mentee-coach-dashboard-2.html" class="btn bg-secondary-subtle px-4 py-1
+                            ">Upcoming</a>
+                            <a href="./mentee-coach-dashboard-3.html" class="btn bg-secondary-subtle px-4 py-1
+                            ">Organizations</a>
+                            <a href="./mentee-coach-dashboard-4.html" class="btn bg-secondary-subtle px-4 py-1 a-link
+                            ">Experiences</a>
+                            <a href="./mentee-coach-dashboard-5.html" class="btn bg-secondary-subtle px-4 py-1
+                            ">Links</a>
+                        </div>
+                        <div class="exp-wrapper ms-5 fs-5 my-5">
+                            <p>February 2020 - Present -- InnovativeTech Solutions</p>
+                            <p>January 2018 - January 2020 -- Freelancer (Agile Couch)</p>
+                            <p>May 2010 - December 2017 -- AgilePro Consultancy</p>
+                        </div>
+                    </div>
+                    <div class="certifications my-5">
+                        <div class="cert1 d-flex align-items-center gap-4 mb-4">
+                            <img src="/Images/cert1.png" alt="">
+                            <p>Scrum Alliance Agile and Scrum Training Certification</p>
+                        </div>
+                        <div class="cert2 d-flex align-items-center gap-4">
+                            <img src="/Images/cert2.png" alt="">
+                            <p>Scrum Alliance Certified Agile Coach </p>
+                        </div>
+                        <div class="cert3 d-flex align-items-center gap-4 mt-4">
+                            <img src="/Images/cert3.png" alt="">
+                            <p>Scrum Alliance Certified Product Owner </p>
+                        </div>
+                        <div class="cert4 d-flex align-items-center gap-4 my-4">
+                            <img src="/Images/cert4.png" alt="">
+                            <p>Scrum Alliance Certified Scrum Master</p>
+                        </div>
+                        <div class="cert5 d-flex align-items-center gap-4">
+                            <img src="/Images/cert5.png" alt="">
+                            <p>Scrum Alliance Certified Team Coach</p>
+                        </div>
+                        
+                    </div>
+				</div>
+			</section>
+		</main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -93,24 +93,32 @@ nav ul li ul li a:hover {
 }
 
 .dropdowns {
-    display: none;
+	opacity: 0;
+    display: flex;
+	flex-direction: column;
 	gap: 1rem;
     position: absolute;
     top: 80%;
     right: 0;
 }
 .dropdown {
-    display: none;
+	opacity: 0;
+    display: flex;
+	flex-direction: column;
 	gap: 1rem;
     position: absolute;
     top: 80%;
-    right: 20;
+    right: 12%;
 }
 
+
+
 .dropdown-button {
+	/* display: none; */
     background-color: #0077b6;
     color: #fff;
     border: none;
+	margin-left: 1rem;
     padding: 10px;
     cursor: pointer;
 }
@@ -179,6 +187,7 @@ main{
 	display: flex;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
+	position: relative;
 }
 input {
 	padding-block: 20px;
@@ -212,6 +221,29 @@ form button {
 	border-radius: 10px;
 }
 
+.card-expertise{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	gap: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	opacity: 0;
+}
+.card-expertise h3{
+	display: flex;
+	justify-content: space-between;
+	color: #007bff;
+	width: 400px;
+	padding: 0.5rem;
+	background-color: #F9FAFB;
+}
+.card-expertise a{
+	padding-inline: 0.9rem;
+	color: #101828;
+}
+
 /* section 1 */
 .section1 {
 	margin-block: 4rem;
@@ -231,6 +263,16 @@ form button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+}
+.dropdown2 {
+	opacity: 0;
+    display: flex;
+	flex-direction: column;
+	gap: 1rem;
+    position: absolute;
+    top: 75%;
+    right: 0%;
 }
 .section1-textdiv h3 {
 	text-align: center;
@@ -260,6 +302,7 @@ form button {
 	border-radius: 8.946px;
 	box-shadow: 0px 5.36789px 26.83946px 0px rgba(0, 0, 0, 0.12);
 }
+
 /* section 2 */
 .section2-contdiv h2 {
 	text-align: center;

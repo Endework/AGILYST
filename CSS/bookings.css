@@ -20,7 +20,7 @@
 .sidebar{
     background-color: #CAF0F8;
     width: 20%;
-    height: 100% !important;
+    height: 130vh !important;
 }
 
 a{
@@ -41,4 +41,11 @@ hr{
 }
 h5 , .num-p{
     color: #00B4D8;
+}
+
+.img1{
+    width: 448px;
+}
+.img2{
+    width: 74px;
 }
