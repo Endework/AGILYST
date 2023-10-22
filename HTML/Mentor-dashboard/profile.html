@@ -9,11 +9,8 @@
 			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="/CSS/bookings.css"
-		/>
-    <title>Coach Meeting</title>
+    <link rel="stylesheet" href="/CSS/mentee-profile.css">
+    <title>Mentee's Profile</title>
 </head>
 <body>
     <header>
@@ -58,7 +55,7 @@
                             <a
                                 class="nav-link fs-5"
                                 id="nav-link2"
-                                href="#"
+                                href="./Mentor-dashboard.html"
                                 >Dashboard</a
                             >
                         </li>
@@ -67,7 +64,7 @@
                                 class="nav-link fs-5"
                                 id="nav-link2"
                                 href="#"
-                                >Responses</a
+                                >Resources</a
                             >
                         </li>
                         <div class="btn-div d-flex gap-4 position-relative">
@@ -83,7 +80,7 @@
                                 src="/Images/symbols-search.svg"
                                 alt=""
                                 class="position-absolute top-50 end-0 translate-middle-y me-3"
-                                onclick="window.location.href=''"
+                                onclick="window.location.href='./Mentee-m-search-results.html'"
                             />
                         </div>
                         <div class="dashboard-profile d-flex gap-4 ms-5">
@@ -96,8 +93,8 @@
                                 alt=""
                             />
                             <img
-                                src="/Images/dashboard-profile.svg"
-                                alt=""
+                                src="/Images/Peter.svg"
+                                alt="" class="w-25"
                             />
                             <img
                                 src="/Images/symbols-arrow-drop-down.svg"
@@ -110,28 +107,71 @@
         </nav>
     </header>
     <main>
-        <section class="container mt-5 pt-5">
-            <img src="/Images/left-arrow.svg" alt="" class="ms-5 mt-5" onclick="window.location.href='./bookings.html'">
-            <div class="content d-flex flex-column justify-content-center align-items-center">
-                <img src="/Images/logo-no-bg.png" alt="" class="img1">
-                <img src="/Images/waiting.svg" alt="" class="img2 mb-5 loading-spinner">
-                <p class="fs-2">Waiting for Mentor to join</p>
-            </div>
-            <div class="leave d-flex justify-content-end">
-                <a
-                                href="#"
-                                class="btn btn-danger py-2 px-4 ms-3 fs-5 text-white" onclick="window.location.href='./bookings.html'"
-                                >Leave Meeting</a
-                            >
+        <section class="main-sec mt-5 pt-5 d-flex gap-5">
+            <!-- side navbar -->
+            
+            <div class="home-content mt-5">
+                <div class="profile-wrapper d-flex flex-column justify-content-center align-items-center w-25 mx-auto">
+                    <img src="/Images/Peter-Profile.svg" alt="" class="w-50">
+                    <h4 class="fs-3 mt-3">Peter David</h4>
+                    <div class="flag-wrapper mb-2">
+                        <img src="/Images/flag-canada.svg" alt="" class="flag me-2">
+                        <span class="text-black">Toronto, Canada</span>
+                    </div>
+                    <p class="fs-5 mb-4">Data Analyst at Africa Agility</p>
+                    <button
+                        class="btn btn-1 border border-black rounded-pill px-4 py-2"
+                        type="submit"
+                        onclick="window.location.href='./edit-profile.html'"
+                    >
+                        Edit Profile
+                    </button>
+                </div>
+                <a href="" class="text-black border-bottom border-black border-3 me-5">Overview</a>
+                <a href="" class="text-black ms-5 ps-5">Commendations</a>
+                <hr class="w-100 mb-4">
+                <p class="fs-5 w-75 mb-4">I am a Data Analyst at Africa Agility with a passion for uncovering insights from data. In addition to my work in data science, I have a passion for reading, exploring novel concepts, and immerse myself in the written world. In my leisure time, I enjoy listening to a wide variety of musical genres and artists who inspire creativity and inspiration.</p>
+                <h4 class="fs-5 fw-semibold mb-3">Expertise</h4>
+                <button
+                        class="btn btn-2 border border-light border-rounded px-4 py-1 me-5"
+                        type="submit"
+                        onclick="window.location.href='.Mentee-m-search-results'"
+                    >
+                        Data Analysis
+                    </button>
+                <button
+                        class="btn btn-2 border border-light border-rounded px-4 py-1 mx-5"
+                        type="submit"
+                        onclick="window.location.href='.Mentee-m-search-results'"
+                    >
+                        Data Analytics Tools
+                    </button>
+                <button
+                        class="btn btn-2 border border-light border-rounded px-4 py-1 mx-5"
+                        type="submit"
+                        onclick="window.location.href='.Mentee-m-search-results'"
+                    >
+                        A/B Testing
+                </button>
+                <img src="/Images/pen.svg" alt="">
+                <div class="experience d-flex justify-content-between w-50">
+                    <h4 class="fs-5 fw-semibold mt-4 mb-3">Experience</h4>
+                    <img src="/Images/pen.svg" alt="" class="mt-5">
+                </div>
+                    <p class="mb-4">Data Analyst <br>@ <br> Africa Agility
+                        <span class="ms-5 ps-5">2019 - Present</span>
+                    </p>
+                
+                <div class="education d-flex justify-content-between w-50">
+                    <h4 class="fs-5 fw-semibold mt-4 mb-3">Education</h4>
+                    <img src="/Images/pen.svg" alt="">
+                </div>
+                <h4 class="fs-5 fw-semibold mt-4 mb-3">Achievements</h4>
+                <div class="card border border-black w-50 ms-5">
+                    <p class="mt-3 ps-3 mb-5 pb-5">No achievements yet</p>
+                </div>
             </div>
         </section>
     </main>
-
-
-    <script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-			crossorigin="anonymous"
-		></script>
 </body>
 </html>

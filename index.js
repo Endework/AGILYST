@@ -5,8 +5,9 @@ const showDropdown2Button = document.getElementById("btn3");
 const dropdowns = document.querySelector(".dropdowns");
 const dropdown = document.querySelector(".dropdown");
 const dropdown2 = document.querySelector(".dropdown2");
-const showPopup = document.querySelector(".search-input")
-const cardExpertise = document.querySelector(".card-expertise")
+const showPopup = document.querySelector(".search-input");
+const cardExpertise = document.querySelector(".card-expertise");
+
 
 showDropdownsButton.addEventListener("click", function () {
 	if (dropdowns.style.opacity === "0" || dropdowns.style.opacity === "") {
@@ -38,6 +39,7 @@ showDropdown2Button.addEventListener("click", function () {
 		dropdown2.style.opacity = "0";
 	}
 });
+
 // services links
 
 // Get a reference to the protected link

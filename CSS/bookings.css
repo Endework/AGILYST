@@ -1,51 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 * {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
 }
-.navbar , .btn-1{
-    background-color: #EFECEF;
+.navbar,
+.btn-1 {
+	background-color: #efecef;
 }
-.navbar-brand img{
-    width: 75% !important;
-    height: 6rem !important;
+.navbar-brand img {
+	width: 75% !important;
+	height: 6rem !important;
 }
-.navbar .nav-link{
-    color: #0F0E0E !important;
-}
-
-.sidebar{
-    background-color: #CAF0F8;
-    width: 20%;
-    height: 130vh !important;
+.navbar .nav-link {
+	color: #0f0e0e !important;
 }
 
-a{
-    text-decoration: none;
+.sidebar {
+	background-color: #caf0f8;
+	width: 20%;
+	height: 130vh !important;
 }
 
-.icon-links a{
-    color: #0F0E0E;
-}
-.settings-icon{
-    width: 15%;
-}
-.home-content span , hr{
-    color: #00B4D8;
-}
-hr{
-    border: 1px solid #0F0E0E;
-}
-h5 , .num-p{
-    color: #00B4D8;
+a {
+	text-decoration: none;
 }
 
-.img1{
-    width: 448px;
+.icon-links a {
+	color: #0f0e0e;
 }
-.img2{
-    width: 74px;
+.settings-icon {
+	width: 15%;
+}
+.home-content span,
+hr {
+	color: #00b4d8;
+}
+hr {
+	border: 1px solid #0f0e0e;
+}
+h5,
+.num-p {
+	color: #00b4d8;
+}
+
+.img1 {
+	width: 448px;
+}
+.img2 {
+	width: 74px;
+}
+
+
+
+.loading-spinner {
+	width: 75px; /* Set the width and height for your spinner */
+	height: 75px;
+	/* border: 4px solid #ccc;
+	border-top: 4px solid #3498db;
+	border-radius: 50%; */
+	animation: spin 2s linear infinite; /* Use the "spin" animation infinitely */
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg); /* Start with 0 degrees rotation */
+	}
+	100% {
+		transform: rotate(360deg); /* Rotate a full circle (360 degrees) */
+	}
 }
