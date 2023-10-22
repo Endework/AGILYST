@@ -1,0 +1,30 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Country Flags/Asia/Japan">
+<rect id="Mask" y="2.85547" width="20" height="14.2857" rx="4" fill="white"/>
+<mask id="mask0_3000_8679" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2" width="20" height="16">
+<rect id="Mask_2" y="2.85547" width="20" height="14.2857" rx="4" fill="white"/>
+</mask>
+<g mask="url(#mask0_3000_8679)">
+<rect id="Mask Copy" y="2.85547" width="20" height="14.2857" fill="#0A17A7"/>
+<path id="Rectangle 36" d="M4.00072 7.80785H4.54826L7.66668 10.0353C7.80646 10.1351 7.97394 10.1888 8.14571 10.1888C8.91086 10.1888 9.263 9.23686 8.68206 8.73891L5.90476 6.35837V6.05569L8.67975 4.07356C9.03014 3.82328 9.2381 3.41918 9.2381 2.98858V2.85547V1.65264L8.2181 2.29014L4.57071 4.56975H4.02317L0.863683 2.31298L0.689834 2.1888H0.47619H0H-1.80217L-0.433861 3.36164L2.66667 6.01923V6.32191L-0.387492 8.50346L-0.666667 8.70287V9.04594V9.52213V10.725L0.353333 10.0875L4.00072 7.80785Z" fill="#FF2E3B" stroke="white" stroke-width="1.33333"/>
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.23642V7.14118H3.33333V9.04594C3.33333 9.57193 3.75973 9.99833 4.28571 9.99833C4.8117 9.99833 5.23809 9.57193 5.23809 9.04594V7.14118H8.09524C8.62122 7.14118 9.04762 6.71479 9.04762 6.1888C9.04762 5.66282 8.62122 5.23642 8.09524 5.23642H5.23809V2.85547H3.33333V5.23642H0Z" fill="url(#paint0_linear_3000_8679)"/>
+<path id="Rectangle 36_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.71261H3.80952V5.23642V2.85547H4.7619V5.23642V5.71261H8.57143V6.66499H4.7619V7.14118V9.52213H3.80952V7.14118V6.66499H0V5.71261Z" fill="url(#paint1_linear_3000_8679)"/>
+<path id="Star 2" fill-rule="evenodd" clip-rule="evenodd" d="M4.28565 14.5257L3.44596 14.9671L3.60633 14.0321L2.927 13.3699L3.86581 13.2335L4.28565 12.3828L4.7055 13.2335L5.64431 13.3699L4.96498 14.0321L5.12535 14.9671L4.28565 14.5257Z" fill="white"/>
+<path id="Star 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M14.2857 15.2395L13.6123 15.4367L13.8095 14.7633L13.6123 14.0898L14.2857 14.2871L14.9592 14.0898L14.7619 14.7633L14.9592 15.4367L14.2857 15.2395Z" fill="white"/>
+<path id="Star 2_3" fill-rule="evenodd" clip-rule="evenodd" d="M14.2857 6.18869L13.6123 6.38593L13.8095 5.7125L13.6123 5.03906L14.2857 5.23631L14.9592 5.03906L14.7619 5.7125L14.9592 6.38593L14.2857 6.18869Z" fill="white"/>
+<path id="Star 2_4" fill-rule="evenodd" clip-rule="evenodd" d="M17.1429 9.04806L16.4695 9.24531L16.6667 8.57187L16.4695 7.89844L17.1429 8.09568L17.8164 7.89844L17.6191 8.57187L17.8164 9.24531L17.1429 9.04806Z" fill="white"/>
+<path id="Star 2_5" fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 10.0012L10.7551 10.1984L10.9524 9.525L10.7551 8.85156L11.4286 9.04881L12.102 8.85156L11.9048 9.525L12.102 10.1984L11.4286 10.0012Z" fill="white"/>
+<path id="Star 2_6" fill-rule="evenodd" clip-rule="evenodd" d="M15.7144 11.192L15.3777 11.2906L15.4763 10.9539L15.3777 10.6172L15.7144 10.7158L16.0511 10.6172L15.9525 10.9539L16.0511 11.2906L15.7144 11.192Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3000_8679" x1="0" y1="2.85547" x2="0" y2="9.99833" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#F0F0F0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3000_8679" x1="0" y1="2.85547" x2="0" y2="9.52213" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF2E3B"/>
+<stop offset="1" stop-color="#FC0D1B"/>
+</linearGradient>
+</defs>
+</svg>
