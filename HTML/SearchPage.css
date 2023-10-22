@@ -19,7 +19,9 @@ nav {
     right: 0;
     z-index: 20;
 }
-
+span{
+    color: #00B4D8;
+}
 .navlist {
 	display: flex;
 	justify-content: space-between;
@@ -119,123 +121,133 @@ nav ul li ul li a:hover {
 /* search bar */
 /* Styles for wrapping the search box */
 
-
-
-/* Bootstrap 4 text input with search icon */
-
-.form-control-borderless {
-    border: none;
-}
-
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-/* main */
-.sessions h6, .Learning h6, .mentors h6{
-    margin-left: 5%;
-}
-.mentors{
-    margin-top: 7%;
-}
-.mentors h3 , .sessions h3 , .Learning h3 {
-    display: flex; 
+h1{
+    display: flex;
+    width: 1200px;
     padding: 10px;
-    margin: 2% 5%;
     align-items: center;
     gap: 10px;
     background: #CAF0F8;
 }
-.mentors .row{
-    margin-bottom:  5%;
+.blur{
+    color: var(--Placeholder, #A7A4A4);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
 }
-.mentors .col{
-    margin-left:5% ;
-    margin-right:5% ;
+.sec-1{
+    margin-top: 10%;
+    width: 1200px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;  
+}
+ .sec-2 ,.sec-3{
+    margin-top: 2%;
+    width: 1200px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+.sec-1 p ,.sec-2 p , .sec-3 p{
+    margin-top: 10px;
+}
+.row{
     display: flex;
+    gap: 15px;
+
+    
+}
+.col{
+    display: flex;
+    width: 595px;
     height: 222px;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
+   margin-top: 15px;
+    flex-shrink: 0;
     border: 1px solid #CAF0F8;
     background: #FFF;
     box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
-    column-gap: 3%;
 }
-.mentors .col span{
-    color: var(--Secondary-Colour, #00B4D8);
+.col .left{
+    display: flex;
+    gap: 10px;
+}
+.col .left .left-text{
+    padding: 20px;
+}
+.col .left .status{
+    display: flex;
+    gap: 10px;
+}
+
+.session , .learning{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #CAF0F8;
+    background: #FFF;
+    width: 1200px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    /* 16dp Penumbra */
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
+}
+.session .user{
+    display: flex;
+    gap: 5px;
+}
+.session .user p , .session p{
+    padding-top: 10px;
+    color: #000;
+}
+.learning , .book , .view{
+    display: flex;
+
+}
+.learning .book img{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.learning .book p{
+    color: #000;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px; 
-    letter-spacing: 0.5px;
+    line-height: 24px; /* 150% */
+    flex: 1 0 0;
 }
-.mentors .col .txt{
-    display: flex;   
-}
-.mentors .col .txt .left .status{
+.learning .view , .learning .book{
     display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+}
+.learning{
     justify-content: space-between;
-    column-gap: 4%;    
 }
-.mentors .col .txt .right{
-    text-align: center;
-    padding-top: 7%;
-    margin-left: 55%;
+.learning .book p ,.learning .view p, .learning p{
+    padding-top: 13px;
 }
-/* sessions */
-.sessions .row{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 4%;
-    
+.learning .book , .learning .view{
+    gap: 5px;
+}
+.learning .book img{
+    background-image: url('/Images/greenbackground.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
-.sessions .row .col .img{
-    display: flex;
-    column-gap: 1%;
-}
-.sessions .col{
-    display: flex;
-    padding: 30px;
-    border-radius: 8px;
-    border: 1px solid #CAF0F8;
-    background: #FFF;
-    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
-    justify-content: space-between;
-    
-}
-.sessions .row .col .img{
-    display: flex;
-    align-items:self-start;
-}
-/* Learning */
-.Learning .row .col .img{
-    display: flex;
-}
-
-.Learning .row{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 4%;   
-}
-.Learning .row .col .img{
-    display: flex;
-    align-items:self-start;
-}
-.Learning .col{
-    display: flex;
-    padding: 30px;
-    border-radius: 8px;
-    border: 1px solid #CAF0F8;
-    background: #FFF;
-    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.12);
-    justify-content: space-between;   
-}
-.Learning .row .col .img{
-    display: flex;
-    align-items:end;  
-}
-
-
