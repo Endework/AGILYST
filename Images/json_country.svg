@@ -1,0 +1,13 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Country Flags/Asia/Japan">
+<rect id="Mask" x="0.5" y="3.07031" width="17" height="11.8571" rx="3.5" fill="white" stroke="#F5F5F5"/>
+<mask id="mask0_3000_8556" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2" width="18" height="14">
+<rect id="Mask_2" x="0.5" y="3.07031" width="17" height="11.8571" rx="3.5" fill="white" stroke="white"/>
+</mask>
+<g mask="url(#mask0_3000_8556)">
+<rect id="Mask_3" x="12.8572" y="2.57031" width="5.14286" height="12.8571" fill="#FF3131"/>
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 15.4275H5.14286V2.57031H0V15.4275Z" fill="#FF3131"/>
+<path id="Rectangle 66" fill-rule="evenodd" clip-rule="evenodd" d="M10.5151 8.34206C10.318 8.53916 9.98496 8.36093 10.0396 8.08761L10.2857 6.85714L9.42857 7.28571L9 6L8.57143 7.28571L7.71429 6.85714L7.96038 8.08761C8.01504 8.36093 7.68202 8.53916 7.48492 8.34206C7.3749 8.23204 7.19653 8.23204 7.08651 8.34206L6.85714 8.57143L6 8.14286L6.42857 9C6.19188 9.23669 6.19188 9.62045 6.42857 9.85714L7.28571 10.7143H8.57143L8.78571 12H9.21429L9.42857 10.7143H10.7143L11.5714 9.85714C11.8081 9.62045 11.8081 9.23669 11.5714 9L12 8.14286L11.1429 8.57143L10.9135 8.34206C10.8035 8.23204 10.6251 8.23204 10.5151 8.34206Z" fill="#FF3131"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Country Flags/Asia/Japan">
+<rect id="Mask" y="2.85547" width="20" height="14.2857" rx="4" fill="white"/>
+<mask id="mask0_3000_8644" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2" width="20" height="16">
+<rect id="Mask_2" y="2.85547" width="20" height="14.2857" rx="4" fill="white"/>
+</mask>
+<g mask="url(#mask0_3000_8644)">
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.71261H20V2.85547H0V5.71261Z" fill="#1461B6"/>
+<path id="Rectangle 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 17.1423H20V14.2852H0V17.1423Z" fill="#1461B6"/>
+<path id="Rectangle 2_3" fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2863H20V5.71484H0V14.2863Z" fill="white"/>
+<path id="Rectangle 2 Copy 4" fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3346H20V6.66797H0V13.3346Z" fill="#F53846"/>
+<ellipse id="Path" cx="7.14292" cy="9.99814" rx="2.38095" ry="2.38095" fill="white"/>
+<path id="Star 29" fill-rule="evenodd" clip-rule="evenodd" d="M7.14292 10.9536L5.74343 11.9244L6.23426 10.2934L4.8785 9.26238L6.58134 9.22519L7.14292 7.61719L7.70449 9.22519L9.40734 9.26238L8.05157 10.2934L8.5424 11.9244L7.14292 10.9536Z" fill="white"/>
+</g>
+</g>
+</svg>
