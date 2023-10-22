@@ -30,8 +30,8 @@
 				<li><a href="/HTML/AboutUs.html">About Us</a></li>
 				<li id="service"><a href="#">Services</a>
 				  <ul id="list">
-					<li><a href="">Agile Couching</a></li>
-					<li><a href="">Mentorship</a></li>
+					<li><a href="/HTML/LogIn.html" class="protected-link">Agile Coaching</a></li>
+					<li><a href="/HTML/LogIn.html" class="protected-link">Mentorship</a></li>
 				  </ul>
 				</li>
 				<li><a href="/HTML/Contact.html">Contact Us</a></li>
@@ -68,9 +68,23 @@
     
             <div>
               <form class="search"  action="">
-                <input type="text" placeholder="Search by Expertise" name="search">
+                <input type="text" placeholder="Search by Expertise" name="search" class="search-input">
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
+              <div class="card-expertise">
+                <h3>All <img src="/Images/check.svg" alt=""></h3>
+                <a href="">Product manager</a>
+                <a href="">Engineer</a>
+                <a href="">Artificial Intelligence</a>
+                <a href="">Quality Assurance</a>
+                <a href="">Graphic Design</a>
+                <a href="">Cyber Security</a>
+                <a href="">Product Marketing</a>
+                <a href="">Frontend</a>
+                <a href="">Product Design</a>
+                <a href="">Backend</a>
+                <a href="">Scrum Master</a>
+              </div>
             </div>
           </div>
 
@@ -143,7 +157,11 @@
 
           <p>At Agilyst, we recognize that startups encounter distinctive challenges on their path to success. That's why our platform is meticulously crafted to ignite your growth, delivering customized Agile solutions engineered to turbocharge your startup's full potential. Explore how Agilyst can propel your startup to new heights.</p>
 
-          <button type="submit">Get Started</button>
+          <button type="submit" id="btn3">Get Started</button>
+          <div class="dropdown2">
+            <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
+            <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
+            <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
         </div>
       </div>
     </section>

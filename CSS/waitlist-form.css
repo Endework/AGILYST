@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.navbar , .btn-1{
+    background-color: #EFECEF;
+}
+.navbar-brand img{
+    width: 75% !important;
+    height: 6rem !important;
+}
+.navbar .nav-link{
+    color: #0F0E0E !important;
+}
+h1{
+    color: #00B4D8;
+    font-weight: 700;
+    margin-top: 3rem !important;
+}
+.signup-btn{
+    background-color: #0077B6;
+    border-radius: 8px;
+}
