@@ -33,6 +33,10 @@ a{
 .settings-icon{
     width: 15%;
 }
+.home-content{
+    width: 90% !important;
+    margin-inline: auto !important;
+}
 .home-content span , hr{
     color: #00B4D8;
 }

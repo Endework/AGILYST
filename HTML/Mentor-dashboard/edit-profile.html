@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/profile.fill.css"
+		/>
+    <title>Profile details fill page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto">
+            <div class="container-fluid gap-md-5">
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/Agilyst_BRAND_LOGO.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active bg-transparent" id="first-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="nav-link2" href="#">About us</a>
+                      </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link1">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black" href="./html/content.html">Agile Coaching</a></li>
+                                <li><a class="dropdown-item text-black" href="./html/download.html">Mentorship</a></li>
+                            </ul>
+                        </li>  
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link3" href="./html/about.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="btn-div d-flex gap-4">
+                        <button class="btn btn-1 border border-rounded px-5 py-2" type="submit" onclick="window.location.href='../html/LogIn.html'">Login</button>
+                        <button class="btn btn-2 btn-outline-light px-5 py-2 me-5" type="submit" onclick="window.location.href='../html/SignUp.html'">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="signup-section w-100">
+        <div class="signup-container d-flex justify-content-between">
+            <div class="signup-image-wrapper">
+                <img
+                    src="/Images/onboarding.png"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+            <div class="signup-content mt-5">
+                <h1 class="mb-4 mt-5">Enter your profile details</h1>
+                <h5 class="fs-5 mb-3">Basic Information</h5>
+                <p>Upload profile photo</p>
+                <div class="div-wrapper d-flex align-items-start gap-3 mt-2">
+                    <div class="profile-picture-container">
+                        <img src="/Images/Peter.svg" alt="Profile Picture" id="profile-picture">
+                        <label for="profilePicture" class="profile-picture-label">Upload profile photo</label>
+                        
+                        <!-- <input type="file" id="profilePicture" accept="image/*"> -->
+                    </div>
+                    <span>
+                        <h6 class="fw-bold mt-3 mb-2">Update file</h6>
+                        <p>Make sure the file is below 2mb</p>
+                    </span>
+                </div>
+                <div class="form-div mb-3 mt-4">
+                    <p class="fw-medium mb-2 fw-bold"> Your full name*</p>
+                    <input
+                        type="text"
+                        name="full name"
+                        id="full name"
+                        placeholder="Peter David"
+                        class="border rounded w-100 py-2 ps-4"
+                        required
+                    />
+                </div>
+                <div class="form-div mb-3">
+                    <p class="fw-medium mb-2 fw-bold">Gender*</p>
+                    <select
+                        name="Gender"
+                        id="Gender"
+                        class="border rounded py-2 ps-4 w-100 text-body-secondary"
+                    >
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Male
+                        </option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="form-div mb-3">
+                    <p class="fw-medium mb-2 fw-bold">Area of Expertise*</p>
+                    <select
+                        name="Expertise"
+                        id="Expertise"
+                        class="border rounded py-2 ps-4 w-100 text-body-secondary"
+                    >
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Data Analytics
+                        </option>
+                        <option value="">Product Manager</option>
+                        <option value="">Artificial Intelligence</option>
+                        <option value="">Quality Assurance</option>
+                        <option value="">Graphic Design</option>
+                        <option value="">Cyber Security</option>
+                        <option value="">Product Marketing</option>
+                        <option value="">Frontend Development</option>
+                        <option value="">Product Design</option>
+                        <option value="">Backend Development</option>
+                        <option value="">Scrum Master</option>
+                    </select>
+                </div>
+                <div class="form-div mb-3">
+                    <p class="fw-medium mb-2 fw-bold">Level of Experience*</p>
+                    <select
+                        name="Experience"
+                        id="Experience"
+                        class="border rounded py-2 ps-4 w-100 text-body-secondary"
+                    >
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Senior
+                        </option>
+                        <option value="">Entry Level</option>
+                        <option value="">Intermediate</option>
+                        <option value="">Senior</option>
+                        <option value="">Manager</option>
+                    </select>
+                </div>
+                <div class="form-div mb-3 position-relative">
+                    <p class="fw-medium mb-2 fw-bold">Bio*</p>
+                    <input type="text" name="" id=""
+                    class="border rounded w-100 bio px-3" placeholder=""
+                        required>
+                        <p class="bio-p position-absolute px-3">I am a Data Analyst at Africa Agility with a passion for uncovering insights from data. In addition to my work in data science, I have a passion for reading, exploring novel concepts, and immerse myself in the written world. In my leisure time, I enjoy listening to a wide variety of musical genres and artists who inspire creativity and inspiration.</p>
+                </div>
+                <div class="form-div mb-3">
+                    <p class="fw-bold mb-2">Social Media Links*</p>
+                    <input
+                        type="url"
+                        name="LinkedIn"
+                        id="LinkedIn"
+                        placeholder="https://www.linkedin.com/in/peter-david-470753132/"
+                        class="border rounded w-100 py-2 ps-4"
+                        required
+                    />
+                    <button
+							class="btn signup-btn w-100 text-white py-2 fs-5 mt-5" 
+							type="submit"
+							onclick="window.location.href='./mentor-dashboard.html'"
+						>
+							Edit
+						</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/profile.js"></script>
+</body>
+</html>
