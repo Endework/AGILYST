@@ -16,23 +16,38 @@
     <title>AboutUs</title>
   </head>
   <body>
+    <header>
+			<nav>
+			  <img  style="height: 120px;" src="../Images/Logo1.png" alt="">
+		
+			  <ul class="navlist">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li id="service"><a href="#">Services</a>
+				  <ul id="list">
+					<li><a href="./LogIn.html" class="protected-link">Agile Coaching</a></li>
+					<li><a href="./LogIn.html" class="protected-link">Mentorship</a></li>
+				  </ul>
+				</li>
+				<li><a href="./Contact .html">Contact Us</a></li>
+			  </ul>
+			  <div class="btn-div">
+				<button id="btn1" type="submit">Log in</button>
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_login.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/LogIn.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/agile-login.html'">Agile Coach</button>
+        </div>
+				<button id="btn2" type="submit">Sign up</button>
+        <div class="dropdowns">
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
+      </div>
+			  </div>
+			</nav>
+		  </header>
     <main>
-      <nav>
-        <div><img src="../Images/BRAND LOGO.png" alt="Agyist Logo" /></div>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./Mentor-dashboard/Mentor-dashboard.html">Find Mentors</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="../HTML/contact.html">Contact</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="">Help</a></li>
-          <li><img src="../Images/mdi_account.png" alt="" /></li>
-          <li><a href="">Account</a></li>
-        </ul>
-      </nav>
 
       <section class="sec1">
         <div class="hero">
@@ -161,9 +176,106 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <img src="/Images/Agilyst_BRAND_LOGO.png" alt="">
+        </div>
+        <div class="footer-content-wrapper">
+          <form action="">
+            <input type="email" name="" id="" placeholder="Your Email" style="color: white; text-align: justify; font-size: large;">
+            <button><a href="">Subscribe Now!</a></button>
+          </form>
+          <div class="footer-links">
+            <div class="platform-links">
+              <h3 class="text-uppercase mb-2">Platform</h3>
+              <ul>
+                <li><a href="">Find Mentor</a></li>
+                <li><a href="">Become a Mentor</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="platform-links">
+              <h3 class="text-uppercase mb-2">Product</h3>
+              <ul>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Community</a></li>
+              </ul>
+            </div>
+            <div class="platform-links">
+              <h3 class="text-uppercase mb-2">Legal</h3>
+              <ul>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr/>
+          <div class="copyright">
+            <p class="text-white d-flex align-items-center gap-3">
+              <span class="fs-3 text-white">©</span> All rights reserved 2023
+            </p>
+            <form action="">
+              <img class="web"
+                src="/Images/web.svg"
+                alt=""
+              />
+              <select
+                name="role"
+                id="role"
+                class=" py-2 ps-4 text-white bg-transparent border border-0"
+              >
+                <option
+                  value=""
+                  selected
+                  disabled
+                  class="bg-transparent"
+                >
+                  English
+                </option>
+                <option value="">French</option>
+                <option value="">German</option>
+                <option value="">Spanish</option>
+              </select>
+            </form>
+            <div class="online-links-wrappers">
+              <a href="">
+                <img
+                                src="/Images/instagram.svg"
+                                alt=""
+                              />
+              </a>
+              <a href="">
+                <img
+                                src="/Images/youtube-fill.svg"
+                                alt=""
+                              />
+              </a>
+              <a href="">
+                <img
+                                src="../Images/footer-facebook.svg"
+                                alt=""
+                              />
+              </a>
+              <a href="">
+                <img
+                                src="../Images/footer-linkedin.svg"
+                                alt=""
+                              />
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     </footer>
+
     
-    <!-- footer -->
    
+   
+
 
   </body>
 </html>

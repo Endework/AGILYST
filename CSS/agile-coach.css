@@ -22,7 +22,7 @@
 .sidebar{
     background-color: #CAF0F8;
     width: 25%;
-    height: 2500px;
+    height: 315vh;
 }
 hr{
     background: #00B4D8;
@@ -112,4 +112,12 @@ h5{
     margin-bottom: 1rem !important;
     display: inline;
     font-size: 1.75rem !important;
+}
+.card3{
+    opacity: 0;
+    width: 60% !important;
+    top: -60%;
+    left: 50%;
+    z-index: 1;
+    background-color: #00B4D8;
 }

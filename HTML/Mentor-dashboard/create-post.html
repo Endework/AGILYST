@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/community.css"
+		/>
+		<title>Mentee's Mentor Search Results</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top ps-5">
+				<div class="container-fluid d-flex justify-content-evenly">
+					<a
+						class="navbar-brand"
+						href="#"
+					>
+						<img
+							src="/Images/dashboard-logo.png"
+							alt=""
+							class=""
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarTogglerDemo02"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+							<li class="nav-item">
+								<a
+									class="nav-link active fs-5"
+									id="first-link"
+									aria-current="page"
+									href="/index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./Mentor-dashboard.html"
+									>Dashboard</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./resource.html"
+									>Resources</a
+								>
+							</li>
+							<div class="btn-div d-flex gap-4 position-relative">
+								<input
+									type="search"
+									name=""
+									id=""
+									placeholder="Search for mentors"
+									class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+									type="submit"
+								/>
+								<img
+									src="/Images/symbols-search.svg"
+									alt=""
+									class="position-absolute top-50 end-0 translate-middle-y me-3"
+									onclick="window.location.href=''"
+								/>
+							</div>
+							<div class="dashboard-profile d-flex gap-4 ms-5">
+								<img
+									src="/Images/message.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/ci-bell-notification.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/Peter.svg"
+									alt=""
+									class="w-25"
+								/>
+								<img
+									src="/Images/symbols-arrow-drop-down.svg"
+									alt=""
+								/>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="main-sec mt-5 pt-5 d-flex gap-5 mb-5">
+				<!-- side navbar -->
+
+				<div class="home-content mt-5 mb-5">
+					<div
+						class="top-title d-flex align-items-center justify-content-between"
+					>
+						<h4 class="display-4 fw-medium">Community Forum</h4>
+						<a
+							href=""
+							class="fs-5"
+							>Recent</a
+						>
+						<a
+							href=""
+							class="fs-5 text-black"
+							>Trending</a
+						>
+						<button class="btn community-btn px-5 py-2">
+							Create a new Post
+						</button>
+					</div>
+					<img
+						src="/Images/left-arrow.svg"
+						alt=""
+						onclick="window.location.href='./Mentor-dashboard.html'"
+					/>
+					<div class="card-wrapper d-flex justify-content-between mt-4 mb-5">
+						<div class="card border-light card-1 px-3 pt-3 me-5">
+							<div class="card-body ms-3">
+								<h3 class="card-title mt-3 mb-3">
+									How to prepare for my first coaching session
+								</h3>
+								<p class="card-text mb-4">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod <br />
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+									minim <br />veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip <br />
+									ex ea commodo consequat.
+								</p>
+								<hr class="mb-3" />
+								<div class="profile d-flex gap-2 align-items-end w-100">
+									<img
+										src="/Images/Ali.svg"
+										alt=""
+									/>
+									<div class="text me-5">
+										<h5 class="">Ali Mohammed</h5>
+										<p>2hr ago</p>
+									</div>
+									<div class="views-comments d-flex gap-5 ms-5">
+										<div class="views d-flex gap-2">
+											<img
+												src="/Images/eye.svg"
+												alt=""
+												class=""
+											/>
+											<p class="fw-semibold">Views: 2k</p>
+										</div>
+										<div class="comments d-flex gap-2 ms-5">
+											<img
+												src="/Images/comment.svg"
+												alt=""
+												class="ms-5"
+											/>
+											<p class="fw-semibold">Comments: 50+</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-2-wrapper card-2">
+							<div class="card border-light px-3 py-3 ms-5">
+								<div class="card-body ms-3">
+									<h3 class="fs-5 text-center mb-4">Top Users</h3>
+									<div class="text-1 d-flex align-items-center gap-2">
+										<img
+											src="/Images/Ali.svg"
+											alt=""
+											width="41.147px"
+											height="40px"
+										/>
+										<div class="text d-flex w-100 justify-content-between">
+											<h6 class="fs-5">Ali Mohammed</h6>
+											<img
+												src="/Images/arrow-top.svg"
+												alt=""
+												class=""
+											/>
+										</div>
+									</div>
+									<div class="text-2 d-flex align-items-center gap-2 my-5">
+										<img
+											src="/Images/Peter.svg"
+											alt=""
+											width="41.147px"
+											height="40px"
+										/>
+										<div class="text d-flex w-100 justify-content-between">
+											<h6 class="fs-5">Peter David</h6>
+											<img
+												src="/Images/arrow-top.svg"
+												alt=""
+												class=""
+											/>
+										</div>
+									</div>
+									<div class="text-3 d-flex align-items-center gap-2">
+										<img
+											src="/Images/Jason.svg"
+											alt=""
+											width="41.147px"
+											height="40px"
+										/>
+										<div class="text d-flex w-100 justify-content-between">
+											<h6 class="fs-5">Jason Hector</h6>
+											<img
+												src="/Images/arrow-top.svg"
+												alt=""
+												class=""
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-wrapper d-flex justify-content-between mt-4">
+						<div class="card border-light card-1 px-3 pt-3 me-5">
+							<div class="card-body ms-3">
+								<h3 class="card-title mt-3 mb-3">
+									Agile tools. Jira Vs Trello
+								</h3>
+								<p class="card-text mb-4">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod <br />
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+									minim <br />veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip <br />
+									ex ea commodo consequat.
+								</p>
+								<hr class="mb-3" />
+								<div class="profile d-flex gap-2 align-items-end w-100">
+									<img
+										src="/Images/Peter.svg"
+										alt=""
+									/>
+									<div class="text me-5">
+										<h5 class="">Ali Mohammed</h5>
+										<p>2hr ago</p>
+									</div>
+									<div class="views-comments d-flex gap-5 ms-5">
+										<div class="views d-flex gap-2">
+											<img
+												src="/Images/eye.svg"
+												alt=""
+												class=""
+											/>
+											<p class="fw-semibold">Views: 1k</p>
+										</div>
+										<div class="comments d-flex gap-2 ms-5">
+											<img
+												src="/Images/comment.svg"
+												alt=""
+												class="ms-5"
+											/>
+											<p class="fw-semibold">Comments: 10+</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-2-wrapper card-2">
+							<div class="card border-light px-3 py-3 ms-5">
+								<div class="card-body ms-3 card-bottom">
+									<h3 class="fs-5 text-center mb-5">Top tags</h3>
+									<div class="button-wrapper mb-5">
+										<button>Agile</button>
+										<button>Scrum</button>
+										<button>Coaching</button>
+										<button>Product Management</button>
+										<button>Kanban</button>
+										<button>Jira</button>
+										<button>Trello</button>
+										<button>Scrum Certification</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

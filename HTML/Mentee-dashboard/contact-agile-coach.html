@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/contact-agile-coach.css"
+		/>
+		<title>Agile dasboard1</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top ps-5">
+				<div class="container-fluid d-flex justify-content-evenly">
+					<a
+						class="navbar-brand"
+						href="#"
+					>
+						<img
+							src="/Images/dashboard-logo.png"
+							alt=""
+							class=""
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarTogglerDemo02"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+							<li class="nav-item">
+								<a
+									class="nav-link active fs-5"
+									id="first-link"
+									aria-current="page"
+									href="../landingpage.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./mentee-coach-dashboard-1.html"
+									>Dashboard</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./resource.html"
+									>Resources</a
+								>
+							</li>
+							<div class="btn-div d-flex gap-4 position-relative">
+								<input
+									type="search"
+									name=""
+									id=""
+									placeholder="Search for Agile coaches"
+									class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+									type="submit"
+								/>
+								<img
+									src="/Images/symbols-search.svg"
+									alt=""
+									class="position-absolute top-50 end-0 translate-middle-y me-3"
+									onclick="window.location.href=''"
+								/>
+							</div>
+							<div class="dashboard-profile d-flex gap-4 ms-5">
+								<img
+									src="/Images/message.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/ci-bell-notification.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/dashboard-profile.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/symbols-arrow-drop-down.svg"
+									alt=""
+								/>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="mt-5 pt-5">
+				<div class="contact">
+					<h1 class="my-5 text-center">Contact an Agile Coach</h1>
+					<p>
+						Reach out to an agile coach with your details and let thel now what
+						you want.
+					</p>
+					<form
+						action="#"
+						method="POST"
+						enctype="multipart/form-data"
+						class="mb-5"
+					>
+						<div class="contact-wrapper d-flex justify-content-between">
+							<div class="left">
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">First Name*</p>
+									<input
+										type="text"
+										name="first name"
+										id="first name"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Email*</p>
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Location*</p>
+									<input
+										type="text"
+										name="location"
+										id="location"
+										placeholder="City, State, Country, and/or Zip Code"
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Company Name</p>
+									<input
+										type="text"
+										name="company"
+										id="company"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3">
+									<p class="fw-medium mb-2 fw-bold">
+										What type of coaching are you looking for? *
+									</p>
+									<select
+										name="Experience"
+										id="Experience"
+										class="border rounded py-2 ps-4 w-100 text-body-secondary"
+									>
+										<option
+											value=""
+											selected
+											disabled
+										>
+											Choose an option
+										</option>
+										<option value="">Executive and Leadership Coaching</option>
+										<option value="">Organizational Coaching</option>
+										<option value="">Coaching fo Teams</option>
+										<option value="">Individual Coaching</option>
+										<option value="">Coach the Coach</option>
+									</select>
+								</div>
+							</div>
+							<div class="right">
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Last Name*</p>
+									<input
+										type="text"
+										name="last name"
+										id="last name"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Phone Number*</p>
+									<input
+										type="number"
+										name="number"
+										id="number"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+								<div class="form-div mb-3">
+									<p class="fw-bold mb-2">What is your job role?</p>
+									<select
+										name="role"
+										id="role"
+										class="border rounded py-2 ps-4 w-100 text-body-secondary"
+									>
+										<option
+											value=""
+											selected
+											disabled
+										>
+											Choose an option
+										</option>
+										<option value="">Manager (e.g Product,Engineering)</option>
+										<option value="">
+											Human Resource (e.g Staffing, Recruiting)
+										</option>
+										<option value="">
+											Senior Leader (e.g Leader of leaders)
+										</option>
+										<option value="">Team Member</option>
+										<option value="">Coach/ Scrum Master</option>
+										<option value="">Others</option>
+									</select>
+								</div>
+								<div class="form-div mb-3 mt-4">
+									<p class="fw-medium mb-2 fw-bold">Company's Website</p>
+									<input
+										type="text"
+										name="website"
+										id="website"
+										placeholder=""
+										class="border rounded w-100 py-2 ps-4"
+										required
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="submit-wrapper d-flex flex-column justify-content-center align-items-center">
+							<div class="form-div mb-3 mt-4 w-50">
+								<p class="fw-medium mb-2 fw-bold">
+									Tell the certified agile coach more about your needs
+								</p>
+								<input
+									type="text"
+									name="message"
+									id="message"
+									placeholder=""
+									class="border rounded w-100 py-2 ps-4 message"
+									required
+								/>
+							</div>
+							<button
+								class="btn signup-btn text-white py-2 fs-5 w-25 mt-5"
+								type="submit"
+								onclick="window.location.href='./mentor_signup2.html'"
+							>
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

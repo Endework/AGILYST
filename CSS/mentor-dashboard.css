@@ -20,7 +20,7 @@
 .sidebar{
     background-color: #CAF0F8;
     width: 25%;
-    height: 103vh !important;
+    height: 170vh !important;
 }
 
 a{
@@ -37,7 +37,9 @@ a{
     color: #00B4D8;
 }
 hr{
-    border: 1px solid #0F0E0E;
+    color: #00B4D8;
+    border: 2px solid #00B4D8;
+    width: 90%;
 }
 h5{
     color: #00B4D8;
@@ -45,4 +47,12 @@ h5{
 .btn-2 , .btn-2:hover{
     background-color: #00B4D8;
     color: #FFF;
+}
+
+.card3{
+    opacity: 0;
+    width: 60% !important;
+    top: -60%;
+    left: 50%;
+    /* z-index: 1; */
 }
