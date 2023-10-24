@@ -146,7 +146,7 @@ const agileRules = [
 			"The Agile Manifesto is a set of guiding values and principles for Agile development, emphasizing individuals and interactions, working software, and customer collaboration.",
 	},
 	{
-		pattern: /scrum framework/i,
+		pattern: /scrum/i,
 		response:
 			"Scrum is an Agile framework that involves fixed-length iterations called sprints, daily stand-up meetings, and a product backlog.",
 	},
@@ -276,4 +276,5 @@ function getBotResponse(userMessage) {
 		"\nFeel free to explore and reach out if you have more questions!"
 	);
 }
+
 
