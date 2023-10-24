@@ -274,6 +274,7 @@ footer .footer-content-wrapper form button{
 	padding-bottom: 10px;
 	padding-left: 50px;
 	background-color: white;
+	border: none;
 	border-radius: 100px;
     position: absolute;
     top: 0%;

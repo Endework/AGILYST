@@ -21,7 +21,7 @@ h1{
     font-weight: 700;
     margin-top: 3rem !important;
 }
-.signup-btn{
+.signup-btn , .signup-btn:hover{
     background-color: #0077B6;
     border-radius: 8px;
 }

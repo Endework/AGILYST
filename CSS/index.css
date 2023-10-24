@@ -59,8 +59,18 @@ nav ul li ul li {
 nav ul li ul li a {
 	font-size: 15px;
 }
+#list{
+	background-color: #007bff;
+	width: 150px;
+	height: 90px;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 8px;
+}
+nav ul li ul li a{
+	padding-block: 0.5rem;
+}
 nav ul li ul li a:hover {
-	background: #0077b6;
 	color: white;
 }
 
@@ -588,7 +598,7 @@ form button {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    z-index: 5;
+    z-index: 10;
 }
 button#toggleChatButton {
     margin: 20px;
@@ -610,6 +620,7 @@ button#toggleChatButton {
     position: fixed;
     bottom: 17%;
     right: 10px;
+	z-index: 100;
 }
 
 .chat-header {
@@ -617,9 +628,17 @@ button#toggleChatButton {
     background-color: rgba(0, 180, 216, 0.50);
     color: #fff;
     padding: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
     text-align: start;
 }
-
+.top-chat{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
 .chat-area {
     padding: 10px;
     max-height: 300px;
@@ -675,15 +694,20 @@ button#sendMessageButton {
     border: none;
     cursor: pointer;
 }
-
+.chat-header .chatLogo-img{
+	width: 95px;
+	height: 30px;
+	
+}
 button#closeChatButton {
     background: none;
     border: none;
     cursor: pointer;
     float: right;
     color: #fff;
-    font-size: 16px;
-    margin-right: 10px;
+	margin-right: 20px;
+    font-size: 32px;
+	z-index: 50;
 }
 
 
@@ -749,6 +773,7 @@ footer .footer-content-wrapper form button{
 	padding-bottom: 10px;
 	padding-left: 50px;
 	background-color: white;
+	border: none;
 	border-radius: 100px;
     position: absolute;
     top: 0%;
