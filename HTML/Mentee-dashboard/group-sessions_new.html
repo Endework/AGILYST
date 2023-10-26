@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/CSS/calendar.css">
+    <link rel="stylesheet" href="/CSS/group-sessionsnew.css">
+    <title>Group Sessions</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top ps-5 ">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <a
+                    class="navbar-brand"
+                    href="#"
+                >
+                    <img
+                        src="/Images/dashboard-logo.png"
+                        alt=""
+                        class=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarTogglerDemo02"
+                >
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active fs-5"
+                                id="first-link"
+                                aria-current="page"
+                                href="/index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link fs-5"
+                                id="nav-link2"
+                                href="#"
+                                >Dashboard</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link fs-5"
+                                id="nav-link2"
+                                href="#"
+                                >Responses</a
+                            >
+                        </li>
+                        <div class="btn-div d-flex gap-4 position-relative">
+                            <input
+                                type="search"
+                                name=""
+                                id=""
+                                placeholder="Search for mentors"
+                                class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+                                type="submit"
+                            />
+                            <img
+                                src="/Images/symbols-search.svg"
+                                alt=""
+                                class="position-absolute top-50 end-0 translate-middle-y me-3"
+                                onclick="window.location.href=''"
+                            />
+                        </div>
+                        <div class="dashboard-profile d-flex gap-4 ms-5">
+                            <img
+                                src="/Images/message.svg"
+                                alt=""
+                            />
+                            <img
+                                src="/Images/ci-bell-notification.svg"
+                                alt=""
+                            />
+                            <img
+                                src="/Images/dashboard-profile.svg"
+                                alt=""
+                            />
+                            <img
+                                src="/Images/symbols-arrow-drop-down.svg"
+                                alt=""
+                            />
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-sec mt-5 pt-5 d-flex gap-5">
+            <div class="sidebar d-flex flex-column gap-4">
+                <div class="profile-wrapper d-flex gap-3 mt-4">
+                    <img
+                        src="/Images/dashboard-profile.svg"
+                        alt="" class="w-50"
+                    />
+                    <div class="profile-content">
+                        <h2 class="fs-4">John Doe</h2>
+                        <a href="./mentee-profile.html">View profile</a>
+                    </div>
+                </div>
+                <div
+                    class="links-wrapper d-flex flex-column gap-5 position-fixed-start"
+                >
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/home-icon.svg"
+                            alt=""
+                        />
+                        <a
+                            href=""
+                            class="text-black ms-2"
+                            >Home</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/message.svg"
+                            alt=""
+                        />
+                        <a
+                            href="./groups-chats.html"
+                            class="text-black ms-2"
+                            >Messages</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/booking-icon.svg"
+                            alt=""
+                        />
+                        <a
+                            href="./bookings.html"
+                            class="text-black ms-2"
+                            >Bookings</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/connection-icon.svg"
+                            alt=""
+                        />
+                        <a
+                            href="./connections.html"
+                            class="text-black ms-2"
+                            >Connections</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/milestones-trophy.svg"
+                            alt=""
+                        />
+                        <a
+                            href="./achievements.html"
+                            class="text-black ms-2"
+                            >Milestones</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/connection-icon.svg"
+                            alt=""
+                        />
+                        <a
+                            href="./group-sessions.html"
+                            class="text-black ms-2"
+                            >Group sessions</a
+                        >
+                    </div>
+                    <div class="icon-links ps-3">
+                        <img
+                            src="/Images/settings-icon.png"
+                            alt=""
+                            class="settings-icon"
+                        />
+                        <a
+                            href=""
+                            class="text-black ms-2"
+                            >Setting</a
+                        >
+                    </div>
+                </div>
+                
+            </div>
+            <div class="home-content mt-5 w-100">
+                <div class="sessions" style="display: flex; gap: 450px;">
+                    <h4 class="mb-5">Group Sessions</h4>
+                    <span>
+                        <a href=""><img src="/Images/Chat.jpg" alt=""></a>
+                        <a href=""><img src="/Images/Video Conference.jpg" alt=""></a>
+                        <a href=""><img src="/Images/Group Of Companies.jpg" alt=""></a>
+                        <img src="/Images/call.png" alt="">
+                    </span>
+                </div>
+                <a href="" class="fs-5 me-5 pe-5 mt-5">Hosting</a>
+                <a href="" class="fs-5 text-black ms-5 ps-5 mt-5">Attending</a>
+                <hr class="w-75 mb-5" >
+                <div class="content-div ">
+                    <div class="btn-div d-flex gap-4 position-relative mb-5 ">
+                        <input
+                            type="search"
+                            name=""
+                            id=""
+                            placeholder="Search"
+                            class="btn btn-1 border  rounded px-5 py-2   "
+                            type="submit"
+                        />
+                        <img
+                            src="/Images/search.svg"
+                            alt=""
+                            class="position-absolute top-50 start-0 translate-middle-y ms-3 search "
+                            onclick="window.location.href=''" id="search-icon"
+                        />
+                    </div>
+                    <!-- calender start here -->
+                    <div class="calendar-container">
+                        <div class="calender" style="margin-top: 30px; margin-left:100px;">
+                            <div class="month">
+                                <i class="fa-solid fa-angle-left prev"></i>
+                                <div class="date" style="display: flex; gap: 10px; text-align: justify;">
+                                    <h1></h1>
+                                    <h2></h2>
+                                </div>
+                                <i class="fa-solid fa-angle-right next"></i>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="days">
+                    
+                    
+                            </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/calendar.js"></script>
+</body>
+</html>
