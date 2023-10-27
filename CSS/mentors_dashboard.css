@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;700&display=swap");
+
+body {
+  padding-bottom: 5rem;
+  background-color: #fafafafa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding-block: 3.5rem !important;
+  font-weight: 600;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #efecef;
+}
+
+.sidebar {
+  position: fixed;
+}
+
+.container-mentor {
+  overflow: hidden !important;
+}
+
+.mentors-symbol {
+  width: 10%;
+}
+
+.btn {
+  padding: 0.45rem 1rem;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+#bar-heading {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-decoration: underline #0077b6;
+}
+#my-list li {
+  list-style-type: circle;
+  font-size: 2rem;
+  color: #0077b6;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#my-list a {
+  font-size: 0.95rem;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#my-list .nav-link {
+  margin-bottom: -0.5rem;
+}
+
+span,
+.card-body {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .mentors-profile {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+  .img-mentors-div {
+    width: 100%;
+  }
+}

@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .card-body {
@@ -57,6 +58,11 @@
   padding: 0.75rem;
   background: #0077b6;
   color: white;
+}
+.btn:hover {
+  background-color: blue;
+  color: white;
+  opacity: 0.8;
 }
 .card-body {
   line-height: 2rem;
