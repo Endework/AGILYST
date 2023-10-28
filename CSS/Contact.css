@@ -126,10 +126,11 @@ nav ul li ul li a:hover {
     background-image: url('/Images/contact-banner2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+	margin-top: 11rem;
 }
 #contact {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 37%;
     color:#CAF0F8;
     font-size: 3rem;

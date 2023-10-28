@@ -72,3 +72,12 @@ h5,
 		transform: rotate(360deg); /* Rotate a full circle (360 degrees) */
 	}
 }
+
+.card3{
+    opacity: 0;
+    width: 70% !important;
+    top: -60%;
+    left: 65%;
+    z-index: 1;
+    background-color: #00B4D8;
+}

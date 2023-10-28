@@ -13,10 +13,37 @@
 }
 .navbar-brand img{
     width: 75% !important;
-    height: 6rem !important;
+    height: 5rem !important;
 }
-.navbar .nav-link{
+.navbar .nav-link , .nav .dropdown-item{
     color: #0F0E0E !important;
+    font-size: 1.25rem;
+    margin-right: 1rem !important;
+}
+
+.btn{
+    transition:.3s ease all;
+    padding: 0.75rem 2.4rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+.btn-1{
+    border: 2px solid #0077B6 !important;
+    color: #0F0E0E;
+}
+.btn-1:hover{
+    background-color: #0077B6 !important;
+    color: #FFF;
+}
+.btn-2{
+    background-color: #0077B6;
+    color: #FFF;
+}
+.btn-2:hover{
+    background-color: transparent;
+    color: #0F0E0E;
+    border: 2px solid #0077B6 !important;
 }
 
 .payment-hero {

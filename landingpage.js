@@ -50,88 +50,6 @@ showDropdown3Button.addEventListener("click", function () {
 	}
 });
 
-// services links
-
-// Get a reference to the protected link
-const protectedLink = document.querySelector(".protected-link");
-
-// Add a click event listener to the link
-protectedLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
-
-const protectLink = document.querySelector(".protect-link");
-
-// Add a click event listener to the link
-protectLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
-const protLink = document.querySelector(".prot-link");
-
-// Add a click event listener to the link
-protLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
-const manageLink = document.querySelector(".manage-link");
-
-// Add a click event listener to the link
-manageLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
-const exploreLink = document.querySelector(".explore-link");
-
-// Add a click event listener to the link
-exploreLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
-const paymentLink = document.querySelector(".payment-link");
-
-// Add a click event listener to the link
-paymentLink.addEventListener("click", function (event) {
-	const confirmation = confirm(
-		"To access this service, please sign up or log in. Do you want to proceed?"
-	);
-
-	// If the user cancels the confirmation, prevent the link from being followed
-	if (!confirmation) {
-		event.preventDefault();
-	}
-});
 
 //  chat bot script
 
@@ -221,7 +139,7 @@ const agileRules = [
 			"The Agile Manifesto is a set of guiding values and principles for Agile development, emphasizing individuals and interactions, working software, and customer collaboration.",
 	},
 	{
-		pattern: /scrum/i,
+		pattern: /scrum framework/i,
 		response:
 			"Scrum is an Agile framework that involves fixed-length iterations called sprints, daily stand-up meetings, and a product backlog.",
 	},
@@ -351,5 +269,4 @@ function getBotResponse(userMessage) {
 		"\nFeel free to explore and reach out if you have more questions!"
 	);
 }
-
 
