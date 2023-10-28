@@ -18,7 +18,7 @@
 }
 main{
     margin-top: 5rem !important;
-    background: linear-gradient(rgba(31, 25, 25, 0.98), rgba(0, 0, 0, 0.81)) , url(/Images/library.jpeg) center/cover no-repeat;
+    background: linear-gradient(rgba(31, 25, 25, 0.9), rgba(0, 0, 0, 0.8)) , url(/Images/library.jpeg) center/cover no-repeat;
     width: 100%;
 }
 .resources-container{
