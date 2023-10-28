@@ -14,6 +14,7 @@
     align-items: center;
     gap: 10px;
     margin-left: 50px;  
+    position: relative;
 }
 .search-bar2 form input{
     display: flex;
@@ -24,19 +25,22 @@
     border-radius: 10px;
     border: 1px solid var(--Placeholder, #A7A4A4);
     background: #FFF;
-    position: relative;
+    
 
 }
-.glass2, .filter2{
+ .filter2{
     position: absolute;
 
 }
 .glass2{
-    top: 50px;
+    position: absolute;
+
+    top: 10px;
     left: 75px;
     color: #A7A4A4;
     width: 20px;
     height: 20px;
+    background-color: red;
 }
 .filter2{
     right: 100px;
