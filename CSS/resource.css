@@ -16,6 +16,12 @@
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 main{
     margin-top: 5rem !important;
     background: linear-gradient(rgba(31, 25, 25, 0.9), rgba(0, 0, 0, 0.8)) , url(/Images/library.jpeg) center/cover no-repeat;

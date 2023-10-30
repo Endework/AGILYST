@@ -16,11 +16,16 @@
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
-
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 .sidebar{
     background-color: #CAF0F8;
     width: 20%;
-    height: 100% !important;
+    height: 105vh !important;
 }
 
 a{
@@ -37,7 +42,7 @@ a{
     color: #00B4D8;
 }
 hr{
-    border: 1px solid #00B4D8;
+    border: 2px solid #00B4D8;
 }
 h5{
     color: #00B4D8;

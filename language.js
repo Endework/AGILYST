@@ -1,4 +1,30 @@
-// script.js
+
+//message interface
+
+const showbuttonDiv = document.querySelector(".send-icon");
+const buttonDiv = document.querySelector(".buttonDiv");
+
+
+showbuttonDiv.addEventListener("click", function () {
+	if (buttonDiv.style.opacity === "0" || buttonDiv.style.opacity === "") {
+		buttonDiv.style.opacity = "1";
+	} else {
+		buttonDiv.style.opacity = "0";
+	}
+});
+
+
+const message = document.querySelector(".message");
+
+message.addEventListener("input", function () {
+  // Clear the message after 3 seconds (3000 milliseconds)
+  setTimeout(clearMessage, 22000);
+});
+
+function clearMessage() {
+  message.value = "";
+}
+
 
 // Define language data
 const languageData = {
@@ -40,3 +66,10 @@ languageSelect.addEventListener("change", (event) => {
 	selectedLanguage = event.target.value;
 	translateContent(selectedLanguage);
 });
+
+
+
+
+
+
+

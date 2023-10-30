@@ -607,20 +607,20 @@ form button {
 
 
 .toggle-div{
-    background-color: #007bff;
-    border-radius: 50%;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 0;
+    right: -5%;
     z-index: 10;
 }
 button#toggleChatButton {
-    margin: 20px;
-    padding: 8px;
-    background-color: #dcf8c6;
+    background-color: transparent;
     border: none;
-    color: black;
     cursor: pointer;
+}
+
+
+button#toggleChatButton img{
+	width: 60%;
 }
 
 .chat-container {
