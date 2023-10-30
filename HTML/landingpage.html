@@ -23,31 +23,31 @@
 	<body>
 		<header>
 			<nav>
-			  <img  style="height: 120px;" src="../Images/Logo1.png" alt="">
+			  <img  style="height: 120px;" src="/Images/Logo1.png" alt="">
 		
 			  <ul class="navlist">
 				<li><a href="/index.html">Home</a></li>
-				<li><a href="/HTML/AboutUs.html">About Us</a></li>
+				<li><a href="./AboutUs.html">About Us</a></li>
 				<li id="service"><a href="#">Services</a>
 				  <ul id="list">
-					<li><a href="/HTML/Mentee-dashboard/mentee-coach-dashboard-1.html" class="protect-link">Agile Coaching</a></li>
-					<li><a href="" class="protect-link">Mentorship</a></li>
+					<li><a href="./SearchPage.html" class="">Agile Coaching</a></li>
+					<li><a href="./SearchPage.html" class="">Mentorship</a></li>
 				  </ul>
 				</li>
-				<li><a href="./HTML/Contact.html">Contact Us</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
 			  </ul>
 			  <div class="btn-div">
 				<button id="btn1" type="submit">Log in</button>
         <div class="dropdown">
-          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_login.html'">Mentor </button>
-          <button class="dropdown-button" onclick="window.location.href='./HTML/LogIn.html'">Mentee</button>
-          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/agile-login.html'">Agile Coach</button>
+          <button class="dropdown-button" onclick="window.location.href='./Mentor_login.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./LogIn.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./Agile-Coach/agile-login.html'">Agile Coach</button>
         </div>
 				<button id="btn2" type="submit">Sign up</button>
         <div class="dropdowns">
-          <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
-          <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
-          <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
+          <button class="dropdown-button" onclick="window.location.href='./Mentor_signup.html'">Mentor </button>
+          <button class="dropdown-button" onclick="window.location.href='./SignUp_Mentee.html'">Mentee</button>
+          <button class="dropdown-button" onclick="window.location.href='./Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
       </div>
 			  </div>
 			</nav>
@@ -132,7 +132,7 @@
               </div>
             </div>
     
-            <button type="submit">Search</button>
+            <button type="submit"><a href="./SearchPage.html" class="" style="color: white;">Search</a></button>
     
           </div>
 
@@ -159,9 +159,9 @@
 
           <button type="submit" id="btn3">Get Started</button>
           <div class="dropdown2">
-            <button class="dropdown-button" onclick="window.location.href='./HTML/Mentor_signup.html'">Mentor </button>
-            <button class="dropdown-button" onclick="window.location.href='./HTML/SignUp_Mentee.html'">Mentee</button>
-            <button class="dropdown-button" onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
+            <button class="dropdown-button" onclick="window.location.href='./Mentor_signup.html'">Mentor </button>
+            <button class="dropdown-button" onclick="window.location.href='./SignUp_Mentee.html'">Mentee</button>
+            <button class="dropdown-button" onclick="window.location.href='./Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
         </div>
       </div>
     </section>
@@ -174,13 +174,18 @@
           <div class="section2-imgdiv-des">
             <img src="../Images/IMG_5897 1.png" alt="">
             <p>Create your profile</p>
-            <button>Sign up</button>
+            <button type="submit" id="btn4">Sign up</button>
+            <div class="dropdown3">
+              <button class="dropdown-button" onclick="window.location.href='./Mentor_signup.html'">Mentor </button>
+              <button class="dropdown-button" onclick="window.location.href='./SignUp_Mentee.html'">Mentee</button>
+              <button class="dropdown-button" onclick="window.location.href='./Agile-Coach/Agile-signup-1.html'">Agile Coach</button>
+          </div>
           </div>
 
           <div class="section2-imgdiv-des">
             <img src="../Images/IMG_5888 1.png" alt="">
             <p>Search Mentor</p>
-            <button>Search</button>
+            <button><a href="./SearchPage.html" class="prot-link" style="color: white;">Search</a></button>
           </div>
         </div>
 
@@ -188,7 +193,7 @@
           <div class="section2-imgdiv-des">
             <img src="../Images/IMG_5895 1.png" alt="">
             <p>Book Mentor</p>
-            <button>Manage Bookings</button>
+            <button><a href="" class="manage-link" style="color: white;">Manage Bookings</a></button>
           </div>
         </div>
 
@@ -240,7 +245,7 @@
           </div>
         </div>
 
-        <button>Explore Mentors</button>
+        <button><a href="./SearchPage.html" class="explore-link" style="color: white;">Explore Mentors</a></button>
 
       </div>
     </section>
@@ -369,7 +374,7 @@
 
         </div>
 
-        <button class="sec5-btn" style="margin-left: 35rem; margin-top: 8rem;" type="submit">Make Payment</button>
+        <button class="sec5-btn" style="margin-left: 35rem; margin-top: 8rem;" type="submit"><a href="./Payment.html" style="color: white;" class="payment-link">Make Payment</a></button>
       </div>
     </section>
 
@@ -384,8 +389,11 @@
     <div class="toggle-div"><button id="toggleChatButton">Chat</button></div>
     <div class="chat-container" id="chatContainer">
         <div class="chat-header">
-            <button id="closeChatButton">Close</button>
-            Bluey
+            <button id="closeChatButton">x</button>
+            <div class="top-chat">
+              <img src="/Images/logo-no-bg.png" alt="" class="chatLogo-img">
+              <img src="/Images/online.svg" alt="">
+            </div>
         </div>
         <div class="chat-area" id="chatArea">
             <p>Hi there 👋,<br> I'm Bluey. How may I help you today?</p>
@@ -403,7 +411,7 @@
 <footer>
   <div class="footer-wrapper">
     <div class="footer-logo">
-      <img src="./Images/Agilyst_BRAND_LOGO.png" alt="">
+      <img src="/Images/Agilyst_BRAND_LOGO.png" alt="">
     </div>
     <div class="footer-content-wrapper">
       <form action="">
@@ -416,8 +424,8 @@
           <ul>
             <li><a href="">Find Mentor</a></li>
             <li><a href="">Become a Mentor</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="/HTML/AboutUs.html">About Us</a></li>
+            <li><a href="/HTML/Contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="platform-links">
@@ -430,8 +438,8 @@
         <div class="platform-links">
           <h3 class="text-uppercase mb-2">Legal</h3>
           <ul>
-            <li><a href="">Terms and Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li><a href="https://docs.google.com/document/d/14Cav8_tpLhMj1wqa7y7p3TokV7CuWWWVGshoX72YPZo/edit?usp=drivesdk">Terms and Conditions</a></li>
+            <li><a href="https://docs.google.com/document/d/12t_hjWHDg7Qe-BcslnpuhAd6RPmMWPe2E11MokK6itI/edit?usp=drivesdk">Privacy Policy</a></li>
             <li><a href="">FAQs</a></li>
           </ul>
         </div>
@@ -449,19 +457,38 @@
           <select
             name="role"
             id="role"
-            class=" py-2 ps-4 text-white bg-transparent border border-0"
+            class=" py-2 ps-4  bg-transparent border border-0"
           >
             <option
               value=""
               selected
               disabled
-              class="bg-transparent"
+              class="option1"
             >
               English
             </option>
-            <option value="">French</option>
-            <option value="">German</option>
-            <option value="">Spanish</option>
+            <option value="">Bengali</option>
+								<option value="">Chinese</option>
+								<option value="">English</option>
+								<option value="">French</option>
+								<option value="">German</option>
+								<option value="">Hindi</option>
+								<option value="">Indonesian</option>
+								<option value="">Japanese</option>
+								<option value="">Korean</option>
+								<option value="">Mandarin</option>
+								<option value="">Marathi</option>
+								<option value="">Portuguese</option>
+								<option value="">Russian</option>
+								<option value="">Spanish</option>
+								<option value="">Standard Arabic</option>
+								<option value="">Swahili</option>
+								<option value="">Tamil</option>
+								<option value="">Telugu</option>
+								<option value="">Turkish</option>
+								<option value="">Urdu</option>
+								<option value="">
+                                    Wu Chinese</option>
           </select>
         </form>
         <div class="online-links-wrappers">
@@ -496,6 +523,6 @@
   </div>
  </footer>
   
-  <script src="./index.js"></script>
+  <script src="/landingpage.js"></script>
 </body>
 </html>

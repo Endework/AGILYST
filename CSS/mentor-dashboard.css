@@ -16,7 +16,12 @@
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
-
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 .sidebar{
     background-color: #CAF0F8;
     width: 25%;

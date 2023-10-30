@@ -1,15 +1,54 @@
-const showCard3 = document.querySelector(".community-link");
-const card3 = document.querySelector(".card3");
+const showDropdownsButton = document.getElementById("btn2");
+const showDropdownButton = document.getElementById("btn1");
+const showDropdown2Button = document.getElementById("btn3");
+const showDropdown3Button = document.getElementById("btn4");
+const dropdowns = document.querySelector(".dropdowns");
+const dropdown = document.querySelector(".dropdown");
+const dropdown2 = document.querySelector(".dropdown2");
+const dropdown3 = document.querySelector(".dropdown3");
+const showPopup = document.querySelector(".search-input");
+const cardExpertise = document.querySelector(".card-expertise");
 
-
-showCard3.addEventListener("click", function () {
-	if (card3.style.opacity === "0" || card3.style.opacity === "") {
-		card3.style.opacity = "1";
+showDropdownsButton.addEventListener("click", function () {
+	if (dropdowns.style.opacity === "0" || dropdowns.style.opacity === "") {
+		dropdowns.style.opacity = "1";
 	} else {
-		card3.style.opacity = "0";
+		dropdowns.style.opacity = "0";
+	}
+});
+showDropdownButton.addEventListener("click", function () {
+	if (dropdown.style.opacity === "0" || dropdown.style.opacity === "") {
+		dropdown.style.opacity = "1";
+	} else {
+		dropdown.style.opacity = "0";
 	}
 });
 
+showPopup.addEventListener("click", function () {
+	if (
+		cardExpertise.style.opacity === "0" ||
+		cardExpertise.style.opacity === ""
+	) {
+		cardExpertise.style.opacity = "1";
+	} else {
+		cardExpertise.style.opacity = "0";
+	}
+});
+
+showDropdown2Button.addEventListener("click", function () {
+	if (dropdown2.style.opacity === "0" || dropdown2.style.opacity === "") {
+		dropdown2.style.opacity = "1";
+	} else {
+		dropdown2.style.opacity = "0";
+	}
+});
+showDropdown3Button.addEventListener("click", function () {
+	if (dropdown3.style.opacity === "0" || dropdown3.style.opacity === "") {
+		dropdown3.style.opacity = "1";
+	} else {
+		dropdown3.style.opacity = "0";
+	}
+});
 
 
 //  chat bot script
@@ -100,7 +139,7 @@ const agileRules = [
 			"The Agile Manifesto is a set of guiding values and principles for Agile development, emphasizing individuals and interactions, working software, and customer collaboration.",
 	},
 	{
-		pattern: /scrum/i,
+		pattern: /scrum framework/i,
 		response:
 			"Scrum is an Agile framework that involves fixed-length iterations called sprints, daily stand-up meetings, and a product backlog.",
 	},

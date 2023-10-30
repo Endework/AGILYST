@@ -19,6 +19,12 @@ a{
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 .links{
     gap: 9rem !important;
     margin-bottom: 36px !important;

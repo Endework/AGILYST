@@ -43,6 +43,9 @@ footer .footer-content-wrapper button{
     left: 68%;
     
 }
+footer .footer-content-wrapper form select option{
+    background-color: #0077B6;
+}
 .footer-links li{
     list-style: none;
     margin-bottom: 1rem !important;

@@ -31,105 +31,45 @@
 		<title>Payment Page</title>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg fixed-top ps-5">
-				<div class="container-fluid d-flex justify-content-evenly">
-					<a
-						class="navbar-brand"
-						href="#"
-					>
-						<img
-							src="../Images/Agilyst Logo5 3.jpg"
-							alt=""
-							class=""
-						/>
+		<header >
+			<nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto">
+				<div class="container-fluid gap-md-5">
+					<a class="navbar-brand" href="#">
+						<img src="/Images/Agilyst_BRAND_LOGO.png" alt="">
 					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarTogglerDemo02"
-						aria-controls="navbarTogglerDemo02"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 					</button>
-					<div
-						class="collapse navbar-collapse"
-						id="navbarTogglerDemo02"
-					>
-						<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
 							<li class="nav-item">
-								<a
-									class="nav-link active bg-transparent"
-									id="first-link"
-									aria-current="page"
-									href="#"
-									>Home</a
-								>
+								<a class="nav-link active bg-transparent" id="first-link" aria-current="page" href="./landingpage.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									id="nav-link2"
-									href="#"
-									>Find Mentors</a
-								>
-							</li>
+							  <a class="nav-link" id="nav-link2" href="./AboutUs.html">About us</a>
+						  </li>
+							<li class="nav-item dropdown">
+								<a class="nav-link  dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link1">
+									Services
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item text-black" href="./html/content.html">Agile Coaching</a></li>
+									<li><a class="dropdown-item text-black" href="./html/download.html">Mentorship</a></li>
+								</ul>
+							</li>  
+							
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									id="nav-link2"
-									href="#"
-									>Services</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									id="nav-link3"
-									href="./html/AboutUs.html"
-									>About Us</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									id="nav-link4"
-									href="#"
-									>contact</a
-								>
+								<a class="nav-link" id="nav-link3" href="./html/about.html">Contact Us</a>
 							</li>
 						</ul>
-						<ul class="navbar-nav sec-ul mx-auto mb-2 mb-lg-0 gap-5">
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									id=""
-									href="#"
-									>Help</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									id=""
-									href="#"
-								>
-									<img
-										src="../Images/mdi-account.svg"
-										alt=""
-										class="w-25"
-									/>
-									Account</a
-								>
-							</li>
-						</ul>
+						<div class="div-btn d-flex gap-4">
+							<button class="btn btn-1 border border-rounded px-5 py-2" type="submit" onclick="window.location.href='../html/LogIn.html'">Login</button>
+							<button class="btn btn-2 btn-outline-light px-5 py-2 me-5" type="submit" onclick="window.location.href='../html/SignUp.html'">Sign Up</button>
+						</div>
 					</div>
 				</div>
 			</nav>
-			<div class="payment-hero"></div>
+			<div class="payment-hero mt-5"></div>
 		</header>
 		<main>
 			<section class="payment-sec1 mt-5">
@@ -282,15 +222,15 @@
 							name=""
 							id=""
 							placeholder="Your Email"
-							class="border-rounded rounded-pill bg-transparent text-white py-2 ps-3 border-white w-100"
+							class="border-rounded rounded-pill bg-transparent text-white py-2 ps-3 border-white w-75"
 							required
 						/>
 						<button
-							class="btn btn-large border rounded-pill bg-white pe-5 py-2 ps-2 ms-3"
+							class="btn btn-large border rounded-pill bg-white pe-5 py-2 ps-2 ms-4"
 						>
 							<a
 								href=""
-								class="px-5 text-primary"
+								class="px-4 text-primary"
 							>
 								Subscribe Now!
 							</a>
@@ -329,27 +269,46 @@
 						<p class="text-white d-flex align-items-center gap-3">
 							<span class="fs-3 text-white">©</span> All rights reserved 2023
 						</p>
-						<form action="">
+						<form action="" id="language-form">
 							<img
 								src="../Images/web.svg"
 								alt=""
 							/>
 							<select
 								name="role"
-								id="role"
+								id="language-select"
 								class=" py-2 ps-4 text-white bg-transparent border border-0"
 							>
 								<option
 									value=""
 									selected
 									disabled
-									class="bg-transparent"
+									class="bg-transparent option1"
 								>
-									Language
+									English
 								</option>
-								<option value="">English</option>
-								<option value="">French</option>
-								<option value=""></option>
+								<option value="">Bengali</option>
+								<option value="">Chinese</option>
+								<option value="en">English</option>
+								<option value="fr">French</option>
+								<option value="de">German</option>
+								<option value="">Hindi</option>
+								<option value="">Indonesian</option>
+								<option value="">Japanese</option>
+								<option value="">Korean</option>
+								<option value="">Mandarin</option>
+								<option value="">Marathi</option>
+								<option value="pt">Portuguese</option>
+								<option value="">Russian</option>
+								<option value="">Spanish</option>
+								<option value="">Standard Arabic</option>
+								<option value="">Swahili</option>
+								<option value="">Tamil</option>
+								<option value="">Telugu</option>
+								<option value="">Turkish</option>
+								<option value="">Urdu</option>
+								<option value="">
+                                    Wu Chinese</option>
 							</select>
 						</form>
 						<div class="online-links-wrappers d-flex gap-3">
@@ -371,5 +330,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		
+		<script src="/language.js"></script>
 	</body>
 </html>

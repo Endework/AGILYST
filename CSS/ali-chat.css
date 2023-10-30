@@ -16,7 +16,12 @@
 .navbar .nav-link{
     color: #0F0E0E !important;
 }
-
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 .sidebar{
     background-color: #CAF0F8;
     width: 20%;
@@ -48,4 +53,14 @@ h5 , .num-p{
 }
 .btn-2 , .btn-2:hover{
     background-color: #0077B6;
+}
+
+.buttonDiv{
+	opacity: 0;
+}
+.send-icon{
+    width: 40px !important;
+    position: absolute;
+    right: 25%;
+    background-color: transparent;
 }

@@ -1,9 +1,11 @@
 const showDropdownsButton = document.getElementById("btn2");
 const showDropdownButton = document.getElementById("btn1");
 const showDropdown2Button = document.getElementById("btn3");
+const showDropdown3Button = document.getElementById("btn4");
 const dropdowns = document.querySelector(".dropdowns");
 const dropdown = document.querySelector(".dropdown");
 const dropdown2 = document.querySelector(".dropdown2");
+const dropdown3 = document.querySelector(".dropdown3");
 const showPopup = document.querySelector(".search-input");
 const cardExpertise = document.querySelector(".card-expertise");
 
@@ -40,6 +42,13 @@ showDropdown2Button.addEventListener("click", function () {
 		dropdown2.style.opacity = "0";
 	}
 });
+showDropdown3Button.addEventListener("click", function () {
+	if (dropdown3.style.opacity === "0" || dropdown3.style.opacity === "") {
+		dropdown3.style.opacity = "1";
+	} else {
+		dropdown3.style.opacity = "0";
+	}
+});
 
 // services links
 
@@ -48,6 +57,72 @@ const protectedLink = document.querySelector(".protected-link");
 
 // Add a click event listener to the link
 protectedLink.addEventListener("click", function (event) {
+	const confirmation = confirm(
+		"To access this service, please sign up or log in. Do you want to proceed?"
+	);
+
+	// If the user cancels the confirmation, prevent the link from being followed
+	if (!confirmation) {
+		event.preventDefault();
+	}
+});
+
+const protectLink = document.querySelector(".protect-link");
+
+// Add a click event listener to the link
+protectLink.addEventListener("click", function (event) {
+	const confirmation = confirm(
+		"To access this service, please sign up or log in. Do you want to proceed?"
+	);
+
+	// If the user cancels the confirmation, prevent the link from being followed
+	if (!confirmation) {
+		event.preventDefault();
+	}
+});
+const protLink = document.querySelector(".prot-link");
+
+// Add a click event listener to the link
+protLink.addEventListener("click", function (event) {
+	const confirmation = confirm(
+		"To access this service, please sign up or log in. Do you want to proceed?"
+	);
+
+	// If the user cancels the confirmation, prevent the link from being followed
+	if (!confirmation) {
+		event.preventDefault();
+	}
+});
+const manageLink = document.querySelector(".manage-link");
+
+// Add a click event listener to the link
+manageLink.addEventListener("click", function (event) {
+	const confirmation = confirm(
+		"To access this service, please sign up or log in. Do you want to proceed?"
+	);
+
+	// If the user cancels the confirmation, prevent the link from being followed
+	if (!confirmation) {
+		event.preventDefault();
+	}
+});
+const exploreLink = document.querySelector(".explore-link");
+
+// Add a click event listener to the link
+exploreLink.addEventListener("click", function (event) {
+	const confirmation = confirm(
+		"To access this service, please sign up or log in. Do you want to proceed?"
+	);
+
+	// If the user cancels the confirmation, prevent the link from being followed
+	if (!confirmation) {
+		event.preventDefault();
+	}
+});
+const paymentLink = document.querySelector(".payment-link");
+
+// Add a click event listener to the link
+paymentLink.addEventListener("click", function (event) {
 	const confirmation = confirm(
 		"To access this service, please sign up or log in. Do you want to proceed?"
 	);
