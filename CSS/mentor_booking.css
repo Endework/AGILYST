@@ -53,6 +53,12 @@ p{
     height: 40px;
    
 }
+.dropdown-menu{
+    background-color: #00B4D8;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
 .nav-cont{
     display: flex;
     margin-left: 100px;
