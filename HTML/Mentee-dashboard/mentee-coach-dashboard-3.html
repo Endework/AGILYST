@@ -16,6 +16,7 @@
 			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="/CSS/footer.css">
 		<link
 			rel="stylesheet"
 			href="/CSS/agile-dashboard1.css"
@@ -130,14 +131,14 @@
 			<section class="main-sec mt-5 pt-5 d-flex gap-5">
 				<!-- side navbar -->
 				<div class="sidebar d-flex flex-column gap-4">
-					<div class="profile-wrapper d-flex gap-3 mt-4">
+					<div class="profile-wrapper d-flex gap-3 my-4">
 						<img
 							src="/Images/dashboard-profile.svg"
-							alt="" class="w-50"
+							alt="" class="w-25"
 						/>
 						<div class="profile-content">
-							<h2 class="fs-4">John Doe</h2>
-							<a href="./mentee-profile.html">View profile</a>
+							<h2 class="fs-3">John Doe</h2>
+							<a href="./mentee-profile.html" class="ms-2">View profile</a>
 						</div>
 					</div>
 					<div
@@ -149,8 +150,8 @@
 								alt=""
 							/>
 							<a
-								href=""
-								class="text-black ms-2"
+								href="./waitlist.html"
+								class="text-black ms-2 fs-5"
 								>Join waitlist</a
 							>
 						</div>
@@ -160,8 +161,8 @@
 								alt=""
 							/>
 							<a
-								href=""
-								class="text-black ms-2"
+								href="./chats.html"
+								class="text-black ms-2 fs-5"
 								>Messages</a
 							>
 						</div>
@@ -171,8 +172,8 @@
 								alt=""
 							/>
 							<a
-								href=""
-								class="text-black ms-2"
+								href="./bookings.html"
+								class="text-black ms-2 fs-5"
 								>Bookings</a
 							>
 						</div>
@@ -183,7 +184,7 @@
 							/>
 							<a
 								href=""
-								class="text-black ms-2"
+								class="text-black ms-2 fs-5"
 								>Community</a
 							>
 						</div>
@@ -193,8 +194,8 @@
 								alt=""
 							/>
 							<a
-								href=""
-								class="text-black ms-2"
+								href="./group-sessions.html"
+								class="text-black ms-2 fs-5"
 								>Group sessions</a
 							>
 						</div>
@@ -206,24 +207,24 @@
 							/>
 							<a
 								href=""
-								class="text-black ms-2"
-								>Setting</a
+								class="text-black ms-2 fs-5"
+								>Settings</a
 							>
 						</div>
 					</div>
 				</div>
 				<div class="home-content mt-5 w-100">
-					<h4 class="fs-5">Profile</h4>
-					<hr class="w-75 mt-5 mb-5" />
-					<div class="profile-wrapper d-flex align-items-center gap-4">
+					<h4 class="fs-2 fw-bold">Profile</h4>
+					<hr class="w-75 mb-5" />
+					<div class="profile-wrapper d-flex align-items-center gap-2">
 						<div class="profile-img">
 							<img
 								src="/Images/Steve-1.svg"
-								alt=""
+								alt="" class="w-75"
 							/>
 						</div>
 						<div class="profile-text">
-							<h5 class="mb-3">Steve Brishton</h5>
+							<h5 class="mb-3 fs-4 fw-semibold">Steve Brishton</h5>
 							<p class="mb-2">Contact Coach</p>
 							<div class="contact-imgs d-flex gap-3">
                                 <img src="/Images/chat.png" alt="">
@@ -266,18 +267,18 @@
 					</div>
 					<div class="info-wrapper mt-5 border w-75">
                         <div class="links-wrapper d-flex justify-content-between">
-                            <a href="./mentee-coach-dashboard-1.html" class="btn bg-secondary-subtle px-4 py-1 
+                            <a href="./mentee-coach-dashboard-1.html" class="btn bg-secondary-subtle px-4 py-1 fs-5 
                             ">Biography</a>
-                            <a href="./mentee-coach-dashboard-2.html" class="btn bg-secondary-subtle px-4 py-1
+                            <a href="./mentee-coach-dashboard-2.html" class="btn bg-secondary-subtle px-4 py-1 fs-5
                             ">Upcoming</a>
-                            <a href="./mentee-coach-dashboard-3.html" class="btn bg-secondary-subtle px-4 py-1 a-link
+                            <a href="./mentee-coach-dashboard-3.html" class="btn bg-secondary-subtle px-4 py-1 a-link fs-5
                             ">Organizations</a>
-                            <a href="./mentee-coach-dashboard-4.html" class="btn bg-secondary-subtle px-4 py-1
+                            <a href="./mentee-coach-dashboard-4.html" class="btn bg-secondary-subtle px-4 py-1 fs-5
                             ">Experiences</a>
-                            <a href="./mentee-coach-dashboard-5.html" class="btn bg-secondary-subtle px-4 py-1
+                            <a href="./mentee-coach-dashboard-5.html" class="btn bg-secondary-subtle px-4 py-1 fs-5
                             ">Links</a>
                         </div>
-                        <div class="ordered ms-5 my-5 fs-5">
+                        <div class="ordered ms-5 ps-3 my-4">
                             <ol>
                                 <li>InnovateTech Solutions</li>
                                 <li>AgilePro Consultancy</li>
@@ -313,6 +314,137 @@
 				</div>
 			</section>
 		</main>
+
+		<footer>
+			<div class="footer-wrapper py-5 d-flex gap-5">
+				<div class="footer-logo">
+					<img
+						src="/Images/Agilyst Logo5 3.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="footer-content-wrapper">
+					<form
+						action=""
+						class=""
+					>
+						<input
+							type="email"
+							name=""
+							id=""
+							placeholder="Your Email"
+							class="border-rounded rounded-pill bg-transparent text-white py-2 ps-3 border-white w-75"
+							required
+						/>
+						<button
+							class="btn btn-large border rounded-pill bg-white pe-5 py-2 ps-2 ms-4"
+						>
+							<a
+								href=""
+								class="px-4 text-primary"
+							>
+								Subscribe Now!
+							</a>
+						</button>
+					</form>
+					<div
+						class="footer-links text-white d-flex justify-content-between my-5"
+					>
+						<div class="platform-links">
+							<h3 class="text-uppercase mb-2">Platform</h3>
+							<ul>
+								<li><a href="">Find Mentor</a></li>
+								<li><a href="">Become a Mentor</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="product-links">
+							<h3 class="text-uppercase mb-2">Product</h3>
+							<ul>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Community</a></li>
+							</ul>
+						</div>
+						<div class="legal-links">
+							<h3 class="text-uppercase mb-2">Legal</h3>
+							<ul>
+								<li><a href="">Terms and Conditions</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="" />
+					<div
+						class="copyright d-flex justify-content-between w-100 align-items-center mt-5"
+					>
+						<p class="text-white d-flex align-items-center gap-3">
+							<span class="fs-3 text-white">©</span> All rights reserved 2023
+						</p>
+						<form
+							action=""
+							id="language-form"
+						>
+							<img
+								src="/Images/web.svg"
+								alt=""
+							/>
+							<select
+								name="role"
+								id="language-select"
+								class="py-2 ps-4 text-white bg-transparent border border-0"
+							>
+								<option
+									value=""
+									selected
+									disabled
+									class="bg-transparent option1"
+								>
+									English
+								</option>
+								<option value="">Bengali</option>
+								<option value="">Chinese</option>
+								<option value="en">English</option>
+								<option value="fr">French</option>
+								<option value="de">German</option>
+								<option value="">Hindi</option>
+								<option value="">Indonesian</option>
+								<option value="">Japanese</option>
+								<option value="">Korean</option>
+								<option value="">Mandarin</option>
+								<option value="">Marathi</option>
+								<option value="pt">Portuguese</option>
+								<option value="">Russian</option>
+								<option value="">Spanish</option>
+								<option value="">Standard Arabic</option>
+								<option value="">Swahili</option>
+								<option value="">Tamil</option>
+								<option value="">Telugu</option>
+								<option value="">Turkish</option>
+								<option value="">Urdu</option>
+								<option value="">Wu Chinese</option>
+							</select>
+						</form>
+						<div class="online-links-wrappers d-flex gap-3">
+							<img
+								src="/Images/instagram.svg"
+								alt=""
+							/><img
+								src="/Images/youtube-fill.svg"
+								alt=""
+							/><img
+								src="/Images/footer-facebook.svg"
+								alt=""
+							/><img
+								src="/Images/footer-linkedin.svg"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 	</body>
 </html>

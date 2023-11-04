@@ -1,9 +1,7 @@
-
 //message interface
 
 const showbuttonDiv = document.querySelector(".send-icon");
 const buttonDiv = document.querySelector(".buttonDiv");
-
 
 showbuttonDiv.addEventListener("click", function () {
 	if (buttonDiv.style.opacity === "0" || buttonDiv.style.opacity === "") {
@@ -13,17 +11,17 @@ showbuttonDiv.addEventListener("click", function () {
 	}
 });
 
-
 const message = document.querySelector(".message");
 
 message.addEventListener("input", function () {
-  // Clear the message after 3 seconds (3000 milliseconds)
-  setTimeout(clearMessage, 22000);
+	// Clear the message after 3 seconds (3000 milliseconds)
+	setTimeout(clearMessage, 22000);
 });
 
 function clearMessage() {
-  message.value = "";
+	message.value = "";
 }
+
 
 
 // Define language data
@@ -31,6 +29,10 @@ const languageData = {
 	en: {
 		welcome: "Welcome",
 		greeting: "Hello, how are you?",
+	},
+	sw: {
+		welcome: "Karibu",
+		greeting: "Habari, uko aje?",
 	},
 	fr: {
 		welcome: "Bienvenue",
@@ -48,28 +50,21 @@ const languageData = {
 };
 
 // Function to translate content
-function translateContent(language) {
-	const elements = document.querySelectorAll("[data-i18n]");
-	elements.forEach((element) => {
-		const key = element.getAttribute("data-i18n");
-		element.textContent = languageData[language][key];
-	});
+function changeLanguage() {
+	const selectedLanguage = document.getElementById("language-select").value;
+	const pageTitle = document.getElementById("page-title");
+	const pageContent = document.querySelector(".page-content");
+
+	if (translations[selectedLanguage]) {
+		pageTitle.textContent = translations[selectedLanguage].pageTitle;
+		pageContent.textContent = translations[selectedLanguage].pageContent;
+	}
 }
 
-// Initialize with the default language (e.g., English)
-let selectedLanguage = "en";
-translateContent(selectedLanguage);
+// Add an event listener to the language select input
+document
+	.getElementById("language-select")
+	.addEventListener("change", changeLanguage);
 
-// Handle language selection
-const languageSelect = document.getElementById("language-select");
-languageSelect.addEventListener("change", (event) => {
-	selectedLanguage = event.target.value;
-	translateContent(selectedLanguage);
-});
-
-
-
-
-
-
-
+// Initialize the language when the page loads
+changeLanguage();

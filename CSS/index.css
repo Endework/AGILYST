@@ -41,7 +41,9 @@ nav ul li a:hover {
 nav ul li {
 	position: relative;
 }
-
+.active{
+	color: #0077b6;
+}
 nav ul li ul {
 	position: absolute;
 	left: 0;
@@ -609,7 +611,7 @@ form button {
 .toggle-div{
     position: fixed;
     bottom: 0;
-    right: -5%;
+    right: -4%;
     z-index: 10;
 }
 button#toggleChatButton {
@@ -620,7 +622,7 @@ button#toggleChatButton {
 
 
 button#toggleChatButton img{
-	width: 60%;
+	width: 90%;
 }
 
 .chat-container {

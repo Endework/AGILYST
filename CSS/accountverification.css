@@ -85,7 +85,7 @@ a {
 }
 .image-wrapper img{
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 .left-side{
     width: 50%;
@@ -107,6 +107,7 @@ a {
     background: var(--Primary-Colour, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0077B6);
     border:none;
 }
+
 form input[type='submit']{
     display: flex;
     width: 382px;
