@@ -58,6 +58,7 @@ h5{
     opacity: 0;
     width: 60% !important;
     top: -60%;
-    left: 50%;
-    /* z-index: 1; */
+    left: 65%;
+    z-index: 1;
+    background-color: #00B4D8;
 }

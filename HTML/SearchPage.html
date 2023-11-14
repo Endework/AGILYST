@@ -1,294 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/CSS/SearchPage.css" />
-    <title>Search page</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img style="height: 120px" src="../Images/Logo1.png" alt="" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/footer.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/SearchPage.css"
+		/>
+		<title>Search page</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar nav-normal navbar-expand-lg fixed-top ps-5">
+				<div class="container-fluid d-flex justify-content-evenly">
+					<a
+						class="navbar-brand"
+						href="#"
+					>
+						<img
+							src="/Images/dashboard-logo.png"
+							alt=""
+							class=""
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarTogglerDemo02"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+							<li class="nav-item">
+								<a
+									class="nav-link active fs-5"
+									id="first-link"
+									aria-current="page"
+									href="./landingpage.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./Mentee-dashboard/mentee-dashboard-1.html"
+									>Dashboard</a
+								>
+							</li>
+							<li class="nav-item dropdown fs-5">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									id="nav-link1"
+								>
+									Services
+								</a>
+								<ul class="dropdown-menu ps-3">
+									<li>
+										<a
+											class="dropdown-item text-white mt-2"
+											href="../SearchPage.html"
+											>Agile Coaching</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item text-white my-3"
+											href="../SearchPage.html"
+											>Mentorship</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link fs-5"
+									id="nav-link2"
+									href="./resource.html"
+									>Resources</a
+								>
+							</li>
+							<div class="btn-div d-flex gap-4 position-relative">
+								<input
+									type="search"
+									name=""
+									id=""
+									placeholder="Search for mentors"
+									class="btn btn-1 border border-black rounded-pill px-5 py-2 d-flex gap-5"
+									type="submit"
+								/>
+								<img
+									src="/Images/symbols-search.svg"
+									alt=""
+									class="position-absolute top-50 end-0 translate-middle-y me-3"
+									onclick="window.location.href='../SearchPage.html'"
+								/>
+							</div>
+							<div class="dashboard-profile d-flex gap-4 ms-5">
+								<img
+									src="/Images/message.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/ci-bell-notification.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/dashboard-profile.svg"
+									alt=""
+								/>
+								<img
+									src="/Images/symbols-arrow-drop-down.svg"
+									alt=""
+								/>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- search bar -->
+		</header>
 
-        <ul class="navlist">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="/HTML/AboutUs.html">About Us</a></li>
-          <li id="service">
-            <a href="#">Services</a>
-            <ul id="list">
-              <li><a href="">Agile Couching</a></li>
-              <li><a href="">Mentorship</a></li>
-            </ul>
-          </li>
-          <li><a href="./HTML/Contact.html">Contact Us</a></li>
-        </ul>
-        <div class="btn-div">
-          <button id="btn1" type="submit">Log in</button>
-          <div class="dropdown">
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/Mentor_login.html'"
-            >
-              Mentor
-            </button>
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/LogIn.html'"
-            >
-              Mentee
-            </button>
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/Agile-Coach/agile-login.html'"
-            >
-              Agile Coach
-            </button>
-          </div>
-          <button id="btn2" type="submit">Sign up</button>
-          <div class="dropdowns">
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/Mentor_signup.html'"
-            >
-              Mentor
-            </button>
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/SignUp_Mentee.html'"
-            >
-              Mentee
-            </button>
-            <button
-              class="dropdown-button"
-              onclick="window.location.href='./HTML/Agile-Coach/Agile-signup-1.html'"
-            >
-              Agile Coach
-            </button>
-          </div>
-        </div>
-      </nav>
-      <!-- search bar -->
-      
-    </header>
-    
-    <main>
-      <div class="search-bar">
-        <form action="">
-          <input type="text" name="search" id="search" placeholder="Product design">
-          <i class="fa-solid  fa-magnifying-glass"></i>
-          <i class="fa-solid  fa-filter"></i>
-        </form>
-      </div>
-      <section class="sec-1">
-        <h1>Agile Mentors</h1>
-        <div class="row">
-          <div class="col">
-            <div class="left">
-              <img src="/Images/Rachel.svg" alt="" />
-              <div class="left-text">
-                <h4>Rachel Jobs <img src="/Images/Japan.svg" alt=""></h4>
-                <p>Scrum Master</p>
-                <h5>Availability status: <span>Active</span></h5>
-                <div class="status">
-                  <p>132 <span class="blur">Sessions</span></p>
-                  <p>95% <span class="blur">Attendance</span> </p>
-                  <p>68 <span class="blur">Reviews</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="right">
-              <p>Experience level</p>
-              <span>Senior</span>
-              <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-            </div>
-          </div>
-          <div class="col">
-            <div class="left">
-              <img src="/Images/json_small.svg" alt="" />
-              <div class="left-text">
-                <h4>Jason Hector <img src="/Images/json_country.svg" alt=""></h4>
-                <p>Senior Software Engineer </p>
-                <h5>Availability status: <span>Active</span></h5>
-                <div class="status">
-                  <p>213 <span class="blur">Sessions</span></p>
-                  <p>90% <span class="blur">Attendance</span></p>
-                  <p>80 <span class="blur">Reviews</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="right">
-              <p>Experience level</p>
-              <span>Manager</span>
-              <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              <div class="left">
-                <img src="/Images/steve_small.svg" alt="" />
-                <div class="left-text">
-                  <h4>Steve Noel <img src="/Images/Japan.svg" alt=""></h4>
-                  <p>UX Lead @ Google</p>
-                  <h5>Availability status: <span>Active</span></h5>
-                  <div class="status">
-                    <p>187 <span class="blur">Sessions</span></p>
-                    <p>85% <span class="blur">Attendance</span> </p>
-                    <p>72 <span class="blur">Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="right">
-                <p>Experience level</p>
-                <span>Director</span>
-                <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-              </div>
-            </div>
-            <div class="col">
-              <div class="left">
-                <img src="/Images/akata.svg" alt="" />
-                <div class="left-text">
-                  <h4>Akata Mariam <img src="/Images/nigeria.svg" alt=""></h4>
-                  <p>Product Owner @ Canva</p>
-                  <h5>Availability status: <span>Active</span></h5>
-                  <div class="status">
-                    <p>120 <span class="blur">Sessions</span></p>
-                    <p>95% <span class="blur">Attendance</span></p>
-                    <p>60 <span class="blur">Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="right">
-                <p>Experience level</p>
-                <span>Senior</span>
-                <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="left">
-                <img src="/Images/sung.svg" alt="" />
-                <div class="left-text">
-                  <h4>Sung-hoon <img src="/Images/sung_country.svg" alt=""></h4>
-                  <p>Agile Project Manager</p>
-                  <h5>Availability status: <span>Active</span></h5>
-                  <div class="status">
-                    <p>86 <span class="blur">Sessions</span></p>
-                    <p>95% <span class="blur">Attendance</span> </p>
-                    <p>39 <span class="blur">Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="right">
-                <p>Experience level</p>
-                <span>Intermediate</span>
-                <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-              </div>
-            </div>
-            <div class="col">
-              <div class="left">
-                <img src="/Images/peter_small.svg" alt="" />
-                <div class="left-text">
-                  <h4>Peter David <img src="/Images/peter_country.svg" alt=""></h4>
-                  <p>Lead Product Designer @ LinkedIn</p>
-                  <h5>Availability status: <span>Active</span></h5>
-                  <div class="status">
-                    <p>65 <span class="blur">Sessions</span></p>
-                    <p>85% <span class="blur">Attendance</span></p>
-                    <p>22 <span class="blur">Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="right">
-                <p>Experience level</p>
-                <span>Intermediate</span>
-                <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-              </div>
-            </div>
-          </div>
-        <p>see all</p>
-      </section>
-      <section class="sec-2">
-        <h1>Sessions</h1>
+		<main class="mt-5 pt-5">
+			<div class="search-bar my-5 pt-3 d-flex justify-content-center">
+				<form action="">
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="Search"
+						class="py-2 ps-4"
+					/>
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<a href="" id="fa-filters"><i class="fa-solid fa-filter"></i></a>
+					<div id="filters" class=" card w-25 ps-3 position-absolute">
+						<form action="">
+							<label for="all" style="color: #00B4D8;">All</label>
+							<select name="" id="" class="ps-3">
+								<option value="" selected>High rate of attendance</option>
+                                <option value="">Highest reviews</option>
+							</select>
+						</form>
+					</div>
+				</form>
+			</div>
+			<section class="sec-1 w-100">
+				<div
+					class="sec-1-wrapper mx-auto"
+					style="width: 92%; margin-inline: auto"
+				>
+					<h1 class="mb-4 w-100 ps-3 py-2">Agile Mentors</h1>
+					<div class="row mb-4">
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/Rachel.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4 class="fw-semibold">
+										Rachel Jobs
+										<img
+											src="/Images/Japan.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">Scrum Master</p>
+									<h6 class="fw-semibold">
+										Availability status: <span class="status-link">Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>132 <span class="blur">Sessions</span></p>
+										<p>95% <span class="blur">Attendance</span></p>
+										<p>68 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right me-3">
+								<h6 class="mb-2 mt-5 pt-1 fw-semibold">Experience level</h6>
+								<span class="status-link fw-semibold">Senior</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/json_small.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4 class="fw-semibold">
+										Jason Hector
+										<img
+											src="/Images/json_country.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">Senior Software Engineer</p>
+									<h6 class="fw-semibold">
+										Availability status: <span>Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>213 <span class="blur">Sessions</span></p>
+										<p>90% <span class="blur">Attendance</span></p>
+										<p>80 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right me-3 mt-5 pt-1">
+								<h6 class="mb-2 fw-semibold">Experience level</h6>
+								<span class="fw-semibold">Manager</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/steve_small.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4 class="fw-semibold">
+										Steve Noel
+										<img
+											src="/Images/Japan.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">UX Lead @ Google</p>
+									<h6 class="fw-semibold">
+										Availability status: <span>Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>187 <span class="blur">Sessions</span></p>
+										<p>85% <span class="blur">Attendance</span></p>
+										<p>72 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right me-3 mt-5 pt-1">
+								<h6 class="mb-2 fw-semibold">Experience level</h6>
+								<span class="fw-semibold">Director</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/akata.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4 class="fw-semibold">
+										Akata Mariam
+										<img
+											src="/Images/nigeria.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">Product Owner @ Canva</p>
+									<h6 class="fw-semibold">
+										Availability status: <span>Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>120 <span class="blur">Sessions</span></p>
+										<p>95% <span class="blur">Attendance</span></p>
+										<p>60 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right mt-5 pt-1 me-3">
+								<h6 class="fw-semibold">Experience level</h6>
+								<span class="fw-semibold mt-2">Senior</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/sung.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4 class="fw-semibold">
+										Sung-hoon
+										<img
+											src="/Images/sung_country.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">Agile Project Manager</p>
+									<h6 class="fw-semibold">
+										Availability status: <span>Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>86 <span class="blur">Sessions</span></p>
+										<p>95% <span class="blur">Attendance</span></p>
+										<p>39 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right mt-5 pt-1 me-3">
+								<h6 class="fw-semibold mb-2">Experience level</h6>
+								<span class="fw-semibold">Intermediate</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="left">
+								<img
+									src="/Images/peter_small.svg"
+									alt=""
+								/>
+								<div class="left-text">
+									<h4
+										class="fw-semibold"
+										onclick="window.location.href='./Mentee-dashboard/Mentee-m-search-results.html'"
+									>
+										Peter David
+										<img
+											src="/Images/peter_country.svg"
+											alt=""
+										/>
+									</h4>
+									<p class="my-2">Lead Product Designer @ LinkedIn</p>
+									<h6 class="fw-semibold">
+										Availability status: <span>Active</span>
+									</h6>
+									<div class="status mt-2">
+										<p>65 <span class="blur">Sessions</span></p>
+										<p>85% <span class="blur">Attendance</span></p>
+										<p>22 <span class="blur">Reviews</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="right mt-5 pt-1 me-3">
+								<h6 class="fw-semibold mb-2">Experience level</h6>
+								<span class="fw-semibold">Intermediate</span>
+								<img
+									style="float: right"
+									src="/Images/ChevronRight.svg"
+									alt=""
+									onclick="window.location.href='./Mentee-dashboard/Mentee-m-search-results.html'"
+								/>
+							</div>
+						</div>
+					</div>
+					<p class="my-4 ms-3 fw-semibold">See all</p>
+				</div>
+			</section>
+			<section class="sec-2 w-100">
+				<div
+					class="sec-1-wrapper mx-auto"
+					style="width: 92%; margin-inline: auto"
+				>
+					<h1 class="mb-4 w-100 ps-3 py-2">Sessions</h1>
+					<div class="session w-100 py-2">
+						<div class="user">
+							<img
+								src="/Images/UserGroup.svg"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Innovation Through Agile Practices
+							</p>
+						</div>
+						<p>Oct 15, 08:00pm (GMT)</p>
+						<div style="display: flex">
+							<p class="text-body-tertiary">Available Slots: 45</p>
+							<img
+								style="float: right"
+								src="/Images/ChevronRight.svg"
+								alt=""
+								class="me-3 ms-4"
+							/>
+						</div>
+					</div>
+					<div class="session my-4 py-2 w-100">
+						<div class="user">
+							<img
+								src="/Images/UserGroup.svg"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Agile Tools and Technologies for Success
+							</p>
+						</div>
+						<p>Oct 15, 08:00pm (GMT)</p>
+						<div style="display: flex">
+							<p class="text-body-tertiary">Available Slots: 25</p>
+							<img
+								style="float: right"
+								src="/Images/ChevronRight.svg"
+								alt=""
+								class="me-3 ms-4"
+							/>
+						</div>
+					</div>
+					<div class="session py-2 w-100">
+						<div class="user">
+							<img
+								src="/Images/UserGroup.svg"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Scaling Agile: From Teams to Enterprises
+							</p>
+						</div>
+						<p>Oct 15, 08:00pm (GMT)</p>
+						<div style="display: flex">
+							<p class="text-body-tertiary">Available Slots: 30</p>
+							<img
+								style="float: right"
+								src="/Images/ChevronRight.svg"
+								alt=""
+								class="me-3 ms-4"
+							/>
+						</div>
+					</div>
+					<p class="my-4 ms-3 fw-semibold">see all</p>
+				</div>
+			</section>
+			<section class="sec-3 w-100">
+				<div
+					class="sec-1-wrapper mx-auto"
+					style="width: 92%; margin-inline: auto"
+				>
+					<h1 class="mb-4 w-100 ps-3 py-2">Learning Resources</h1>
+					<div class="learning py-2 w-100">
+						<div class="book">
+							<img
+								src="/Images/Book.png"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Agile Methodologies Handbook: A Comprehensive Guide
+							</p>
+						</div>
+						<div class="view text-body-tertiary">
+							<img
+								src="/Images/EyeOutline.svg"
+								alt=""
+							/>
+							<p>38views</p>
+						</div>
+						<p class="text-body-tertiary">8 reviews</p>
+						<img
+							style="float: right"
+							src="/Images/ChevronRight.svg"
+							alt=""
+							class="me-3 ms-4"
+						/>
+					</div>
+					<div class="learning py-2 w-100 my-4">
+						<div class="book">
+							<img
+								src="/Images/Book.png"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Scrum Master Certification Study Material
+							</p>
+						</div>
+						<div class="view">
+							<img
+								src="/Images/EyeOutline.svg"
+								alt=""
+							/>
+							<p class="text-body-tertiary">38views</p>
+						</div>
+						<p class="text-body-tertiary">8 reviews</p>
+						<img
+							style="float: right"
+							src="/Images/ChevronRight.svg"
+							alt=""
+							class="me-3 ms-4"
+						/>
+					</div>
+					<div class="learning py-2 w-100">
+						<div class="book">
+							<img
+								src="/Images/Book.png"
+								alt=""
+							/>
+							<p class="d-flex align-items-center ms-3">
+								Embracing Agile Culture and Mindset: Resources for
+								Transformation
+							</p>
+						</div>
+						<div class="view">
+							<img
+								src="/Images/EyeOutline.svg"
+								alt=""
+							/>
+							<p class="text-body-tertiary">38views</p>
+						</div>
+						<p class="text-body-tertiary">8 reviews</p>
+						<img
+							style="float: right"
+							src="/Images/ChevronRight.svg"
+							alt=""
+							class="me-3 ms-4"
+						/>
+					</div>
+					<p class="my-4 ms-3 fw-semibold">see all</p>
+				</div>
+			</section>
+		</main>
 
-        <div class="session">
-            <div class="user">
-              <img src="/Images/UserGroup.svg" alt="" />
-              <p>Innovation Through Agile Practices</p>
-            </div>
-            <p>Oct 15, 08:00pm (GMT)</p>
-            <div style="display: flex;">
-              <p>Available Slots: 45</p>
-              <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-            </div>
-        </div>
-        <div class="session">
-            <div class="user">
-              <img src="/Images/UserGroup.svg" alt="" />
-              <p>Agile Tools and Technologies for Success</p>
-            </div>
-            <p>Oct 15, 08:00pm (GMT)</p>
-            <div style="display: flex;">
-              <p>Available Slots: 25</p>
-              <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-            </div>
-        </div>
-        <div class="session">
-            <div class="user">
-              <img src="/Images/UserGroup.svg" alt="" />
-              <p>Scaling Agile: From Teams to Enterprises</p>
-            </div>
-            <p>Oct 15, 08:00pm (GMT)</p>
-            <div style="display: flex;">
-              <p>Available Slots: 30</p>
-              <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-            </div>
-        </div>
-        <p>see all</p>
-      </section>
-      <section class="sec-3">
-        <h1>Learning Resources</h1>
-        <div class="learning">
-            <div class="book">
-                <img src="/Images/Book.png" alt="" >
-                <p>Agile Methodologies Handbook:  A Comprehensive  Guide</p>
-            </div>
-            <div class="view">
-                <img  src="/Images/EyeOutline.svg" alt="">
-                <p>38views</p>
-            </div>
-            <p>8 reviews</p>
-            <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-        </div>
-        <div class="learning">
-            <div class="book">
-                <img src="/Images/Book.png" alt="">
-                <p>Scrum Master Certification Study Material</p>
-            </div>
-            <div class="view">
-                <img  src="/Images/EyeOutline.svg" alt="">
-                <p >38views</p>
-            </div>
-            <p>8 reviews</p>
-            <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-        </div>
-        <div class="learning">
-            <div class="book">
-                <img src="/Images/Book.png" alt="">
-                <p>Embracing Agile Culture and Mindset: Resources  for Transformation</p>
-            </div>
-            <div class="view">
-                <img  src="/Images/EyeOutline.svg" alt="">
-                <p>38views</p>
-            </div>
-            <p >8 reviews</p>
-            <img style="float: right;" src="/Images/ChevronRight.svg" alt="">
-        </div>
-        <p>see all </p>
-      </section>
-    </main>
-  </body>
+		<footer>
+			<div class="footer-wrapper py-5 d-flex gap-5">
+				<div class="footer-logo">
+					<img
+						src="/Images/Agilyst Logo5 3.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="footer-content-wrapper">
+					<form
+						action=""
+						class=""
+					>
+						<input
+							type="email"
+							name=""
+							id=""
+							placeholder="Your Email"
+							class="border-rounded rounded-pill bg-transparent text-white py-2 ps-3 border-white w-75"
+							required
+						/>
+						<button
+							class="btn btn-large border rounded-pill bg-white pe-5 py-2 ps-2 ms-4"
+						>
+							<a
+								href=""
+								class="px-4 text-primary"
+							>
+								Subscribe Now!
+							</a>
+						</button>
+					</form>
+					<div
+						class="footer-links text-white d-flex justify-content-between my-5"
+					>
+						<div class="platform-links">
+							<h3 class="text-uppercase mb-2">Platform</h3>
+							<ul>
+								<li><a href="">Find Mentor</a></li>
+								<li><a href="">Become a Mentor</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="product-links">
+							<h3 class="text-uppercase mb-2">Product</h3>
+							<ul>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Community</a></li>
+							</ul>
+						</div>
+						<div class="legal-links">
+							<h3 class="text-uppercase mb-2">Legal</h3>
+							<ul>
+								<li><a href="">Terms and Conditions</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="" />
+					<div
+						class="copyright d-flex justify-content-between w-100 align-items-center mt-5"
+					>
+						<p class="text-white d-flex align-items-center gap-3">
+							<span class="fs-3 text-white">©</span> All rights reserved 2023
+						</p>
+						<form
+							action=""
+							id="language-form"
+						>
+							<img
+								src="/Images/web.svg"
+								alt=""
+							/>
+							<select
+								name="role"
+								id="language-select"
+								class="py-2 ps-4 text-white bg-transparent border border-0"
+							>
+								<option
+									value=""
+									selected
+									disabled
+									class="bg-transparent option1"
+								>
+									English
+								</option>
+								<option value="">Bengali</option>
+								<option value="">Chinese</option>
+								<option value="en">English</option>
+								<option value="fr">French</option>
+								<option value="de">German</option>
+								<option value="">Hindi</option>
+								<option value="">Indonesian</option>
+								<option value="">Japanese</option>
+								<option value="">Korean</option>
+								<option value="">Mandarin</option>
+								<option value="">Marathi</option>
+								<option value="pt">Portuguese</option>
+								<option value="">Russian</option>
+								<option value="">Spanish</option>
+								<option value="">Standard Arabic</option>
+								<option value="">Swahili</option>
+								<option value="">Tamil</option>
+								<option value="">Telugu</option>
+								<option value="">Turkish</option>
+								<option value="">Urdu</option>
+								<option value="">Wu Chinese</option>
+							</select>
+						</form>
+						<div class="online-links-wrappers d-flex gap-3">
+							<img
+								src="/Images/instagram.svg"
+								alt=""
+							/><img
+								src="/Images/youtube-fill.svg"
+								alt=""
+							/><img
+								src="/Images/footer-facebook.svg"
+								alt=""
+							/><img
+								src="/Images/footer-linkedin.svg"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="/profile.js"></script>
+	</body>
 </html>

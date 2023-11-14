@@ -25,40 +25,94 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto">
-            <div class="container-fluid gap-md-5">
-                <a class="navbar-brand" href="#">
-                    <img src="/Images/Agilyst_BRAND_LOGO.png" alt="">
+        <nav class="navbar navbar-expand-lg fixed-top ps-5">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <a
+                    class="navbar-brand"
+                    href="#"
+                >
+                    <img
+                        src="/Images/dashboard-logo.png"
+                        alt=""
+                        class=""
+                    />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarTogglerDemo02"
+                >
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
                         <li class="nav-item">
-                            <a class="nav-link active bg-transparent" id="first-link" aria-current="page" href="/index.html">Home</a>
+                            <a
+                                class="nav-link active fs-5"
+                                id="first-link"
+                                aria-current="page"
+                                href="/index.html"
+                                >Home</a
+                            >
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="nav-link2" href="#">About us</a>
-                      </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link1">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-black" href="./html/content.html">Agile Coaching</a></li>
-                                <li><a class="dropdown-item text-black" href="./html/download.html">Mentorship</a></li>
-                            </ul>
-                        </li>  
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-link3" href="./html/about.html">Contact Us</a>
+                            <a
+                                class="nav-link fs-5"
+                                id="nav-link2"
+                                href="./Mentor-dashboard.html"
+                                >Dashboard</a
+                            >
                         </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link fs-5"
+                                id="nav-link2"
+                                href="./resource.html"
+                                >Resources</a
+                            >
+                        </li>
+                        <div class="btn-div d-flex gap-4 position-relative">
+                            <input
+                                type="search"
+                                name=""
+                                id=""
+                                placeholder="Search for mentors"
+                                class="btn border border-black rounded-pill px-5 py-2 d-flex gap-5"
+                                type="submit"
+                            />
+                            <img
+                                src="/Images/symbols-search.svg"
+                                alt=""
+                                class="position-absolute top-50 end-0 translate-middle-y me-3"
+                                onclick="window.location.href=''"
+                            />
+                        </div>
+                        <div class="dashboard-profile d-flex gap-4 ms-5">
+                            <img
+                                src="/Images/message.svg"
+                                alt=""
+                            />
+                            <img
+                                src="/Images/ci-bell-notification.svg"
+                                alt=""
+                            />
+                            <img
+                                src="/Images/Peter.svg"
+                                alt="" class="" style="width: 23%;"
+                            />
+                            <img
+                                src="/Images/symbols-arrow-drop-down.svg"
+                                alt=""
+                            />
+                        </div>
                     </ul>
-                    <div class="btn-div d-flex gap-4">
-                        <button class="btn btn-1 border border-rounded px-5 py-2" type="submit" onclick="window.location.href='../html/LogIn.html'">Login</button>
-                        <button class="btn btn-2 btn-outline-light px-5 py-2 me-5" type="submit" onclick="window.location.href='../html/SignUp.html'">Sign Up</button>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -184,7 +238,7 @@
                     <button
 							class="btn signup-btn w-100 text-white py-2 fs-5 mt-5" 
 							type="submit"
-							onclick="window.location.href='./mentor-dashboard.html'"
+							onclick="window.location.href='./profile.html'"
 						>
 							Edit
 						</button>

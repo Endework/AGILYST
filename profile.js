@@ -13,3 +13,15 @@ profilePictureInput.addEventListener("change", function () {
 		reader.readAsDataURL(file);
 	}
 });
+
+
+const showfiltersDiv = document.querySelector("#fa-filters");
+const filters = document.querySelector(".filters");
+
+showfiltersDiv.addEventListener("click", function () {
+	if (filters.style.opacity === "0" || filters.style.opacity === "") {
+		filters.style.opacity = "1";
+	} else {
+		filters.style.opacity = "0";
+	}
+});

@@ -32,7 +32,9 @@ nav ul li a {
 	font-family: lato;
 	font-size: 20px;
 }
-
+.active{
+	color: #0077b6;
+}
 nav ul li a:hover {
 	color: #0077b6;
 }

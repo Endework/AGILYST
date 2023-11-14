@@ -115,8 +115,10 @@
 }
 .today{
     background-color: #00B4D8;
+    border-radius: 50%;
 }
 /* user's schedule date */
 .random{
     background-color: Peru;
+    /* border-radius: 50%; */
 }
